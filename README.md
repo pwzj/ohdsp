@@ -46,8 +46,7 @@ enthusiast, especially given the wealth of low cost tools available these days.
 
 Designed using KiCad on Windows.
 
-Master branch located in C:\repo\ohdsp
-Other branches located in C:\repo\ohdsp-*branchname*
+Located in C:\repo\ohdsp
 
 Git ignores MUST NOT INCLUDE .LIB FILES as KiCad uses these extensions
 
