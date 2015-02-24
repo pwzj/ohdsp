@@ -1,0 +1,33 @@
+22 Jan 2015:
+Add 4.7uH 4A inductor for SMPS - footprint --done 23 Jan 15
+
+10 Feb 2015:
+Add EEPROM to library - connect to master port - Done 12 Feb 15
+Add Oscillator - Done 16 Feb 2015
+Add thermal diode? - Note would need external temp sense IC eg ADM1032 (16 Feb 2015)
+Add ADM811 to Reset - Done 12 Feb 15
+Try and sequence the supplies - use two 3v3 rails, one with a soft start on enable pin, drive the 1v2 enable from 3v3 supply - done 16 Feb 15
+Add raspberry pi interface to slave control port - done 16 Feb 2015
+Check elektor Arduino connection and add - Just added generic I2C/SPI lines for control, also have SPI for EEPROM - 17 Feb 2015
+Check eval board for ADI USB/I2C connection and add - Done 21 Feb 2015
+Add raspberry pi I2S lines to one of the I2S ports - use resistors to switch to external connectors - Done 12 Feb 15
+
+12 Feb 2015:
+Add Onboard SPDIF in and DAC out? - Done 16 Feb 2015
+
+16 Feb 2015:
+Add clock fan out buffer - Done 16 Deb 2015
+Do something celever with ADM811 reset power up - eg switch the power supply with pnp/npn (level translator) from DVDD so reset is low until DVDD us valid
+	-- Replaced with ADM13307 and delayed supplies it correct order
+Add header to allow in circuit EEPROM programming - Done 17 Feb 2015
+
+17 Feb 2015:
+Add Power Connector - screw terminals? - Done 17 Feb 2015
+Delay one 3v3 supply - connect devices in right order (I2C, EEProm etc first, then DSP...) - Done 17 Feb 2015
+Add protection diodes on AUXADC inputs - Done 17 Feb 2015
+Add voltage clamp/polyfuse to power connectors
+
+
+19 Feb 2015:
+Rationalise the design!
+Add a better hand solder LFCSP package - pull pad inside edges to the edge of the pad on the package

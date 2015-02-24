@@ -1,0 +1,37 @@
+ADAU1452:
+Pn 26 SS_M/MP0 - Self boot - needs 10k pull down to GND for i2c self boot
+
+Solders:
+Bi-Sn - low temp lead free solder
+http://uk.farnell.com/edsyn/cr11/solder-paste-58-42-138-deg-10g/dp/2131462
+
+
+PSU:
+Use LM317/337 with teddy regs!
+http://www.pinkfishmedia.net/forum/showthread.php?t=39990
+http://www.pinkfishmedia.net/forum/showthread.php?t=39306
+
+
+Raspberry Pi Connections:
+http://www.robot-electronics.co.uk/htm/raspberry_pi_examples.htm
+http://pi.gadgetoid.com/pinout
+http://uk.farnell.com/harwin/m20-6102045/socket-pc-104-stackthru-40way/dp/1569230
+http://uk.farnell.com/te-connectivity-amp/2-534206-0/connector-receptacle-tht-40way/dp/2310167
+
+
+ADI USB/I2C:
+http://www.analog.com/static/imported-files/user_guides/EVAL-ADAU1452MINIZ_User_Guide.pdf
+
+PCB Slide Switches:
+http://uk.farnell.com/c-k-components/bd01/switch-1-way-spst-tht/dp/2319976
+
+
+Pi I2S Info: VERY USEFUL - INFO ON CLOCKS
+https://hifiduino.wordpress.com/2014/11/13/raspberry-pi-b-digital-audio/
+
+
+AKM DAC Notes:
+https://hifiduino.wordpress.com/2014/12/07/akm-verita-4490-dac/
+
+PCB trace impedance:
+http://chemandy.com/calculators/coplanar-waveguide-with-ground-calculator.htm
