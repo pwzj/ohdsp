@@ -1,4 +1,4 @@
-update=21/02/2015 20:08:07
+update=25/02/2015 09:54:57
 version=1
 last_client=kicad
 [cvpcb]
@@ -41,11 +41,11 @@ RptD_X=0
 RptD_Y=100
 RptLab=1
 LabSize=60
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=../Kicad-Libs
 [eeschema/libraries]
 LibName1=power
-LibName2=C:/repo/ohdsp-ADAU1452/Kicad-Libs/OHDSP-Lib
-[general]
-version=1
+LibName2=OHDSP-Lib

@@ -373,17 +373,6 @@ F 3 "~" H 7700 4150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP1 C322
-U 1 1 54D8DE5C
-P 7050 4150
-F 0 "C322" H 7100 4250 50  0000 L CNN
-F 1 "100u" H 7100 4050 50  0000 L CNN
-F 2 "OHDSP-Footprints-Pretty:SMD-0805" H 7050 4150 60  0000 C CNN
-F 3 "~" H 7050 4150 60  0000 C CNN
-	1    7050 4150
-	1    0    0    -1  
-$EndComp
-$Comp
 L CP1 C340
 U 1 1 54D8DEFF
 P 10650 4100
@@ -447,17 +436,6 @@ F 1 "100n" H 7706 5215 40  0000 L CNN
 F 2 "OHDSP-Footprints-Pretty:SMD-0805" H 7738 5150 30  0000 C CNN
 F 3 "~" H 7700 5300 60  0000 C CNN
 	1    7700 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L CP1 C323
-U 1 1 54D8E066
-P 7050 5300
-F 0 "C323" H 7100 5400 50  0000 L CNN
-F 1 "100u" H 7100 5200 50  0000 L CNN
-F 2 "OHDSP-Footprints-Pretty:SMD-0805" H 7050 5300 60  0000 C CNN
-F 3 "~" H 7050 5300 60  0000 C CNN
-	1    7050 5300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -650,23 +628,23 @@ $EndComp
 $Comp
 L GNDD #PWR058
 U 1 1 54DA133C
-P 7050 4450
-F 0 "#PWR058" H 7050 4200 60  0001 C CNN
-F 1 "GNDD" H 7050 4300 60  0000 C CNN
-F 2 "" H 7050 4450 60  0000 C CNN
-F 3 "" H 7050 4450 60  0000 C CNN
-	1    7050 4450
+P 7400 4450
+F 0 "#PWR058" H 7400 4200 60  0001 C CNN
+F 1 "GNDD" H 7400 4300 60  0000 C CNN
+F 2 "" H 7400 4450 60  0000 C CNN
+F 3 "" H 7400 4450 60  0000 C CNN
+	1    7400 4450
 	1    0    0    -1  
 $EndComp
 $Comp
 L GNDD #PWR059
 U 1 1 54DA1370
-P 7050 5600
-F 0 "#PWR059" H 7050 5350 60  0001 C CNN
-F 1 "GNDD" H 7050 5450 60  0000 C CNN
-F 2 "" H 7050 5600 60  0000 C CNN
-F 3 "" H 7050 5600 60  0000 C CNN
-	1    7050 5600
+P 7400 5600
+F 0 "#PWR059" H 7400 5350 60  0001 C CNN
+F 1 "GNDD" H 7400 5450 60  0000 C CNN
+F 2 "" H 7400 5600 60  0000 C CNN
+F 3 "" H 7400 5600 60  0000 C CNN
+	1    7400 5600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -975,10 +953,7 @@ Wire Wire Line
 Wire Wire Line
 	7400 3950 7400 3800
 Connection ~ 7700 3800
-Wire Wire Line
-	7050 3950 7050 3800
 Connection ~ 7400 3800
-Connection ~ 7050 3800
 Wire Wire Line
 	10650 3700 10650 3900
 Wire Wire Line
@@ -994,10 +969,7 @@ Wire Wire Line
 Wire Wire Line
 	7400 4950 7400 5100
 Connection ~ 7700 4950
-Wire Wire Line
-	7050 5100 7050 4950
 Connection ~ 7400 4950
-Connection ~ 7050 4950
 Wire Wire Line
 	10650 4900 10650 5050
 Wire Wire Line
@@ -1063,22 +1035,12 @@ Wire Wire Line
 Wire Wire Line
 	6150 4450 6150 4400
 Wire Wire Line
-	7050 4350 7050 4450
-Wire Wire Line
-	7050 5500 7050 5600
-Wire Wire Line
-	7050 4400 7700 4400
-Wire Wire Line
-	7400 4400 7400 4350
-Connection ~ 7050 4400
+	7400 4350 7400 4450
 Wire Wire Line
 	7700 4400 7700 4350
 Connection ~ 7400 4400
 Wire Wire Line
-	7050 5550 7700 5550
-Wire Wire Line
-	7400 5550 7400 5500
-Connection ~ 7050 5550
+	7400 5500 7400 5600
 Wire Wire Line
 	7700 5550 7700 5500
 Connection ~ 7400 5550
@@ -1853,4 +1815,14 @@ F 3 "" H 1450 7350 60  0000 C CNN
 	1    1450 7350
 	1    0    0    -1  
 $EndComp
+Text Notes 7700 1650 0    118  ~ 0
+Add small diode\nfor quick discharge
+Text Notes 7150 4900 0    79   ~ 0
+Add small diode\nfor quick discharge
+Text Notes 7350 3750 0    79   ~ 0
+Add small diode\nfor quick discharge
+Wire Wire Line
+	7400 4400 7700 4400
+Wire Wire Line
+	7700 5550 7400 5550
 $EndSCHEMATC

@@ -835,7 +835,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:DIODE-SMB (layer F.Cu) (tedit 54E5DE00) (tstamp 54E4FAC3)
-    (at 238.412 -8.764 90)
+    (at 156.912 74.736 90)
     (path /54DA50D9/54D8C886)
     (attr smd)
     (fp_text reference D303 (at 2.5 -2.5 90) (layer F.SilkS)
@@ -868,7 +868,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:DIODE-SMB (layer F.Cu) (tedit 54E5FA5D) (tstamp 54E4FAD6)
-    (at 106 -19 90)
+    (at 154 42.5 90)
     (path /54DA50D9/54D8CDA1)
     (attr smd)
     (fp_text reference D304 (at -3.556 1.016 90) (layer F.SilkS)
@@ -1237,7 +1237,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:PASSIVE-TH-IND-WURTH-5mm (layer F.Cu) (tedit 54E5DDDF) (tstamp 54E4FBE9)
-    (at 242.5 -19.5)
+    (at 161 64)
     (path /54DA50D9/54D8C8BE)
     (fp_text reference L302 (at 0 5) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -1253,7 +1253,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:PASSIVE-TH-IND-WURTH-5mm (layer F.Cu) (tedit 54E5FA1D) (tstamp 54E4FBF0)
-    (at 110 -29.5)
+    (at 158 32)
     (path /54DA50D9/54D8CDA8)
     (fp_text reference L303 (at 6.604 -0.508) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -1645,7 +1645,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:IC-SOT23-6 (layer F.Cu) (tedit 54E5DDF9) (tstamp 54E504E3)
-    (at 233.586 -13.844 180)
+    (at 152.086 69.656 180)
     (path /54DA50D9/54D8C556)
     (attr smd)
     (fp_text reference U301 (at 2.5 1.5 270) (layer F.SilkS)
@@ -1674,7 +1674,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:IC-SOT23-6 (layer F.Cu) (tedit 54E5FA6D) (tstamp 54E50431)
-    (at 101.5 -25.5 180)
+    (at 149.5 36 180)
     (path /54DA50D9/54D8CD94)
     (attr smd)
     (fp_text reference U302 (at 3.556 0.508 180) (layer F.SilkS)
@@ -1703,7 +1703,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:IC-TO-252-5L (layer F.Cu) (tedit 54E5C20A) (tstamp 54E5043E)
-    (at 258 -27.5)
+    (at 176.5 56)
     (path /54DA50D9/54D8CE87)
     (attr smd)
     (fp_text reference U303 (at 0.5 -3.9) (layer F.SilkS)
@@ -1730,7 +1730,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:IC-SOT25 (layer F.Cu) (tedit 54E5C1F1) (tstamp 54E5044D)
-    (at 123.5 -30.5 270)
+    (at 171.5 31 270)
     (path /54DA50D9/54D8CF90)
     (attr smd)
     (fp_text reference U304 (at 0.1 -2.7 270) (layer F.SilkS)
@@ -1758,7 +1758,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:IC-SOT25 (layer F.Cu) (tedit 54E5C1F1) (tstamp 54E5045C)
-    (at 123.5 -23 270)
+    (at 171.5 38.5 270)
     (path /54DA50D9/54D8E04A)
     (attr smd)
     (fp_text reference U305 (at 0.1 -2.7 270) (layer F.SilkS)
@@ -2259,7 +2259,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:CAP-TH-D6.3mmP2.5mm (layer F.Cu) (tedit 54E5C648) (tstamp 54E5EDB1)
-    (at 243.5 -12 270)
+    (at 162 71.5 270)
     (path /54DA50D9/54D8CD42)
     (fp_text reference C314 (at -0.127 -3.937 270) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2277,7 +2277,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:CAP-TH-D6.3mmP2.5mm (layer F.Cu) (tedit 54E5C648) (tstamp 54EDB81D)
-    (at 111.144 -21.848 270)
+    (at 159.144 39.652 270)
     (path /54DA50D9/54D8CDDF)
     (fp_text reference C317 (at -0.127 -3.937 270) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2295,7 +2295,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:CAP-TH-D6.3mmP2.5mm (layer F.Cu) (tedit 54E5C648) (tstamp 54EDB95A)
-    (at 260.5 -13 180)
+    (at 179 70.5 180)
     (path /54DA50D9/54D8CF4F)
     (fp_text reference C339 (at -0.127 -3.937 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2313,7 +2313,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:CAP-TH-D6.3mmP2.5mm (layer F.Cu) (tedit 54E5C648) (tstamp 54E5EDC0)
-    (at 129.5 -31 270)
+    (at 177.5 30.5 270)
     (path /54DA50D9/54D8DEFF)
     (fp_text reference C340 (at -0.127 -3.937 270) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2331,7 +2331,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:CAP-TH-D6.3mmP2.5mm (layer F.Cu) (tedit 54E5C648) (tstamp 54E5EDC5)
-    (at 129.5 -23 270)
+    (at 177.5 38.5 270)
     (path /54DA50D9/54D8E06F)
     (fp_text reference C341 (at -0.127 -3.937 270) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2841,7 +2841,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4F7E5)
-    (at 232.57 -9.526 90)
+    (at 151.07 73.974 90)
     (path /54DA50D9/54D8CCFE)
     (attr smd)
     (fp_text reference C303 (at 0.254 -1.524 90) (layer F.SilkS)
@@ -2861,7 +2861,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4F7EF)
-    (at 100.476 -21.086 90)
+    (at 148.476 40.414 90)
     (path /54DA50D9/54D8CDD1)
     (attr smd)
     (fp_text reference C304 (at 0.254 -1.524 90) (layer F.SilkS)
@@ -2881,7 +2881,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4F7F9)
-    (at 234.856 -9.526 90)
+    (at 153.356 73.974 90)
     (path /54DA50D9/54DA642E)
     (attr smd)
     (fp_text reference C305 (at 0.254 -1.524 90) (layer F.SilkS)
@@ -2901,7 +2901,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4F803)
-    (at 102.762 -21.086 90)
+    (at 150.762 40.414 90)
     (path /54DA50D9/54DA64CE)
     (attr smd)
     (fp_text reference C306 (at 0.254 -1.524 90) (layer F.SilkS)
@@ -2941,7 +2941,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4F820)
-    (at 237.396 -15.876)
+    (at 155.896 67.624)
     (path /54DA50D9/54D8CB02)
     (attr smd)
     (fp_text reference C309 (at 0.254 -1.524) (layer F.SilkS)
@@ -2961,7 +2961,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4F82A)
-    (at 104.5 -27.5 90)
+    (at 152.5 34 90)
     (path /54DA50D9/54D8CDB1)
     (attr smd)
     (fp_text reference C310 (at 0.254 -1.524 90) (layer F.SilkS)
@@ -3021,7 +3021,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer B.Cu) (tedit 54E60510) (tstamp 54E4F848)
-    (at 245.778 -12.066 270)
+    (at 164.278 71.434 270)
     (path /54DA50D9/54D8CC07)
     (attr smd)
     (fp_text reference C313 (at 0.254 1.524 270) (layer B.SilkS)
@@ -3041,7 +3041,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer B.Cu) (tedit 54E60510) (tstamp 54EDB813)
-    (at 113.684 -21.848 270)
+    (at 161.684 39.652 270)
     (path /54DA50D9/54D8CDC1)
     (attr smd)
     (fp_text reference C315 (at 0.254 1.524 270) (layer B.SilkS)
@@ -3061,7 +3061,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer B.Cu) (tedit 54E60510) (tstamp 54E4F865)
-    (at 241.206 -12.066 270)
+    (at 159.706 71.434 270)
     (path /54DA50D9/54DA7C1A)
     (attr smd)
     (fp_text reference C316 (at 0.254 1.524 270) (layer B.SilkS)
@@ -3081,7 +3081,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer B.Cu) (tedit 54E60510) (tstamp 54EDB808)
-    (at 108.858 -21.848 270)
+    (at 156.858 39.652 270)
     (path /54DA50D9/54DA7C88)
     (attr smd)
     (fp_text reference C319 (at 0.254 1.524 270) (layer B.SilkS)
@@ -3101,7 +3101,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4F895)
-    (at 255 -17.5)
+    (at 173.5 66)
     (path /54DA50D9/54D8DD12)
     (attr smd)
     (fp_text reference C321 (at 0.254 -1.524) (layer F.SilkS)
@@ -3121,7 +3121,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4F8B3)
-    (at 255 -15)
+    (at 173.5 68.5)
     (path /54DA50D9/54D8CED7)
     (attr smd)
     (fp_text reference C324 (at 0.254 -1.524) (layer F.SilkS)
@@ -3141,7 +3141,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4F8BD)
-    (at 117.5 -31 270)
+    (at 165.5 30.5 270)
     (path /54DA50D9/54D8DCFC)
     (attr smd)
     (fp_text reference C325 (at 0.254 -1.524 270) (layer F.SilkS)
@@ -3161,7 +3161,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4F8C7)
-    (at 117.5 -23.5 270)
+    (at 165.5 38 270)
     (path /54DA50D9/54D8E050)
     (attr smd)
     (fp_text reference C326 (at 0.254 -1.524 270) (layer F.SilkS)
@@ -3181,7 +3181,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4F8D1)
-    (at 253.5 -22.5 90)
+    (at 172 61 90)
     (path /54DA50D9/54E2A118)
     (attr smd)
     (fp_text reference C327 (at 0.254 -1.524 90) (layer F.SilkS)
@@ -3201,7 +3201,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4F8DB)
-    (at 120 -31 270)
+    (at 168 30.5 270)
     (path /54DA50D9/54D8DD89)
     (attr smd)
     (fp_text reference C328 (at 0.254 -1.524 270) (layer F.SilkS)
@@ -3221,7 +3221,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4F8E5)
-    (at 120 -23.5 270)
+    (at 168 38 270)
     (path /54DA50D9/54D8E05C)
     (attr smd)
     (fp_text reference C329 (at 0.254 -1.524 270) (layer F.SilkS)
@@ -3241,7 +3241,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4F8EF)
-    (at 118.5 -27.5 180)
+    (at 166.5 34 180)
     (path /54DA50D9/54E9BC50)
     (attr smd)
     (fp_text reference C330 (at 0.254 -1.524 180) (layer F.SilkS)
@@ -3261,7 +3261,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4F8F9)
-    (at 118.5 -20 180)
+    (at 166.5 41.5 180)
     (path /54DA50D9/54E3F121)
     (attr smd)
     (fp_text reference C331 (at 0.254 -1.524 180) (layer F.SilkS)
@@ -3281,7 +3281,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4F903)
-    (at 259 -17.5 180)
+    (at 177.5 66 180)
     (path /54DA50D9/54D8CF12)
     (attr smd)
     (fp_text reference C332 (at 0.254 -1.524 180) (layer F.SilkS)
@@ -3301,7 +3301,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer B.Cu) (tedit 54E60510) (tstamp 54E4F917)
-    (at 127.5 -31 270)
+    (at 175.5 30.5 270)
     (path /54DA50D9/54D8DF05)
     (attr smd)
     (fp_text reference C334 (at 0.254 1.524 270) (layer B.SilkS)
@@ -3321,7 +3321,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer B.Cu) (tedit 54E60510) (tstamp 54E4F921)
-    (at 127 -23 270)
+    (at 175 38.5 270)
     (path /54DA50D9/54D8E075)
     (attr smd)
     (fp_text reference C335 (at 0.254 1.524 270) (layer B.SilkS)
@@ -3341,7 +3341,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer B.Cu) (tedit 54E60510) (tstamp 54E4F92B)
-    (at 260.5 -15 180)
+    (at 179 68.5 180)
     (path /54DA50D9/54D8DD24)
     (attr smd)
     (fp_text reference C336 (at 0.254 1.524 180) (layer B.SilkS)
@@ -3361,7 +3361,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer B.Cu) (tedit 54E60510) (tstamp 54E4F935)
-    (at 131.5 -31 270)
+    (at 179.5 30.5 270)
     (path /54DA50D9/54D8DD02)
     (attr smd)
     (fp_text reference C337 (at 0.254 1.524 270) (layer B.SilkS)
@@ -3381,7 +3381,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer B.Cu) (tedit 54E60510) (tstamp 54E4F93F)
-    (at 131.5 -23 270)
+    (at 179.5 38.5 270)
     (path /54DA50D9/54D8E056)
     (attr smd)
     (fp_text reference C338 (at 0.254 1.524 270) (layer B.SilkS)
@@ -4461,7 +4461,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4FF0E)
-    (at 230.51 -12 270)
+    (at 149.01 71.5 270)
     (path /54DA50D9/54DA29C2)
     (attr smd)
     (fp_text reference R301 (at 0.254 -1.524 270) (layer F.SilkS)
@@ -4481,7 +4481,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4FF18)
-    (at 98 -27 270)
+    (at 146 34.5 270)
     (path /54DA50D9/54DA2AE5)
     (attr smd)
     (fp_text reference R302 (at 0.254 -1.524 270) (layer F.SilkS)
@@ -4521,7 +4521,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E5FC5D)
-    (at 231.51 -19 180)
+    (at 150.01 64.5 180)
     (path /54DA50D9/54D8C877)
     (attr smd)
     (fp_text reference R304 (at 0.254 -1.524 180) (layer F.SilkS)
@@ -4541,7 +4541,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E5FC52)
-    (at 230.51 -16 270)
+    (at 149.01 67.5 270)
     (path /54DA50D9/54D8CBE8)
     (attr smd)
     (fp_text reference R305 (at 0.254 -1.524 270) (layer F.SilkS)
@@ -4561,7 +4561,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4FF40)
-    (at 104 -31 180)
+    (at 152 30.5 180)
     (path /54DA50D9/54D8CD9A)
     (attr smd)
     (fp_text reference R306 (at 0.254 -1.524 180) (layer F.SilkS)
@@ -4581,7 +4581,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4FF4A)
-    (at 100 -31 180)
+    (at 148 30.5 180)
     (path /54DA50D9/54D8CDBB)
     (attr smd)
     (fp_text reference R307 (at 0.254 -1.524 180) (layer F.SilkS)
@@ -4601,7 +4601,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4FF54)
-    (at 95.904 -29.976 90)
+    (at 143.904 31.524 90)
     (path /54DA50D9/54D8CE34)
     (attr smd)
     (fp_text reference R308 (at 0.254 -1.524 90) (layer F.SilkS)
@@ -4681,7 +4681,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4FF7C)
-    (at 251 -20.5 90)
+    (at 169.5 63 90)
     (path /54DA50D9/54DA4027)
     (attr smd)
     (fp_text reference R312 (at 0.254 -1.524 90) (layer F.SilkS)
@@ -4701,7 +4701,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4FF86)
-    (at 122.5 -27.5 180)
+    (at 170.5 34 180)
     (path /54DA50D9/54DA36BB)
     (attr smd)
     (fp_text reference R313 (at 0.254 -1.524 180) (layer F.SilkS)
@@ -4721,7 +4721,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4FF90)
-    (at 122.5 -20 180)
+    (at 170.5 41.5 180)
     (path /54DA50D9/54DA35C3)
     (attr smd)
     (fp_text reference R314 (at 0.254 -1.524 180) (layer F.SilkS)
@@ -4741,7 +4741,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4FF9A)
-    (at 262.5 -18.5 90)
+    (at 181 65 90)
     (path /54DA50D9/54D8DB27)
     (attr smd)
     (fp_text reference R315 (at 0.254 -1.524 90) (layer F.SilkS)
@@ -4761,7 +4761,7 @@
   )
 
   (module OHDSP-Footprints-Pretty:SMD-0805 (layer F.Cu) (tedit 54E60510) (tstamp 54E4FFA4)
-    (at 262.5 -22.5 90)
+    (at 181 61 90)
     (path /54DA50D9/54D8DB2D)
     (attr smd)
     (fp_text reference R316 (at 0.254 -1.524 90) (layer F.SilkS)
@@ -8086,9 +8086,9 @@
   (segment (start 268.792 97.984) (end 268.097 98.679) (width 0.25) (layer F.Cu) (net 12) (tstamp 54E9046C))
   (segment (start 268.792 96.944) (end 268.792 97.984) (width 0.25) (layer F.Cu) (net 12))
   (segment (start 268.097 98.679) (end 267.396 98.679) (width 0.25) (layer F.Cu) (net 12) (tstamp 54E9046F))
-  (segment (start 231.122 -10.288) (end 230.51 -10.9) (width 1.5) (layer F.Cu) (net 22) (tstamp 54E5FFC0))
-  (segment (start 233.502 -10.288) (end 231.122 -10.288) (width 1.5) (layer F.Cu) (net 22))
-  (segment (start 232.61 -19) (end 232.646 -19) (width 0.4) (layer F.Cu) (net 28))
+  (segment (start 149.622 73.212) (end 149.01 72.6) (width 1.5) (layer F.Cu) (net 22) (tstamp 54E5FFC0))
+  (segment (start 152.002 73.212) (end 149.622 73.212) (width 1.5) (layer F.Cu) (net 22))
+  (segment (start 151.11 64.5) (end 151.146 64.5) (width 0.4) (layer F.Cu) (net 28))
   (segment (start 217.880403 88.454063) (end 217.880404 90.359063) (width 0.28) (layer F.Cu) (net 58))
   (segment (start 212.800402 96.074063) (end 209.795403 96.074063) (width 0.28) (layer F.Cu) (net 60))
   (segment (start 271.526 72.794) (end 271.526 75.608) (width 0.25) (layer F.Cu) (net 108) (tstamp 54E90386))
