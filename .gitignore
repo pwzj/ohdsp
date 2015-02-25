@@ -1,5 +1,5 @@
 #################
-## Eclipse
+## KiCad Backups
 #################
 
 *.bak
@@ -20,3 +20,6 @@ $RECYCLE.BIN/
 
 # Mac crap
 .DS_Store
+*.bak
+Schematics/ADAU1452 PSU.bak
+*.bak
