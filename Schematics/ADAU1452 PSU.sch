@@ -78,7 +78,7 @@ L R R305
 U 1 1 54D8CBE8
 P 5300 3100
 F 0 "R305" V 5380 3100 40  0000 C CNN
-F 1 "51k" V 5307 3101 40  0000 C CNN
+F 1 "97k6" V 5307 3101 40  0000 C CNN
 F 2 "OHDSP-Footprints-Pretty:SMD-0805" V 5230 3100 30  0001 C CNN
 F 3 "~" H 5300 3100 30  0000 C CNN
 	1    5300 3100
@@ -1614,4 +1614,6 @@ Wire Wire Line
 	1800 1750 1800 2050
 Wire Wire Line
 	1800 2050 1850 2050
+Text Notes 5450 3300 0    60   ~ 0
+Can use 1% resistors for\nR305 and R304 although\n0.1% would be better.
 $EndSCHEMATC
