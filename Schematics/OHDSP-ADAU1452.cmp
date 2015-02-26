@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-01-16 BZR 5376)-product   date = 26/02/2015 09:50:57
+Cmp-Mod V01 Created by Cvpcb (2015-01-16 BZR 5376)-product   date = 26/02/2015 11:12:42
 
 BeginCmp
 TimeStamp = /54BE4270/54E2687A;
@@ -1452,7 +1452,7 @@ EndCmp
 BeginCmp
 TimeStamp = /54DA50D9/54D8CBE8;
 Reference = R305;
-ValeurCmp = 51k;
+ValeurCmp = 97k6;
 IdModule  = OHDSP-Footprints-Pretty:SMD-0805;
 EndCmp
 
