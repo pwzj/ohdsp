@@ -1,12 +1,12 @@
 (export (version D)
   (design
     (source C:/repo/ohdsp/Schematics/OHDSP-ADAU1452.sch)
-    (date "25/02/2015 12:43:08")
+    (date "26/02/2015 09:51:04")
     (tool "Eeschema (2015-01-16 BZR 5376)-product"))
   (components
     (comp (ref U201)
       (value ADAU1452WBCPZ)
-      (footprint OHDSP-Footprints-Pretty:IC-LFCSP72)
+      (footprint OHDSP-Footprints-Pretty:IC-LFCSP72-HANDFIT)
       (libsource (lib OHDSP-Lib) (part IC-DSP-ADAU1452WBCPZ))
       (sheetpath (names /ADAU1452/) (tstamps /54BE4270/))
       (tstamp 54BE9DB4))
@@ -663,7 +663,7 @@
       (sheetpath (names "/ADAU1452 PSU/") (tstamps /54DA50D9/))
       (tstamp 54D8CB02))
     (comp (ref R305)
-      (value 51k)
+      (value 97k6)
       (footprint OHDSP-Footprints-Pretty:SMD-0805)
       (libsource (lib OHDSP-Lib) (part R))
       (sheetpath (names "/ADAU1452 PSU/") (tstamps /54DA50D9/))
