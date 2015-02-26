@@ -1,1 +1,29 @@
+<<<<<<< HEAD
+#################
+## KiCad Backups
+#################
+
 *.bak
+
+#############
+## Windows detritus
+#############
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Mac crap
+.DS_Store
+*.bak
+Schematics/ADAU1452 PSU.bak
+*.bak
+=======
+*.bak
+>>>>>>> origin/master
