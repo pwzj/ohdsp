@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/master
 #################
 ## KiCad Backups
 #################
@@ -23,3 +27,9 @@ $RECYCLE.BIN/
 *.bak
 Schematics/ADAU1452 PSU.bak
 *.bak
+<<<<<<< HEAD
+=======
+=======
+*.bak
+>>>>>>> origin/master
+>>>>>>> origin/master
