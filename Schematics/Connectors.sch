@@ -2256,7 +2256,7 @@ Wire Wire Line
 Wire Wire Line
 	6000 8000 6450 8000
 Wire Wire Line
-	6000 8100 6450 8100
+	5850 8100 6450 8100
 Text Label 6200 1700 0    60   ~ 0
 PI_3V3
 $Comp
@@ -2278,7 +2278,7 @@ Wire Wire Line
 	7050 7900 7050 8250
 Text Label 6000 8000 0    60   ~ 0
 SL_SCL
-Text Label 6000 8100 0    60   ~ 0
+Text Label 4900 8100 0    60   ~ 0
 SL_SDA
 $Comp
 L +5V #PWR0137
@@ -2606,13 +2606,11 @@ Wire Wire Line
 Wire Wire Line
 	6000 9050 6450 9050
 Wire Wire Line
-	6000 9150 6450 9150
+	5900 9150 6450 9150
 Wire Wire Line
 	7050 8950 7050 9300
 Text Label 6000 9050 0    60   ~ 0
 SL_SCL
-Text Label 6000 9150 0    60   ~ 0
-SL_SDA
 Wire Wire Line
 	7050 9150 6950 9150
 Connection ~ 7050 9250
@@ -2807,4 +2805,20 @@ Wire Wire Line
 	4100 8700 4100 8250
 Wire Wire Line
 	4100 4250 4100 4700
+$Comp
+L R R642
+U 1 1 54F0AB06
+P 5600 8100
+F 0 "R642" V 5650 8400 40  0000 C CNN
+F 1 "0R" V 5607 8101 40  0000 C CNN
+F 2 "OHDSP-Footprints-Pretty:SMD-0805" V 5530 8100 30  0001 C CNN
+F 3 "~" H 5600 8100 30  0000 C CNN
+	1    5600 8100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4900 8100 5350 8100
+Wire Wire Line
+	5900 8100 5900 9150
+Connection ~ 5900 8100
 $EndSCHEMATC
