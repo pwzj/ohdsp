@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:/repo/ohdsp/Schematics/OHDSP-ADAU1452.sch)
-    (date "27/02/2015 15:54:07")
+    (date "28/02/2015 11:29:51")
     (tool "Eeschema (2015-01-16 BZR 5376)-product"))
   (components
     (comp (ref U201)
@@ -306,7 +306,7 @@
       (tstamp 54DC5405))
     (comp (ref R217)
       (value 4k3)
-      (footprint OHDSP-Footprints-Pretty:SMD-0805)
+      (footprint OHDSP-Footprints-Pretty:SMD-0603)
       (libsource (lib OHDSP-Lib) (part R))
       (sheetpath (names /ADAU1452/) (tstamps /54BE4270/))
       (tstamp 54DC55C9))
@@ -1855,24 +1855,17 @@
       (sheetpath (names /Connectors/) (tstamps /54E8D6A6/))
       (tstamp 54F0AB06)))
   (libparts
-    (libpart (lib OHDSP-Lib) (part C)
-      (footprints
-        (fp SM*)
-        (fp C?)
-        (fp C1-1))
+    (libpart (lib OHDSP-Lib) (part CONN_6x1)
       (fields
-        (field (name Reference) C)
-        (field (name Value) C))
+        (field (name Reference) P)
+        (field (name Value) CONN_6x1))
       (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
-    (libpart (lib OHDSP-Lib) (part COAX)
-      (fields
-        (field (name Reference) CN)
-        (field (name Value) COAX))
-      (pins
-        (pin (num 1) (name ~) (type input))
-        (pin (num 2) (name ~) (type input))))
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))
+        (pin (num 3) (name P3) (type passive))
+        (pin (num 4) (name P4) (type passive))
+        (pin (num 5) (name P5) (type passive))
+        (pin (num 6) (name P6) (type passive))))
     (libpart (lib OHDSP-Lib) (part CONN_02X05)
       (footprints
         (fp Pin_Header_Straight_2X05)
@@ -1893,133 +1886,6 @@
         (pin (num 8) (name P8) (type passive))
         (pin (num 9) (name P9) (type passive))
         (pin (num 10) (name P10) (type passive))))
-    (libpart (lib OHDSP-Lib) (part CONN_02X20)
-      (footprints
-        (fp Pin_Header_Straight_2X20)
-        (fp Pin_Header_Angled_2X20)
-        (fp Socket_Strip_Straight_2X20)
-        (fp Socket_Strip_Angled_2X20))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_02X20))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))
-        (pin (num 3) (name P3) (type passive))
-        (pin (num 4) (name P4) (type passive))
-        (pin (num 5) (name P5) (type passive))
-        (pin (num 6) (name P6) (type passive))
-        (pin (num 7) (name P7) (type passive))
-        (pin (num 8) (name P8) (type passive))
-        (pin (num 9) (name P9) (type passive))
-        (pin (num 10) (name P10) (type passive))
-        (pin (num 11) (name P11) (type passive))
-        (pin (num 12) (name P12) (type passive))
-        (pin (num 13) (name P13) (type passive))
-        (pin (num 14) (name P14) (type passive))
-        (pin (num 15) (name P15) (type passive))
-        (pin (num 16) (name P16) (type passive))
-        (pin (num 17) (name P17) (type passive))
-        (pin (num 18) (name P18) (type passive))
-        (pin (num 19) (name P19) (type passive))
-        (pin (num 20) (name P20) (type passive))
-        (pin (num 21) (name P21) (type passive))
-        (pin (num 22) (name P22) (type passive))
-        (pin (num 23) (name P23) (type passive))
-        (pin (num 24) (name P24) (type passive))
-        (pin (num 25) (name P25) (type passive))
-        (pin (num 26) (name P26) (type passive))
-        (pin (num 27) (name P27) (type passive))
-        (pin (num 28) (name P28) (type passive))
-        (pin (num 29) (name P29) (type passive))
-        (pin (num 30) (name P30) (type passive))
-        (pin (num 31) (name P31) (type passive))
-        (pin (num 32) (name P32) (type passive))
-        (pin (num 33) (name P33) (type passive))
-        (pin (num 34) (name P34) (type passive))
-        (pin (num 35) (name P35) (type passive))
-        (pin (num 36) (name P36) (type passive))
-        (pin (num 37) (name P37) (type passive))
-        (pin (num 38) (name P38) (type passive))
-        (pin (num 39) (name P39) (type passive))
-        (pin (num 40) (name P40) (type passive))))
-    (libpart (lib OHDSP-Lib) (part CONN_2x1)
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_2x1))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))))
-    (libpart (lib OHDSP-Lib) (part CONN_3x1)
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_3x1))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))
-        (pin (num 3) (name P3) (type passive))))
-    (libpart (lib OHDSP-Lib) (part CONN_5x1)
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_5x1))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))
-        (pin (num 3) (name P3) (type passive))
-        (pin (num 4) (name P4) (type passive))
-        (pin (num 5) (name P5) (type passive))))
-    (libpart (lib OHDSP-Lib) (part CONN_6X2)
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_6X2))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))
-        (pin (num 3) (name P3) (type passive))
-        (pin (num 4) (name P4) (type passive))
-        (pin (num 5) (name P5) (type passive))
-        (pin (num 6) (name P6) (type passive))
-        (pin (num 7) (name P7) (type passive))
-        (pin (num 8) (name P8) (type passive))
-        (pin (num 9) (name 9) (type passive))
-        (pin (num 10) (name 10) (type passive))
-        (pin (num 11) (name 11) (type passive))
-        (pin (num 12) (name 12) (type passive))))
-    (libpart (lib OHDSP-Lib) (part CONN_6x1)
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_6x1))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))
-        (pin (num 3) (name P3) (type passive))
-        (pin (num 4) (name P4) (type passive))
-        (pin (num 5) (name P5) (type passive))
-        (pin (num 6) (name P6) (type passive))))
-    (libpart (lib OHDSP-Lib) (part CP1)
-      (footprints
-        (fp CP*)
-        (fp SM*))
-      (fields
-        (field (name Reference) C)
-        (field (name Value) CP1))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
-    (libpart (lib OHDSP-Lib) (part CRYSTAL)
-      (fields
-        (field (name Reference) X)
-        (field (name Value) CRYSTAL))
-      (pins
-        (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))))
-    (libpart (lib OHDSP-Lib) (part DIODE)
-      (fields
-        (field (name Reference) D)
-        (field (name Value) DIODE))
-      (pins
-        (pin (num 1) (name A) (type passive))
-        (pin (num 2) (name K) (type passive))))
     (libpart (lib OHDSP-Lib) (part IC-CLK-FANOUT-NB3L553)
       (fields
         (field (name Reference) U)
@@ -2033,6 +1899,16 @@
         (pin (num 6) (name Q2) (type input))
         (pin (num 7) (name Q3) (type input))
         (pin (num 8) (name OE) (type input))))
+    (libpart (lib OHDSP-Lib) (part CONN_5x1)
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_5x1))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))
+        (pin (num 3) (name P3) (type passive))
+        (pin (num 4) (name P4) (type passive))
+        (pin (num 5) (name P5) (type passive))))
     (libpart (lib OHDSP-Lib) (part IC-DSP-ADAU1452WBCPZ)
       (fields
         (field (name Reference) U)
@@ -2111,6 +1987,87 @@
         (pin (num 71) (name DVDD) (type input))
         (pin (num 72) (name DGND) (type input))
         (pin (num EP1) (name EP) (type input))))
+    (libpart (lib OHDSP-Lib) (part CONN_2x1)
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_2x1))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))))
+    (libpart (lib OHDSP-Lib) (part CRYSTAL)
+      (fields
+        (field (name Reference) X)
+        (field (name Value) CRYSTAL))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))))
+    (libpart (lib OHDSP-Lib) (part CP1)
+      (footprints
+        (fp CP*)
+        (fp SM*))
+      (fields
+        (field (name Reference) C)
+        (field (name Value) CP1))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib OHDSP-Lib) (part CONN_02X20)
+      (footprints
+        (fp Pin_Header_Straight_2X20)
+        (fp Pin_Header_Angled_2X20)
+        (fp Socket_Strip_Straight_2X20)
+        (fp Socket_Strip_Angled_2X20))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_02X20))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))
+        (pin (num 3) (name P3) (type passive))
+        (pin (num 4) (name P4) (type passive))
+        (pin (num 5) (name P5) (type passive))
+        (pin (num 6) (name P6) (type passive))
+        (pin (num 7) (name P7) (type passive))
+        (pin (num 8) (name P8) (type passive))
+        (pin (num 9) (name P9) (type passive))
+        (pin (num 10) (name P10) (type passive))
+        (pin (num 11) (name P11) (type passive))
+        (pin (num 12) (name P12) (type passive))
+        (pin (num 13) (name P13) (type passive))
+        (pin (num 14) (name P14) (type passive))
+        (pin (num 15) (name P15) (type passive))
+        (pin (num 16) (name P16) (type passive))
+        (pin (num 17) (name P17) (type passive))
+        (pin (num 18) (name P18) (type passive))
+        (pin (num 19) (name P19) (type passive))
+        (pin (num 20) (name P20) (type passive))
+        (pin (num 21) (name P21) (type passive))
+        (pin (num 22) (name P22) (type passive))
+        (pin (num 23) (name P23) (type passive))
+        (pin (num 24) (name P24) (type passive))
+        (pin (num 25) (name P25) (type passive))
+        (pin (num 26) (name P26) (type passive))
+        (pin (num 27) (name P27) (type passive))
+        (pin (num 28) (name P28) (type passive))
+        (pin (num 29) (name P29) (type passive))
+        (pin (num 30) (name P30) (type passive))
+        (pin (num 31) (name P31) (type passive))
+        (pin (num 32) (name P32) (type passive))
+        (pin (num 33) (name P33) (type passive))
+        (pin (num 34) (name P34) (type passive))
+        (pin (num 35) (name P35) (type passive))
+        (pin (num 36) (name P36) (type passive))
+        (pin (num 37) (name P37) (type passive))
+        (pin (num 38) (name P38) (type passive))
+        (pin (num 39) (name P39) (type passive))
+        (pin (num 40) (name P40) (type passive))))
+    (libpart (lib OHDSP-Lib) (part DIODE)
+      (fields
+        (field (name Reference) D)
+        (field (name Value) DIODE))
+      (pins
+        (pin (num 1) (name A) (type passive))
+        (pin (num 2) (name K) (type passive))))
     (libpart (lib OHDSP-Lib) (part IC-EEPROM-SPI)
       (fields
         (field (name Reference) U)
@@ -2124,6 +2081,49 @@
         (pin (num 6) (name SCK) (type input))
         (pin (num 7) (name ~HOLD) (type input))
         (pin (num 8) (name Vcc) (type input))))
+    (libpart (lib OHDSP-Lib) (part C)
+      (footprints
+        (fp SM*)
+        (fp C?)
+        (fp C1-1))
+      (fields
+        (field (name Reference) C)
+        (field (name Value) C))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib OHDSP-Lib) (part CONN_6X2)
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_6X2))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))
+        (pin (num 3) (name P3) (type passive))
+        (pin (num 4) (name P4) (type passive))
+        (pin (num 5) (name P5) (type passive))
+        (pin (num 6) (name P6) (type passive))
+        (pin (num 7) (name P7) (type passive))
+        (pin (num 8) (name P8) (type passive))
+        (pin (num 9) (name 9) (type passive))
+        (pin (num 10) (name 10) (type passive))
+        (pin (num 11) (name 11) (type passive))
+        (pin (num 12) (name 12) (type passive))))
+    (libpart (lib OHDSP-Lib) (part COAX)
+      (fields
+        (field (name Reference) CN)
+        (field (name Value) COAX))
+      (pins
+        (pin (num 1) (name ~) (type input))
+        (pin (num 2) (name ~) (type input))))
+    (libpart (lib OHDSP-Lib) (part CONN_3x1)
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_3x1))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))
+        (pin (num 3) (name P3) (type passive))))
     (libpart (lib OHDSP-Lib) (part IC-REG-XC6210B332MR)
       (fields
         (field (name Reference) U)
@@ -2134,6 +2134,21 @@
         (pin (num 3) (name CE) (type input))
         (pin (num 4) (name NC) (type input))
         (pin (num 5) (name VOUT) (type input))))
+    (libpart (lib OHDSP-Lib) (part IC-SPDIF-TX-OPTO)
+      (fields
+        (field (name Reference) U)
+        (field (name Value) IC-SPDIF-TX-OPTO))
+      (pins
+        (pin (num 1) (name Vin) (type input))
+        (pin (num 2) (name Vcc) (type input))
+        (pin (num 3) (name GND) (type input))))
+    (libpart (lib OHDSP-Lib) (part INDUCTOR)
+      (fields
+        (field (name Reference) L)
+        (field (name Value) INDUCTOR))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))))
     (libpart (lib OHDSP-Lib) (part IC-REG-XRP7659ISTR-F)
       (fields
         (field (name Reference) U)
@@ -2166,55 +2181,12 @@
         (pin (num 1) (name Vcc) (type input))
         (pin (num 2) (name GND) (type input))
         (pin (num 3) (name Vout) (type input))))
-    (libpart (lib OHDSP-Lib) (part IC-SPDIF-TX-OPTO)
-      (fields
-        (field (name Reference) U)
-        (field (name Value) IC-SPDIF-TX-OPTO))
-      (pins
-        (pin (num 1) (name Vin) (type input))
-        (pin (num 2) (name Vcc) (type input))
-        (pin (num 3) (name GND) (type input))))
-    (libpart (lib OHDSP-Lib) (part INDUCTOR)
-      (fields
-        (field (name Reference) L)
-        (field (name Value) INDUCTOR))
-      (pins
-        (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))))
-    (libpart (lib OHDSP-Lib) (part LED)
-      (footprints
-        (fp LED-3MM)
-        (fp LED-5MM)
-        (fp LED-10MM)
-        (fp LED-0603)
-        (fp LED-0805)
-        (fp LED-1206)
-        (fp LEDV))
-      (fields
-        (field (name Reference) D)
-        (field (name Value) LED))
-      (pins
-        (pin (num 1) (name A) (type passive))
-        (pin (num 2) (name K) (type passive))))
     (libpart (lib OHDSP-Lib) (part PIN)
       (fields
         (field (name Reference) P)
         (field (name Value) PIN))
       (pins
         (pin (num 1) (name P1) (type passive))))
-    (libpart (lib OHDSP-Lib) (part R)
-      (footprints
-        (fp R?)
-        (fp SM0603)
-        (fp SM0805)
-        (fp R?-*)
-        (fp SM1206))
-      (fields
-        (field (name Reference) R)
-        (field (name Value) R))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
     (libpart (lib OHDSP-Lib) (part SCHOTTKY_DIODE)
       (footprints
         (fp D?)
@@ -2231,7 +2203,35 @@
         (field (name Value) SWITCH))
       (pins
         (pin (num 1) (name 1) (type input))
-        (pin (num 2) (name 2) (type input)))))
+        (pin (num 2) (name 2) (type input))))
+    (libpart (lib OHDSP-Lib) (part R)
+      (footprints
+        (fp R?)
+        (fp SM0603)
+        (fp SM0805)
+        (fp R?-*)
+        (fp SM1206))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) R))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib OHDSP-Lib) (part LED)
+      (footprints
+        (fp LED-3MM)
+        (fp LED-5MM)
+        (fp LED-10MM)
+        (fp LED-0603)
+        (fp LED-0805)
+        (fp LED-1206)
+        (fp LEDV))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) LED))
+      (pins
+        (pin (num 1) (name A) (type passive))
+        (pin (num 2) (name K) (type passive)))))
   (libraries
     (library (logical OHDSP-Lib)
       (uri C:\repo\ohdsp\Kicad-Libs\OHDSP-Lib.lib)))
