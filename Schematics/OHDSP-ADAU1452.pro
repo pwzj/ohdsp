@@ -1,4 +1,4 @@
-update=25/02/2015 09:54:57
+update=02/03/2015 11:56:10
 version=1
 last_client=kicad
 [cvpcb]
@@ -28,19 +28,6 @@ ModuleOutlineThickness=0.150000000000
 [pcbnew/libraries]
 LibDir=Kicad Libs
 LibName1=OHDSP-Footprints-Pretty
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-RptD_X=0
-RptD_Y=100
-RptLab=1
-LabSize=60
 [general]
 version=1
 [eeschema]
@@ -49,3 +36,16 @@ LibDir=../Kicad-Libs
 [eeschema/libraries]
 LibName1=power
 LibName2=OHDSP-Lib
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+RptD_X=0
+RptD_Y=100
+RptLab=1
+LabSize=60
