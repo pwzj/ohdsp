@@ -390,17 +390,6 @@ F 3 "" H 2250 3400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP1 C402
-U 1 1 54E607CF
-P 2600 2850
-F 0 "C402" H 2650 2950 50  0000 L CNN
-F 1 "220u" H 2650 2750 50  0000 L CNN
-F 2 "OHDSP-Footprints-Pretty:CAP-TH-D6.3mmP2.5mm" H 2600 2850 60  0000 C CNN
-F 3 "~" H 2600 2850 60  0000 C CNN
-	1    2600 2850
-	1    0    0    -1  
-$EndComp
-$Comp
 L C C404
 U 1 1 54E607D0
 P 3250 2850
@@ -428,23 +417,17 @@ Wire Wire Line
 	2250 2250 2250 2300
 Wire Wire Line
 	2250 2800 2250 2900
-Wire Wire Line
-	2600 2250 2600 2650
 Connection ~ 2250 2250
 Wire Wire Line
 	2950 2250 2950 2650
-Connection ~ 2600 2250
 Connection ~ 2950 2250
 Wire Wire Line
 	2250 3300 2250 3400
 Wire Wire Line
 	2250 3350 3250 3350
-Wire Wire Line
-	2600 3350 2600 3050
 Connection ~ 2250 3350
 Wire Wire Line
 	2950 3350 2950 3050
-Connection ~ 2600 3350
 Connection ~ 2950 3350
 Wire Wire Line
 	3250 2250 3250 2650
