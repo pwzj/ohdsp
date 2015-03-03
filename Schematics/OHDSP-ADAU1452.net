@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:/repo/ohdsp/Schematics/OHDSP-ADAU1452.sch)
-    (date "03/03/2015 09:40:58")
+    (date "03/03/2015 12:00:13")
     (tool "Eeschema (2015-01-16 BZR 5376)-product"))
   (components
     (comp (ref U201)
@@ -342,7 +342,7 @@
       (tstamp 54DEAEEA))
     (comp (ref SW202)
       (value SWITCH)
-      (footprint OHDSP-Footprints-Pretty:SW_TACT_TH)
+      (footprint OHDSP-Footprints-Pretty:SW_TACT_SMD)
       (libsource (lib OHDSP-Lib) (part SWITCH))
       (sheetpath (names /ADAU1452/) (tstamps /54BE4270/))
       (tstamp 54DEF588))

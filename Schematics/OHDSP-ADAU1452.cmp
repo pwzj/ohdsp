@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-01-16 BZR 5376)-product   date = 02/03/2015 11:58:42
+Cmp-Mod V01 Created by Cvpcb (2015-01-16 BZR 5376)-product   date = 03/03/2015 12:00:08
 
 BeginCmp
 TimeStamp = /54BE4270/54E2687A;
@@ -551,13 +551,6 @@ TimeStamp = /54E20ECF/54E607CC;
 Reference = C401;
 ValeurCmp = 100p;
 IdModule  = OHDSP-Footprints-Pretty:SMD-0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /54E20ECF/54E607CF;
-Reference = C402;
-ValeurCmp = 220u;
-IdModule  = OHDSP-Footprints-Pretty:CAP-TH-D6.3mmP2.5mm;
 EndCmp
 
 BeginCmp
@@ -2055,7 +2048,7 @@ BeginCmp
 TimeStamp = /54BE4270/54DEF588;
 Reference = SW202;
 ValeurCmp = SWITCH;
-IdModule  = OHDSP-Footprints-Pretty:SW_TACT_TH;
+IdModule  = OHDSP-Footprints-Pretty:SW_TACT_SMD;
 EndCmp
 
 BeginCmp
