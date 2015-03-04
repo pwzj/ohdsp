@@ -2490,4 +2490,9 @@ Wire Wire Line
 Connection ~ 13150 1050
 Text Label 2900 9750 0    60   ~ 0
 M_SS
+Text HLabel 10100 10100 2    60   Input ~ 0
+MRST
+Wire Wire Line
+	10100 10100 9750 10100
+Connection ~ 9750 10100
 $EndSCHEMATC
