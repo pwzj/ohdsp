@@ -677,8 +677,6 @@ F 3 "" H 2600 10500 60  0000 C CNN
 	1    2600 10500
 	1    0    0    -1  
 $EndComp
-Text Label 2600 9750 0    60   ~ 0
-SS_M/MP0
 Text Notes 2100 9400 0    59   ~ 0
 SPI/I2C Select:\nSet SPI or I2C for selfboot\n10kR to 0V is I2C\nOpen is SPI
 $Comp
@@ -2490,4 +2488,6 @@ $EndComp
 Wire Wire Line
 	13150 1750 13150 1700
 Connection ~ 13150 1050
+Text Label 2900 9750 0    60   ~ 0
+M_SS
 $EndSCHEMATC
