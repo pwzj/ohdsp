@@ -6,7 +6,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title ""
 Date "10 feb 2015"
 Rev ""
@@ -449,4 +449,10 @@ Text Label 2650 3350 0    60   ~ 0
 MAN_RESET
 Wire Wire Line
 	2650 3350 3300 3350
+$Sheet
+S 2250 6700 2650 850 
+U 55019779
+F0 "SimpleADCDAC" 60
+F1 "SimpleADCDAC.sch" 60
+$EndSheet
 $EndSCHEMATC
