@@ -1,6 +1,7 @@
 EESchema Schematic File Version 2
 LIBS:power
 LIBS:OHDSP-Lib
+LIBS:OHDSP-ADAU1701-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
