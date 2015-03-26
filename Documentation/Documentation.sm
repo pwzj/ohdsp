@@ -4,7 +4,7 @@
   <settings>
     <identity>
       <id>f95f1910-2bda-4fc1-9fdb-20f70bb81fc8</id>
-      <revision>84</revision>
+      <revision>87</revision>
     </identity>
     <calculation>
       <precision>4</precision>
@@ -404,36 +404,36 @@
   </region>
   <region id="41" left="36" top="3069" width="152" height="28" color="#004080" bgColor="#ffffff" fontSize="12">
     <text lang="eng">
-      <p bold="true">XPR7659 at 1v2</p>
+      <p bold="true">XPR7659 at 1v8</p>
     </text>
   </region>
   <region id="42" left="36" top="3105" width="198" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
-        <e type="operand">XPR7659_1v2_Vout</e>
-        <e type="operand">1.2</e>
+        <e type="operand">XPR7659_1v8_Vout</e>
+        <e type="operand">1.8</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
         <e type="operator" args="2">:</e>
       </input>
     </math>
   </region>
-  <region id="43" left="243" top="3105" width="214" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="43" left="243" top="3105" width="197" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
-        <e type="operand">XPR7659_1v2_Iout</e>
-        <e type="operand">1000</e>
+        <e type="operand">XPR7659_1v8_Iout</e>
+        <e type="operand">20</e>
         <e type="operand" style="unit">mA</e>
         <e type="operator" args="2">*</e>
         <e type="operator" args="2">:</e>
       </input>
     </math>
   </region>
-  <region id="44" left="36" top="3141" width="180" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="44" left="36" top="3141" width="189" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
-        <e type="operand">XPR7659_1v2_R1</e>
-        <e type="operand">47</e>
+        <e type="operand">XPR7659_1v8_R1</e>
+        <e type="operand">100</e>
         <e type="operand" style="unit">kΩ</e>
         <e type="operator" args="2">*</e>
         <e type="operator" args="2">:</e>
@@ -448,9 +448,9 @@
   <region id="46" left="36" top="3186" width="432" height="60" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
-        <e type="operand">XPR7659_1v2_R2</e>
-        <e type="operand">XPR7659_1v2_R1</e>
-        <e type="operand">XPR7659_1v2_Vout</e>
+        <e type="operand">XPR7659_1v8_R2</e>
+        <e type="operand">XPR7659_1v8_R1</e>
+        <e type="operand">XPR7659_1v8_Vout</e>
         <e type="operand">0.81</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
@@ -462,7 +462,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">97615.3846</e>
+        <e type="operand">81818.1818</e>
         <e type="operand" style="unit">Ω</e>
         <e type="operator" args="2">*</e>
       </result>
@@ -478,11 +478,11 @@
       <p>Rearranging for the real Vout</p>
     </text>
   </region>
-  <region id="49" left="36" top="3285" width="239" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="49" left="36" top="3285" width="222" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
-        <e type="operand">XPR7659_1v2_R2_Real</e>
-        <e type="operand">97.6</e>
+        <e type="operand">XPR7659_1v8_R2_Real</e>
+        <e type="operand">82</e>
         <e type="operand" style="unit">kΩ</e>
         <e type="operator" args="2">*</e>
         <e type="operator" args="2">:</e>
@@ -493,8 +493,8 @@
     <math>
       <input>
         <e type="operand">XPR7659_1v2_Vout_Real</e>
-        <e type="operand">XPR7659_1v2_R1</e>
-        <e type="operand">XPR7659_1v2_R2_Real</e>
+        <e type="operand">XPR7659_1v8_R1</e>
+        <e type="operand">XPR7659_1v8_R2_Real</e>
         <e type="operator" args="2">/</e>
         <e type="operand">1</e>
         <e type="operator" args="2">+</e>
@@ -506,7 +506,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">1.2001</e>
+        <e type="operand">1.7978</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
       </result>
@@ -514,17 +514,17 @@
   </region>
   <region id="51" left="36" top="3366" width="704" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
-      <p>This 1v2 rail is critical, so lets calucalte worst case with regualtor tolerance and with 1% tolerance resistors... </p>
+      <p>This 1v8 rail is critical, so lets calucalte worst case with regualtor tolerance and with 1% tolerance resistors... </p>
     </text>
   </region>
   <region id="52" left="36" top="3411" width="613" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
-        <e type="operand">XPR7659_1v2_Vout_Real_Max</e>
-        <e type="operand">XPR7659_1v2_R1</e>
+        <e type="operand">XPR7659_1v8_Vout_Real_Max</e>
+        <e type="operand">XPR7659_1v8_R1</e>
         <e type="operand">1.01</e>
         <e type="operator" args="2">*</e>
-        <e type="operand">XPR7659_1v2_R2_Real</e>
+        <e type="operand">XPR7659_1v8_R2_Real</e>
         <e type="operand">0.99</e>
         <e type="operator" args="2">*</e>
         <e type="operator" args="2">/</e>
@@ -538,7 +538,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">1.2452</e>
+        <e type="operand">1.8739</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
       </result>
@@ -547,11 +547,11 @@
   <region id="53" left="36" top="3465" width="613" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
-        <e type="operand">XPR7659_1v2_Vout_Real_Min</e>
-        <e type="operand">XPR7659_1v2_R1</e>
+        <e type="operand">XPR7659_1v8_Vout_Real_Min</e>
+        <e type="operand">XPR7659_1v8_R1</e>
         <e type="operand">0.99</e>
         <e type="operator" args="2">*</e>
-        <e type="operand">XPR7659_1v2_R2_Real</e>
+        <e type="operand">XPR7659_1v8_R2_Real</e>
         <e type="operand">1.01</e>
         <e type="operator" args="2">*</e>
         <e type="operator" args="2">/</e>
@@ -565,7 +565,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">1.1555</e>
+        <e type="operand">1.7234</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
       </result>
@@ -584,7 +584,7 @@
   <region id="56" left="36" top="3681" width="364" height="35" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
-        <e type="operand">XPR7659_1v2_Pdiss</e>
+        <e type="operand">XPR7659_1v8_Pdiss</e>
         <e type="operand">333</e>
         <e type="operand" style="unit">mA</e>
         <e type="operator" args="2">*</e>
@@ -639,22 +639,22 @@
       <p>Lets calulate an inductor using datasheet formula, need highest value, highestinput voltage (18V) and lowest switching frequency will give us this:</p>
     </text>
   </region>
-  <region id="61" left="36" top="3870" width="592" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="61" left="36" top="3870" width="548" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
-        <e type="operand">XPR7659_1v2_L</e>
-        <e type="operand">XPR7659_1v2_Vout</e>
+        <e type="operand">XPR7659_1v8_L</e>
+        <e type="operand">XPR7659_1v8_Vout</e>
         <e type="operand">18</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
-        <e type="operand">XPR7659_1v2_Vout</e>
+        <e type="operand">XPR7659_1v8_Vout</e>
         <e type="operator" args="2">-</e>
         <e type="bracket">(</e>
         <e type="operator" args="2">*</e>
         <e type="operand">18</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
-        <e type="operand">XPR7659_1v2_Iout</e>
+        <e type="operand">XPR7659_1v8_Iout</e>
         <e type="operator" args="2">*</e>
         <e type="operand">0.3</e>
         <e type="operator" args="2">*</e>
@@ -666,20 +666,15 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">3.3939</e>
-        <e type="operand">10</e>
-        <e type="operand">6</e>
-        <e type="operator" args="1">-</e>
-        <e type="operator" args="2">^</e>
-        <e type="operator" args="2">*</e>
+        <e type="operand">0.0002</e>
         <e type="operand" style="unit">H</e>
         <e type="operator" args="2">*</e>
       </result>
     </math>
   </region>
-  <region id="62" left="36" top="3915" width="659" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="62" left="36" top="3915" width="200" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
-      <p>This inductor seems more sensible, could just use a 4.7uH as per the datasheet.</p>
+      <p>This inductor is large!</p>
     </text>
   </region>
   <region id="63" left="36" top="3942" width="118" height="31" color="#800000" bgColor="#ffffff" fontSize="14">

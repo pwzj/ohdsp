@@ -6,7 +6,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 2 6
+Sheet 2 5
 Title ""
 Date "10 feb 2015"
 Rev ""
@@ -2084,17 +2084,17 @@ Wire Wire Line
 	10100 7200 10100 7150
 Connection ~ 9950 7200
 Text HLabel 11050 4300 2    60   Output ~ 0
-ANAVOUT0
+DAC_VOUT0
 Text HLabel 11050 4450 2    60   Output ~ 0
-ANAVOUT1
+DAC_VOUT1
 Text HLabel 11050 4600 2    60   Output ~ 0
-ANAVOUT2
+DAC_VOUT2
 Text HLabel 11050 4750 2    60   Output ~ 0
-ANAVOUT3
+DAC_VOUT3
 Text HLabel 8250 4300 0    60   Input ~ 0
-ANAIN0
+ADC_IN0
 Text HLabel 8250 4450 0    60   Input ~ 0
-ANAIN1
+ADC_IN1
 $Comp
 L R R?
 U 1 1 551616FB
@@ -2134,4 +2134,16 @@ F 3 "" H 3150 6000 60  0000 C CNN
 	1    3150 6000
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	8250 4300 8350 4300
+Wire Wire Line
+	8350 4450 8250 4450
+Wire Wire Line
+	10850 4300 11050 4300
+Wire Wire Line
+	11050 4450 10850 4450
+Wire Wire Line
+	10850 4600 11050 4600
+Wire Wire Line
+	11050 4750 10850 4750
 $EndSCHEMATC
