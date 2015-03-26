@@ -4,7 +4,7 @@
   <settings>
     <identity>
       <id>f95f1910-2bda-4fc1-9fdb-20f70bb81fc8</id>
-      <revision>83</revision>
+      <revision>84</revision>
     </identity>
     <calculation>
       <precision>4</precision>
@@ -112,9 +112,9 @@
       </input>
     </math>
   </region>
-  <region id="17" left="36" top="2070" width="704" height="56" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="17" left="36" top="2070" width="467" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
-      <p>Two XPR7659 parts will be used to generate 1v6 and 3v8. A third maybe added for a high current "general" 3v3 rail for anything that is added that draws a lot of power, although I hope this won't be needed. </p>
+      <p>Two XPR7659 parts will be used to generate 1v8 and 3v8. </p>
     </text>
   </region>
   <region id="18" left="36" top="2133" width="152" height="28" color="#004080" bgColor="#ffffff" fontSize="12">
