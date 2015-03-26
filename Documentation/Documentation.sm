@@ -4,7 +4,7 @@
   <settings>
     <identity>
       <id>f95f1910-2bda-4fc1-9fdb-20f70bb81fc8</id>
-      <revision>87</revision>
+      <revision>104</revision>
     </identity>
     <calculation>
       <precision>4</precision>
@@ -21,7 +21,6 @@
     <dependences>
       <assembly name="SMath Studio Desktop" version="0.97.5346.24640" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
       <assembly name="Text Region" version="1.10.5346.31409" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
-      <assembly name="Picture Region" version="1.10.5346.31387" guid="06b5df04-393e-4be7-9107-305196fcb861" />
       <assembly name="Math Region" version="0.97.5346.24640" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
     </dependences>
   </settings>
@@ -100,77 +99,72 @@
       <p>Power Supply Block Diagram</p>
     </text>
   </region>
-  <region id="15" left="0" top="1080" width="768" height="324" color="#000000" bgColor="#ffffff">
-    <picture>
-      <raw format="png" encoding="base64">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Qazvf//74f/+7/9i/e///m/89RTVpZdeGuu73/1u+M53vhPrf/7nf2Jdcskl4eKLL4713//937H+67/+K3z729+O9a1vfSvWN7/5zfCNb3wj1te//vVYS5cuDV/72tdi6T5S6Xjwla98JdaXv/zl+Iedqi9+8Yux9P1vfTVE9YUvfCGWziArXKo++9nPxvrMZz4TPv3pT8f61Kc+FeuCCy4In/zkJ2N94hOfiKUz0/qOueqjH/1orPPPPz985CMfiXXeeeeFD3/4w7E+9KEPxfrgBz8Yzj333Fgf+MAHYunY9773vS/We9/73lj6VFM/PqA655xzYr3rXe8K73znO2O94x3viKW/W3rb294W661vfWust7zlLeHNb35zLH3dUc8l1ZlnnhnrTW96U3jjG98YS5+Sqk4//fTwhje8IdbrX//6WHp86OSK6tRTT411yimnhJNPPjnWSSedFEvH5RNOOCHW8ccfH+u4444Lxx57bKxjjjkmbLfddvGxVlePf/zj423fRe4Y1OQYo+3btC41XaXumOCPP6LrfjxNjy2541hOuj0sfyv4Oyz34GvygNS0+rBKH9Re7gFi83QpWj9tUyX3JBKtX/UkabJPXpMHtS79i3dT1113XXyB0Db0YqAXAR38dcDXgV4HGR3UdTDXQVwHbh2sdYDWgVkHZB2EdfDVQVcHWh1gdWDVAVUHUR08ddDUgVIHSB0YdTDUQVAHPx30jjrqqHDEEUeEww47LBxyyCHhoIMOCgcccEDYb7/9wj777BP22muvsMcee8T9fPWrXx1e+cpXhl122SXstNNO4RWveEXYYYcdwvbbbx8Pni95yUvCi170ovCCF7wgbLPNNuG5z31ueM5znhO22mqr8MxnPjNsueWWYcmSJfH22nzzzcNTnvKUsMkmm8Q/fNJ3IhWadYB97GMfGx796EfHMy76BYSHP/zh4aEPfWj453/+53iW/cEPfnD8zrxuf31f/v73v3/8Os26664b7n3ve4d73eteYa211gprrLFGWH311cPf//3fh3vc4x7hbne7W7jLXe4SVllllbB48eKw8sorh0WLFsX7uE2pT21T10sL+P75kHu+iPbb2tQ9R8SW556rkls/95zy26xTdVwQ7Yv66bpPfnzWVpfGr59bLn6eb29yfZTIAj5FLaTS69BcVR2D1O+0Y0zdMcqrOyak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/DXXXDMceuih4bDDDguHH354rCOOOCIceeSRsY466qhYRx99dDjmmGNiHXvssbGOO+64cPzxx8c64YQTwoknnhjrpJNOinXyySeHU045Jdapp54a67TTTguve93rYr3+9a8Pb3jDG2LpD0pV+r75G9/4xlj6SopKZ6z1QqtSqH3zm98c6y1veUust771reFtb3tbrLe//e2x3vGOd4R3vvOdsd71rneFc845J9a73/3uWO95z3vCe9/73ljve9/7Yr3//e8PH/jAB2Kde+654YMf/GCsD33oQ7E+/OEPh/POOy/WRz7ykVjnn39++OhHPxrrYx/7WPj4xz8e6xOf+ESsT37yk+GCCy6I9alPfSrWpz/96fCZz3wm1mc/+9nwuc99LtbnP//5WF/4whfChRdeGGvzzTeP91NV6Y9xdVso6BPwy6ZfVlKYvuGGG8Jvf/vbGO6vueaaeJ8rbGv5LbfcEm677bbJGv150pOetMzjzteqq64ajyEaVxM+TOeCqqY1v4pfP5WGQguqOX47Ve1sfHX9+H1o2m4a68feiBjbP5X1ZfM8bUvrWak/sX6tquT6TOX21c+z6+rLtufbT1vux1A1Hr9e09tAqvccAGacBfyqM8TUbNW9733v+GZI1wn4ZVq6dOkd7ve6WmmlleLze/HixfEPZe9yl7vEr9fozYBC+WqrrRZWX331sMYaa4S11lor3Ote9wr/8A//ENZZZ534Nx/6lGi99dYL66+/fpyX24Yv9aeTAXrzUUdtFVzFzpB7mrblOX79VBoEq4KhWMC04JcGcFueXk9pHduHpu2m8f3o0vbXrmufbKzpPua2o+XWp7/tpt02Vcslt69+Xq4PXU9vq6rlfr/SfRStm+6Lb5+7DUz+HgKAAvgz+HbmXmfxdSZOdcghh4SDDz441kEHHRRLH8cfcMABsfbff/9Y++23X9h3331j6Xu5e++9d6y99tor1p577hn/ME+1++67x3rta18bD8Aq/TrHq1/96livetWrYr3yla+MP8+n2mWXXWLtvPPOYaeddoq14447hle84hWxXv7yl8faYYcd4i/PqPTdddVLX/rSsN1228Xadtttw0te8pJYL37xi2O96EUvCi984QtjveAFL4j1/Oc/P2yzzTaxnve854XnPve5sbbeeutYz3nOc8Kzn/3sWFtttVWsZz3rWeGZz3xmrGc84xlhyy23jPX0pz891pIlS8LTnva0WPYi9NSnPjWenVdtttlm4SlPeUosfd9Ztckmm4SNN944PPjBD473U10pfOlTEPuDSAJ+mb75zW/GQK4grYCuoK7Qbo8DBXkFegV7mzffpTcI+tQqpce8tVGw8zTPglouNErd+l4aBO35VsX3pzH4UOjXrRqX+PWatpvG92Nh1a+vcWm+pPusaa1rt6lJ201jY/Dl+8ztq59n13Xp2bxpy/14c/uY7ov1J1W3gcnfQwBQAL6Dv/Dpazc6g6r7KVf6CU3/W/l8RWd86r6Dr6/q6Cs7+uqO/ij7j3/8Y7jxxhvjOjrLrq/U6Cs/v/rVr+IfzOrXcX7xi1+En//85+FnP/tZuPLKK8MVV1wR/y+D3sj6x15aD3jAA+JX5fzfhFRRSPXhTNdt2l+vkq7vNQmCJhcwNW2h0F/34TGlbVjwbtpuGt+PXVepD9E+2fXcPmqeraNSH2pTdVs0YX2a3L7mxp2y8Uxb7vcr3cd0/3yZ3G1g7rhVACgEAX/h03fr/QuUlX5JR3+jkP42/lgDfvriPybz8Ue23//+9ys/FXjQgx4U/86lzX9eVmj2QdcHPV1WnXU16fpe+lioCpGitmk/WldVN8aU2qkvadpumrQfjSmdtr7SfU7Zfk5r14TGoLFJbl/9PLtu7Y3Nm7bcjzcde9t9sdvA5O8hACgAAX9h0xlX/QGt7iMrfSe67rfw+wj49qKL6beFLU9LYSKleWm7PsxHwNdX19KxP+QhD4l/oK5PCOooKKeBXUErDWc2z4cwabq+yQU/TWvMnvrUvDRc+vvU349VjwWNxc9v2k40L903U9WP0T7Z+NJ91nW/X7bc+vTb9Ot5auP3X+w289L+/H7a9tKxqY1MW+73K91HSbcttq7a5m4DU33LAsCMI+AvbPZiqlLQ13RVsDcE/H5Nuy2qlvuQIwoWaTu7f30ImYuhA/6ll14aFi1aFLeheuhDHxp/YerWW2+dtJjO9t8qDWqiAKZlaaiUJuubXBAU699XlfT+E7uv00rH27SdaH7V/V/12DLaR+szt8+2D1YmHV+dJreZP06pbB2xbaX9mGnL/X75655fz68rVbeBLDsFAAUh4C9cCvL2Cybpb93XmY+An76gq73oxde/AOu6nU2TqhdosW1W9W2qluf6Tl/c0778smnjqlK3XNvXuOraaLm/jeZi6ICvPzBX/xtttFH8edghfoJzjPS4qHrclaLL82doy2erADAPCPgLl34nX7/v3zTYm6EDvi3TpSigWluFbx9WNd/3o2Vqk2P9+sCTht+6bet63bril2s9PxYty4Ut22aVuuU2hnRsXrpPczFkwL/kkkvCox/96Ph/HQj2aKvL82doy2erADAPCPjlGTrg58Kq2ios+7CqaQvN6bKc3HKbZ+q2nS7TtC1L5fpJt2Wq5pu65dq2Ar7dDlW0vt/vtoYM+PpPysBcdXn+DG35bBUA5gEBvzxDB/xcWPVn5u26QrQu/fX0jLqX22Y6r27budBuId9K/eXm+0pNCyB1y7UdjS83NmPr29jmYj7+yBYoTfWzGgBmHAG/PMvzDL7YcgVb9aPSdc2rCrmS22Y6r27bdSFatNzeYExr69XdFlK33MJ9XRs/rrki4APtVT+rAWDGEfDLszy/gy8K25r2oVXXNc/eBOTktpnOq9t2Gtp13dpJujw3nlzQzo3Lq1pu+2y07bSd3VZ+nHNBwAfaq35WA8CMI+CXp8+An5YFZAumVmlA9W0lF25TuaCcm1e17TTAi4Vsq5Rfllsu026LquUaT8rekPjqAwEfaK+fZx8ALEAE/PL0EfAxWwj4QHsEfADFIuCXh4A/PgR8oD0CPoBiEfDLQ8AfHwI+0B4BH0CxCPjlIeCPDwEfaI+AD6BYBPzyEPDHh4APtEfAB1AsAn55CPjjQ8AH2iPgAygWAb88BPzxIeAD7RHwARSLgF8eAv74EPCB9gj4AIpFwC8PAX98CPhAewR8AMUi4JeHgD8+BHygPQI+gGIR8MtDwB8fAj7QHgEfQLEI+OUh4I8PAR9oj4APoFgE/PIQ8MeHgA+0R8AHUCwCfnkI+ONDwAfaI+ADKBYBvzwW8O9zn/uE0047jRpBHX/88QR8oCUCPoBiEfDLYwGfGl8R8IHmCPgAikXAL89VV10Vdt99d2qEtd9++00eBQCmIeADKBYBHwAwRgR8AMUi4AMAxoiAD6BYBHwAwBgR8AEUi4APABgjAj6AYhHwAQBjRMAHUCwCPgBgjAj4AIpFwAcAjBEBH0CxCPgAgDEi4AMoFgEfADBGBHwAxSLgAwDGiIAPoFgEfADAGBHwARSLgA8AGCMCPoBiEfABAGNEwAdQLAI+AGCMCPgAikXABwCMEQEfQLEI+ACAMSLgAygWAR8AMEYEfADFIuADAMaIgA+gWAR8AMAYEfABFIuADwAYIwI+gGIR8AEAY0TAB1AsAj4AYIwI+ACKRcAvz6233hp+9atfUSMtAM0Q8AEUi4BfniuuuCLep9Q46+abb548EgDUIeADKBYBvzwW8FdaaaWw5pprUiOpFVdckYAPtEDAB1AsAn55LOCvt956kzkYg1VWWYWAD7RAwAdQLAJ+eQj440TAB9oh4AMoFgG/PAT8cSLgA+0Q8AEUi4BfHgL+OBHwgXYI+ACKRcAvDwF/nAj4QDsEfADFIuCXh4A/TgR8oB0CPoBiEfDLQ8AfJwI+0A4BH0CxCPjlIeCPEwEfaIeAD6BYBPzyEPDHiYAPtEPAB1AsAn55CPjjRMAH2iHgAygWAb88BPxxIuAD7RDwARSLgF8eAv44EfCBdgj4AIpFwC8PAX+cCPhAOwR8AMUi4JeHgD9OBHygHQI+gGIR8Mszl4B/1llnxXV06W2wwQaxvN122y22tdpiiy0mS27n26Tr27as1NarWyYXXXTRMm00bdJlVmk/abu2y+v2wa/rxya6rXz7qvHOBQEfaIeAD6BYBPzyzPUMvkKnD5eaTsO5AmousPuAm7ZRiLXlapu+IdA2/fpG7XLz1bfvL92W3wejeWpr0n1Ix1C3fNo+2Bj8OCU3PzdeLUu33wQBH2iHgA+gWAT88nT5io6CpcKrQqz6UAA1Nq9OVcCuo0CbBmbJBfzcGDRt4b1q+1VvFoyW58Zgpi33+2BjSMdqbVQ2ltx453IbCgEfaKf9swwAZgQBvzxdAr6FS1UaiH2IraJQa28SrB8L31XSM93GB2Fj/Xt+/apwPG0cXZdXjcGvZ9enBXwtT/exCQI+0A4BH0CxCPjl6fpHthbOU5qvqqPgqnUt1FqA1WVOXZjVsjTgazodg29n20srt32t12W5UTu/DzYG0bi0TLeHtZk2Xi2fCwI+0A4BH0CxCPgL27e+9a3wi1/8YjLVTJeAr+BpITMNmrlwnfJB1vhA62m+tlUlt16uf02ngTnl2+Roed2+VS3P7YMfgw/wtn2/X7nx+rZtDBHwL7zwwniMAEpUffQBgBlHwF/Yfvvb34a11147bLvtto2D1lwDvoVNO/ueBk3N17w66iMN4LmgngvGqdx6uTH4MecCs+TeGHhzWV61D+kY0nZ+v3Ljze1jE0ME/Ouvvz6sttpqYcstt4xvNoGStH+WAcCMIOAvfMccc0y8j1ZeeeVGQX+uAV8BNhfoFUKNwmkadNXOr6flto4FWN+HlmveNLmAL36cafDOBWZRXyrROipPfTRdLnX7UDUG4/erqq3fx6aG+orO4YcfHvtdccUVw5IlS8I3vvGNyZK5sX22arufbdZP26r840XT6X1ttEx9+3Wt0m3mtpNr10bVY0zzFuqYZ031sxQAZhwBf+HTWfx73vOef3sBnhb05xLwFSZ88DEKo+rLSwOED77GL/dhRNf9MqtceK5angYTTZuq0JLum+2XVboPdcun7YONoYraWYiqamvbaGOogH/DDTeE1VdfPfZtpX1YunTppEU76X2h/tqEyjbr525fjd3uK3/d0+2v7VTdP/YYNU3bNWX9qdJ9W6hjnkXj2EsAo0TAnw12Ft9XVdDv+ke2mE1D/pHtUUcdtcxjz2rzzTePQbELH1gVLtNAq2nNr1IVeCUXYv28upCr7VYtFz/Wpu2asn2y0O4t1DHPovzeA0ABCPizIT2L7ysN+gT8cRoy4Nc9/lSbbrpp+MpXvjJp3Y7WV5CVXKDVtC3P8eunciE2nZeGWb+8LgRrHRtr03ZNqS/bJ3/dLMQxz6L83gNAASzgr7nmmuHUU0+lFnDp+8+6r6rKgv4Xv/jFOE3AL9N1110XTjnllFgnn3xyOOmkk8KJJ54Y73/d70cffXQ49thj46c+uq6z70ceeWSsI444In6n/rDDDguHHnpoOOSQQ8LBBx8cDjrooHDggQeGAw44IOy///5hv/32i7XvvvuGffbZJ+y9997hiU984jKPt1xtvPHG8fE3jc5O2zoKmp7mWaCtCqF163u59RVc/Rl/bcuHWTt7LnUh2K/XtF0TdeMxC23Msyq/9wBQAAv4VDm1aNGieEnAL9MPfvCDO9znC6n0RuPSSy+djHY6BUkfYH1Y9derpOt7FmJ95YKr5ivUptfrQvBQZ8PVVn2lldK8hTLmWZXfewAowLXXXhv22GMPagZqk002iS/IdfXkJz85nHvuufE6Ab9M11xzTXw87LnnnmGvvfaKZ9d1lt3O4Ou6zsLrbLzOyuvsvM7S62y9ztrr7L3O4utsvs7q6wy/Smf7ddZfZ/+PO+64cPzxx4cTTjghfjqgTwn0NRz/WEvrzne+c9h1113DVVddNRlpM+nZYh88dWnBtUq6vlcXYj17I1E3lpTaKQhL03bTVPWT62OhjHmW5fceAIB5ctNNN4V11103viDnSsH+S1/6UmzLd/DHacjv4OtrQfe4xz2WecxZLV68OOy8887hyiuvnLSupjCaBnaFyfQMvM3zwVWarm/qQqxn7VQ+2NYFbj+/aTvRvHQfjIX2lNqnt8V8jrlU49hLAMCCdcYZZ8QX3bR8sDdjDfgKOVVBbwyGDPg6++8fd6o73elOYccdd4yPtzZ0H/l+cveZ7ksty51FbrK+qQqxOblg60O0r3RcTduJ5qt9jpZVhf/csvkac6kI+ACA5SZ39j4X7E0fAd9e/DH9tmgTlDQvbdeXoQK+/pvtqquu+rfxKtjvsMMO4Sc/+cmkBZrSY2XMb0IXGo5wAIDlxp+9rwv2hoDfr6YBP5WeXbUzz57OyGqe+uhqqICv7+yrX33Hf/vttw+XX375ZAkw2zjCAQCWCzt73yTYm/kI+BZMrSygKsT6M5S6rqBrdAa76gymbbOqb1O1PNe3hey0rfHLpo2rSt1ybV/jqmuj5f42mqshAr7+i+0aa6wRtttuu3DZZZdN5gJlIOADAJaLpUuXhosvvngy1czQAd+W6VLsayei8O3Dqub7frRMbXKsXx+00/Bbt21dr1tX/HKt58eiZbmQb9usUrfcxpCOzUv3aa6GCPh6/F199dWTKaAs1c9qAAAWmKEDfi6sqq3Csg+rmrbQnC7LyS23eaZu2+kyTduyVK6fdFumar6pW65tK+Db7VBF6/v9nosh/8gWKFH1sxoAgAVm6ICfC6v+zLxdV4jWpb+enlH3cttM59VtOxfaLeRbWYhO5/tK1d0WUrdc29H4cmMztr6Nba4I+EA71c9qAAAWmOV5Bl9suYKt+lHpuuZVhVzJbTOdV7ftuhAtWm5vMKa19epuC6lbbuG+ro0fVxcEfKCd6mc1AAALzPL8Dr4obGvah1Zd1zx7E5CT22Y6r27baWjXdWsn6fLceHJBOzcur2q57bPRttN2dlv5cc4VAR9op/pZDQDAAtNnwE/LArIFU6s0oPq2kgu3qVxQzs2r2nYa4MVCtlXKL8stl2m3RdVyjSdlb0h89YWAD7TT37MPAICB9RHwMXsI+EA7BHwAwMwg4I8TAR9oh4APAJgZBPxxIuAD7RDwAQAzg4A/TgR8oB0CPgBgZhDwx4mAD7RDwAcAzAwC/jgR8IF2CPgAgJlBwB8nAj7QDgEfADAzCPjjRMAH2iHgAwBmBgF/nAj4QDsEfADAzCDgjxMBH2iHgA8AmBkE/HEi4APtEPABADODgD9OBHygHQI+AGBmEPDHiYAPtEPABwDMDAL+OBHwgXYI+ACAmWEBf/HixWGjjTaiRlKLFi0i4AMtEPABADPDAj41ziLgA80Q8AEAM0MB7+KLL6ZGWrfddtvkkQCgWgj/DywN1su24F6QAAAAAElFTkSuQmCC</raw>
-    </picture>
-  </region>
-  <region id="16" left="36" top="2043" width="94" height="31" color="#004080" bgColor="#ffffff" fontSize="14">
+  <region id="15" left="36" top="2043" width="94" height="31" color="#004080" bgColor="#ffffff" fontSize="14">
     <math>
       <input>
         <e type="operand">XPR7659</e>
       </input>
     </math>
   </region>
-  <region id="17" left="36" top="2070" width="467" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="16" left="36" top="2070" width="532" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
-      <p>Two XPR7659 parts will be used to generate 1v8 and 3v8. </p>
+      <p>One XPR7659 part will be used to generate 3v5 to feed the LDOs. </p>
     </text>
   </region>
-  <region id="18" left="36" top="2133" width="152" height="28" color="#004080" bgColor="#ffffff" fontSize="12">
+  <region id="17" left="36" top="2133" width="152" height="28" color="#004080" bgColor="#ffffff" fontSize="12">
     <text lang="eng">
-      <p bold="true">XPR7659 at 3v8</p>
+      <p bold="true">XPR7659 at 3v5</p>
     </text>
   </region>
-  <region id="19" left="36" top="2160" width="687" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="18" left="36" top="2160" width="687" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
       <p>Lets assume a maximum current of 500mA on this rail, the ADAU1452 will only pull a small amount of current (60mA) from PVDD, IOVDD, AVDD, combined worst case. </p>
     </text>
   </region>
-  <region id="20" left="36" top="2205" width="198" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="19" left="36" top="2205" width="198" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
-        <e type="operand">XPR7659_3v8_Vout</e>
-        <e type="operand">3.8</e>
+        <e type="operand">XPR7659_3v5_Vout</e>
+        <e type="operand">3.5</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
         <e type="operator" args="2">:</e>
       </input>
     </math>
   </region>
-  <region id="21" left="261" top="2205" width="206" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="20" left="261" top="2205" width="197" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
-        <e type="operand">XPR7659_3v8_Iout</e>
-        <e type="operand">500</e>
+        <e type="operand">XPR7659_3v5_Iout</e>
+        <e type="operand">50</e>
         <e type="operand" style="unit">mA</e>
         <e type="operator" args="2">*</e>
         <e type="operator" args="2">:</e>
       </input>
     </math>
   </region>
-  <region id="22" left="36" top="2232" width="180" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="21" left="36" top="2232" width="180" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
-        <e type="operand">XPR7659_3v8_R1</e>
-        <e type="operand">39</e>
+        <e type="operand">XPR7659_3v5_R1</e>
+        <e type="operand">75</e>
         <e type="operand" style="unit">kΩ</e>
         <e type="operator" args="2">*</e>
         <e type="operator" args="2">:</e>
       </input>
     </math>
   </region>
-  <region id="23" left="225" top="2232" width="506" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="22" left="225" top="2232" width="506" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
       <p>use trial and error to get a nice value for R2 with R1 close to values listed in datasheet</p>
     </text>
   </region>
-  <region id="24" left="36" top="2277" width="432" height="60" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="23" left="36" top="2277" width="432" height="60" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
-        <e type="operand">XPR7659_3v8_R2</e>
-        <e type="operand">XPR7659_3v8_R1</e>
-        <e type="operand">XPR7659_3v8_Vout</e>
+        <e type="operand">XPR7659_3v5_R2</e>
+        <e type="operand">XPR7659_3v5_R1</e>
+        <e type="operand">XPR7659_3v5_Vout</e>
         <e type="operand">0.81</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
@@ -182,39 +176,39 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">10565.2174</e>
+        <e type="operand">22583.6431</e>
         <e type="operand" style="unit">Ω</e>
         <e type="operator" args="2">*</e>
       </result>
     </math>
   </region>
-  <region id="25" left="477" top="2295" width="250" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="24" left="477" top="2295" width="250" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
       <p>Can use two series resistors,10k and 560R to get close</p>
     </text>
   </region>
-  <region id="26" left="36" top="2349" width="251" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="25" left="36" top="2349" width="251" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
       <p>Rearranging for the real Vout</p>
     </text>
   </region>
-  <region id="27" left="36" top="2376" width="239" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="26" left="36" top="2376" width="239" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
-        <e type="operand">XPR7659_3v8_R2_Real</e>
-        <e type="operand">10000</e>
+        <e type="operand">XPR7659_3v5_R2_Real</e>
+        <e type="operand">22000</e>
         <e type="operand" style="unit">Ω</e>
         <e type="operator" args="2">*</e>
         <e type="operator" args="2">:</e>
       </input>
     </math>
   </region>
-  <region id="28" left="36" top="2403" width="524" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="27" left="36" top="2403" width="532" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
-        <e type="operand">XPR7659_3v8_Vout_Real</e>
-        <e type="operand">XPR7659_3v8_R1</e>
-        <e type="operand">XPR7659_3v8_R2_Real</e>
+        <e type="operand">XPR7659_3v5_Vout_Real</e>
+        <e type="operand">XPR7659_3v5_R1</e>
+        <e type="operand">XPR7659_3v5_R2_Real</e>
         <e type="operator" args="2">/</e>
         <e type="operand">1</e>
         <e type="operator" args="2">+</e>
@@ -226,25 +220,25 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">3.969</e>
+        <e type="operand">3.5714</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
       </result>
     </math>
   </region>
-  <region id="29" left="36" top="2457" width="664" height="88" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="28" left="36" top="2457" width="658" height="72" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
-      <p>This rail voltage is not critical as long as it is above the dropout voltage ofthe linear regulators.Lets caluclate worst case anyway... (Actually I caulcated them for the critical 1v2 rail below, and then decided to copy the forumlas up here...)</p>
+      <p>This rail voltage is not critical as long as it is above the dropout voltage ofthe linear regulators (which should be less than 100mV).Lets caluclate worst case anyway...</p>
     </text>
   </region>
-  <region id="30" left="36" top="2547" width="613" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="29" left="36" top="2547" width="613" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
-        <e type="operand">XPR7659_3v8_Vout_Real_Max</e>
-        <e type="operand">XPR7659_3v8_R1</e>
+        <e type="operand">XPR7659_3v5_Vout_Real_Max</e>
+        <e type="operand">XPR7659_3v5_R1</e>
         <e type="operand">1.01</e>
         <e type="operator" args="2">*</e>
-        <e type="operand">XPR7659_3v8_R2_Real</e>
+        <e type="operand">XPR7659_3v5_R2_Real</e>
         <e type="operand">0.99</e>
         <e type="operator" args="2">*</e>
         <e type="operator" args="2">/</e>
@@ -258,20 +252,20 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">4.1573</e>
+        <e type="operand">3.7391</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
       </result>
     </math>
   </region>
-  <region id="31" left="36" top="2601" width="613" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="30" left="36" top="2601" width="613" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
-        <e type="operand">XPR7659_3v8_Vout_Real_Min</e>
-        <e type="operand">XPR7659_3v8_R1</e>
+        <e type="operand">XPR7659_3v5_Vout_Real_Min</e>
+        <e type="operand">XPR7659_3v5_R1</e>
         <e type="operand">0.99</e>
         <e type="operator" args="2">*</e>
-        <e type="operand">XPR7659_3v8_R2_Real</e>
+        <e type="operand">XPR7659_3v5_R2_Real</e>
         <e type="operand">1.01</e>
         <e type="operator" args="2">*</e>
         <e type="operator" args="2">/</e>
@@ -285,26 +279,26 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">3.7859</e>
+        <e type="operand">3.4081</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
       </result>
     </math>
   </region>
-  <region id="32" left="36" top="2664" width="692" height="72" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="31" left="36" top="2664" width="692" height="72" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
       <p>The Torex XC6210 have very very low dropout voltages, the 3v3 part is 75mV at 100mAoutput, and the graph at the start of the datasheet shows 200mV typically at around300mA-400mA output current. In the calculations on these regualtors Irecommend keeping the current lower than this anyway (200mA).</p>
     </text>
   </region>
-  <region id="33" left="36" top="2745" width="726" height="56" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="32" left="36" top="2745" width="726" height="56" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
       <p>Lets approximate power dissipation for interest sake, lets assume 85% efficiencyat 500mA. The device will therefore draw 588mA on the input, assume this is all lost in the device through Rdson = 0.35Ω... </p>
     </text>
   </region>
-  <region id="34" left="36" top="2790" width="355" height="35" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="33" left="36" top="2790" width="355" height="35" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
-        <e type="operand">XPR7659_3v8_Pdiss</e>
+        <e type="operand">XPR7659_3v5_Pdiss</e>
         <e type="operand">88</e>
         <e type="operand" style="unit">mA</e>
         <e type="operator" args="2">*</e>
@@ -325,15 +319,15 @@
       </result>
     </math>
   </region>
-  <region id="35" left="36" top="2835" width="696" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="34" left="36" top="2835" width="696" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
       <p>Power dissipation is so small I think we can ignore it, even if I am a factor of 100out, with  thermal resistance of 220C/W and a junction temp of 150C, at 60C ambient</p>
     </text>
   </region>
-  <region id="36" left="36" top="2880" width="416" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="35" left="36" top="2880" width="416" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
-        <e type="operand">XPR7659_3v8_Junc_Temp</e>
+        <e type="operand">XPR7659_3v5_Junc_Temp</e>
         <e type="operand">220</e>
         <e type="operand">0.0027</e>
         <e type="operand">100</e>
@@ -349,312 +343,32 @@
       </result>
     </math>
   </region>
-  <region id="37" left="432" top="2880" width="264" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="36" left="432" top="2880" width="264" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
       <p>C - which is plenty of headroom</p>
     </text>
   </region>
-  <region id="38" left="36" top="2925" width="652" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="37" left="36" top="2925" width="652" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
       <p>Lets calulate an inductor using datasheet formula, need highest value, highestinput voltage (18V) and lowest switching frequency will give us this:</p>
     </text>
   </region>
-  <region id="39" left="36" top="2970" width="592" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="38" left="36" top="2970" width="548" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
-        <e type="operand">XPR7659_3v8_L</e>
-        <e type="operand">XPR7659_3v8_Vout</e>
+        <e type="operand">XPR7659_3v5_L</e>
+        <e type="operand">XPR7659_3v5_Vout</e>
         <e type="operand">18</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
-        <e type="operand">XPR7659_3v8_Vout</e>
+        <e type="operand">XPR7659_3v5_Vout</e>
         <e type="operator" args="2">-</e>
         <e type="bracket">(</e>
         <e type="operator" args="2">*</e>
         <e type="operand">18</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
-        <e type="operand">XPR7659_3v8_Iout</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand">0.3</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand">1.1</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand" style="unit">MHz</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">/</e>
-        <e type="operator" args="2">:</e>
-      </input>
-      <result action="numeric">
-        <e type="operand">1.8168</e>
-        <e type="operand">10</e>
-        <e type="operand">5</e>
-        <e type="operator" args="1">-</e>
-        <e type="operator" args="2">^</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand" style="unit">H</e>
-        <e type="operator" args="2">*</e>
-      </result>
-    </math>
-  </region>
-  <region id="40" left="36" top="3024" width="675" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>This part seems quite large, datasheet shows 4.7uH but 22uH would be used here...</p>
-    </text>
-  </region>
-  <region id="41" left="36" top="3069" width="152" height="28" color="#004080" bgColor="#ffffff" fontSize="12">
-    <text lang="eng">
-      <p bold="true">XPR7659 at 1v8</p>
-    </text>
-  </region>
-  <region id="42" left="36" top="3105" width="198" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XPR7659_1v8_Vout</e>
-        <e type="operand">1.8</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-    </math>
-  </region>
-  <region id="43" left="243" top="3105" width="197" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XPR7659_1v8_Iout</e>
-        <e type="operand">20</e>
-        <e type="operand" style="unit">mA</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-    </math>
-  </region>
-  <region id="44" left="36" top="3141" width="189" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XPR7659_1v8_R1</e>
-        <e type="operand">100</e>
-        <e type="operand" style="unit">kΩ</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-    </math>
-  </region>
-  <region id="45" left="225" top="3141" width="506" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>use trial and error to get a nice value for R2 with R1 close to values listed in datasheet</p>
-    </text>
-  </region>
-  <region id="46" left="36" top="3186" width="432" height="60" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XPR7659_1v8_R2</e>
-        <e type="operand">XPR7659_1v8_R1</e>
-        <e type="operand">XPR7659_1v8_Vout</e>
-        <e type="operand">0.81</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">/</e>
-        <e type="bracket">(</e>
-        <e type="operand">1</e>
-        <e type="operator" args="2">-</e>
-        <e type="operator" args="2">/</e>
-        <e type="operator" args="2">:</e>
-      </input>
-      <result action="numeric">
-        <e type="operand">81818.1818</e>
-        <e type="operand" style="unit">Ω</e>
-        <e type="operator" args="2">*</e>
-      </result>
-    </math>
-  </region>
-  <region id="47" left="477" top="3195" width="266" height="56" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>Lets just use a real value thatis lower like 51k to allowfor tolerances</p>
-    </text>
-  </region>
-  <region id="48" left="36" top="3258" width="251" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>Rearranging for the real Vout</p>
-    </text>
-  </region>
-  <region id="49" left="36" top="3285" width="222" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XPR7659_1v8_R2_Real</e>
-        <e type="operand">82</e>
-        <e type="operand" style="unit">kΩ</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-    </math>
-  </region>
-  <region id="50" left="36" top="3312" width="532" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XPR7659_1v2_Vout_Real</e>
-        <e type="operand">XPR7659_1v8_R1</e>
-        <e type="operand">XPR7659_1v8_R2_Real</e>
-        <e type="operator" args="2">/</e>
-        <e type="operand">1</e>
-        <e type="operator" args="2">+</e>
-        <e type="bracket">(</e>
-        <e type="operand">0.81</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-      <result action="numeric">
-        <e type="operand">1.7978</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-      </result>
-    </math>
-  </region>
-  <region id="51" left="36" top="3366" width="704" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>This 1v8 rail is critical, so lets calucalte worst case with regualtor tolerance and with 1% tolerance resistors... </p>
-    </text>
-  </region>
-  <region id="52" left="36" top="3411" width="613" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XPR7659_1v8_Vout_Real_Max</e>
-        <e type="operand">XPR7659_1v8_R1</e>
-        <e type="operand">1.01</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand">XPR7659_1v8_R2_Real</e>
-        <e type="operand">0.99</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">/</e>
-        <e type="operand">1</e>
-        <e type="operator" args="2">+</e>
-        <e type="bracket">(</e>
-        <e type="operand">0.835</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-      <result action="numeric">
-        <e type="operand">1.8739</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-      </result>
-    </math>
-  </region>
-  <region id="53" left="36" top="3465" width="613" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XPR7659_1v8_Vout_Real_Min</e>
-        <e type="operand">XPR7659_1v8_R1</e>
-        <e type="operand">0.99</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand">XPR7659_1v8_R2_Real</e>
-        <e type="operand">1.01</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">/</e>
-        <e type="operand">1</e>
-        <e type="operator" args="2">+</e>
-        <e type="bracket">(</e>
-        <e type="operand">0.785</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-      <result action="numeric">
-        <e type="operand">1.7234</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-      </result>
-    </math>
-  </region>
-  <region id="54" left="36" top="3519" width="720" height="88" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>From the top of this section you can see these voltages are withing the limits of the 1v2 rail on the ADAU1452, it may look "close" but these values are normallyseen at worst case temperatures, so for the ADAU1452 this is -40C to +105C and for the XPR7659 this is -40C to +85C. It is always worth checking though just in case you misssomething obvious which would stop everything working properly! </p>
-    </text>
-  </region>
-  <region id="55" left="36" top="3618" width="717" height="56" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>Lets approximate power dissipation for interest sake, lets assume 1000mA worst case at75% efficiency. The device will therefore draw 1333mA on the input.Assume this is all lost in the device through Rdson = 0.35Ω... </p>
-    </text>
-  </region>
-  <region id="56" left="36" top="3681" width="364" height="35" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XPR7659_1v8_Pdiss</e>
-        <e type="operand">333</e>
-        <e type="operand" style="unit">mA</e>
-        <e type="operator" args="2">*</e>
-        <e type="bracket">(</e>
-        <e type="operand">2</e>
-        <e type="operator" args="2">^</e>
-        <e type="operand">0.35</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand" style="unit">Ω</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-      <contract>
-        <e type="operand" style="unit">W</e>
-      </contract>
-      <result action="numeric">
-        <e type="operand">0.0388</e>
-      </result>
-    </math>
-  </region>
-  <region id="57" left="36" top="3726" width="680" height="56" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>Power dissipation  small again assume twice the current draw this regualtor shouldactually see. If I am a factor of 10 out, with  thermal resistance of 220C/W and a junction temp of 150C, at 60C ambient</p>
-    </text>
-  </region>
-  <region id="58" left="36" top="3789" width="415" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XPR7659_1v2_Junc_Temp</e>
-        <e type="operand">220</e>
-        <e type="operand">0.0388</e>
-        <e type="operand">10</e>
-        <e type="operator" args="2">*</e>
-        <e type="bracket">(</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand">60</e>
-        <e type="operator" args="2">+</e>
-        <e type="operator" args="2">:</e>
-      </input>
-      <result action="numeric">
-        <e type="operand">145.36</e>
-      </result>
-    </math>
-  </region>
-  <region id="59" left="432" top="3789" width="305" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>C - still a little headroom at 1A...</p>
-    </text>
-  </region>
-  <region id="60" left="36" top="3825" width="652" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>Lets calulate an inductor using datasheet formula, need highest value, highestinput voltage (18V) and lowest switching frequency will give us this:</p>
-    </text>
-  </region>
-  <region id="61" left="36" top="3870" width="548" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XPR7659_1v8_L</e>
-        <e type="operand">XPR7659_1v8_Vout</e>
-        <e type="operand">18</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand">XPR7659_1v8_Vout</e>
-        <e type="operator" args="2">-</e>
-        <e type="bracket">(</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand">18</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand">XPR7659_1v8_Iout</e>
+        <e type="operand">XPR7659_3v5_Iout</e>
         <e type="operator" args="2">*</e>
         <e type="operand">0.3</e>
         <e type="operator" args="2">*</e>
@@ -672,59 +386,42 @@
       </result>
     </math>
   </region>
-  <region id="62" left="36" top="3915" width="200" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="39" left="36" top="3024" width="224" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
-      <p>This inductor is large!</p>
+      <p>Around 220uH should be ok.</p>
     </text>
   </region>
-  <region id="63" left="36" top="3942" width="118" height="31" color="#800000" bgColor="#ffffff" fontSize="14">
+  <region id="40" left="18" top="3087" width="118" height="31" color="#800000" bgColor="#ffffff" fontSize="14">
     <math>
       <input>
         <e type="operand">Inductors</e>
       </input>
     </math>
   </region>
-  <region id="64" left="36" top="3969" width="705" height="104" color="#800000" bgColor="#ffffff" fontSize="10">
+  <region id="41" left="18" top="3114" width="705" height="104" color="#800000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
       <p>The best way, with any electronics, to make sure it works is to build it. I willtry and choose an inductor series with plenty of values in 1 footprint, with thecurrent handling needed. The datasheet recommends &gt;2.4A Isat and &gt;2.2A Idc to handle short circuit conditions so I will choose using this.The Wurth Elektronik 744772220 and 744772047 parts look suitable, and there are many other values (1uH to &gt;100uH) in the range as well and they are low cost.</p>
     </text>
   </region>
-  <region id="65" left="36" top="4104" width="158" height="31" color="#004080" bgColor="#ffffff" fontSize="14">
+  <region id="42" left="36" top="4104" width="94" height="31" color="#004080" bgColor="#ffffff" fontSize="14">
     <text lang="eng">
-      <p>XC6210B332MR </p>
+      <p>NCP700B</p>
     </text>
   </region>
-  <region id="66" left="45" top="4149" width="561" height="56" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="43" left="45" top="4149" width="693" height="120" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
-      <p>The XC6210B332MR is a fixed volage part, nominal voltage is 3v3Minimum voltage is 3v234, Maximum voltage is 3v366.These values are within the ranges of the ADAU1542 part and EEPROM.</p>
+      <p>The NCP700B is a series of fixed voltage regualtors with excellent PSRR.The NCP700BSN18T1G is a 1v8 part.The NCP700BSN33T1G is a 3v3 part.Graphs for the 3v3 part show output voltage tolerance within 20mV over temperature!Transients graphs for 200mA on 3v3 part show -200mV and +50mV peaks, this iswithin the tolerance of the ADAU1701 and most I2C EEPROMs. They are fast transientsin the order of &lt;10μS, good local decoupling should filter these.</p>
     </text>
   </region>
-  <region id="67" left="45" top="4212" width="206" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XC6210B332_Vmin</e>
-        <e type="operand">3.234</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-    </math>
+  <region id="44" left="36" top="4275" width="142" height="28" color="#000000" bgColor="#ffffff" fontSize="12">
+    <text lang="eng">
+      <p>NCP700B - 3v3</p>
+    </text>
   </region>
-  <region id="68" left="45" top="4239" width="206" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="45" left="45" top="4302" width="198" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
-        <e type="operand">XC6210B332_Vmax</e>
-        <e type="operand">3.366</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-    </math>
-  </region>
-  <region id="69" left="45" top="4266" width="190" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XC6210B332_Vnom</e>
+        <e type="operand">NCP700B_3v3_Vnom</e>
         <e type="operand">3.3</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
@@ -732,26 +429,24 @@
       </input>
     </math>
   </region>
-  <region id="70" left="36" top="4293" width="647" height="56" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="46" left="36" top="4329" width="607" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
-      <p>For the XC6210B332MR part, using the SOT25 (SOT23-5) part, the maximum power disipation is 250mW at 25C ambient. The device does not specify maximum junction temperature but states it can operate upto 85C in the same table. </p>
+      <p>For the NCP700BSN33T1G part, using the SOT25 (SOT23-5) part, the maximum power disipation is &gt;300mW at 60C ambient with 645mm2 copper area.</p>
     </text>
   </region>
-  <region id="71" left="36" top="4356" width="694" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="47" left="36" top="4374" width="694" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
-      <p>At 25C ambient one 3v3 rail max current, with absolute worst case input voltage is:</p>
+      <p>At 60C ambient one 3v3 rail max current, with absolute worst case input voltage is:</p>
     </text>
   </region>
-  <region id="72" left="63" top="4383" width="342" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="48" left="63" top="4401" width="501" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">Max_3v3_Current</e>
         <e type="operand">250</e>
         <e type="operand" style="unit">mW</e>
         <e type="operator" args="2">*</e>
-        <e type="operand">3.98</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
+        <e type="operand">XPR7659_3v5_Vout_Real_Max</e>
         <e type="operand">3.3</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
@@ -760,84 +455,52 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">0.3676</e>
+        <e type="operand">0.5693</e>
         <e type="operand" style="unit">A</e>
         <e type="operator" args="2">*</e>
       </result>
     </math>
   </region>
-  <region id="73" left="36" top="4446" width="642" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="49" left="36" top="4455" width="733" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
-      <p>Working on worst case assumptions (dangerous, but it is all I have to go on);</p>
+      <p>Even reducing power to 250mW maximum current is much higher than the device can deliver!</p>
     </text>
   </region>
-  <region id="74" left="36" top="4482" width="569" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="50" left="36" top="4500" width="142" height="28" color="#000000" bgColor="#ffffff" fontSize="12">
     <text lang="eng">
-      <p>Assume a max junction temperature of 125C, standard to many devices,thermal resistance is:</p>
+      <p>NCP700B - 1v8</p>
     </text>
   </region>
-  <region id="75" left="72" top="4527" width="320" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="51" left="45" top="4527" width="198" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
-        <e type="operand">XC6210_Thermal_Resistance</e>
-        <e type="operand">100</e>
-        <e type="operand">0.25</e>
-        <e type="operator" args="2">/</e>
+        <e type="operand">NCP700B_1v8_Vnom</e>
+        <e type="operand">1.8</e>
+        <e type="operand" style="unit">V</e>
+        <e type="operator" args="2">*</e>
         <e type="operator" args="2">:</e>
       </input>
-      <result action="numeric">
-        <e type="operand">400</e>
-      </result>
     </math>
   </region>
-  <region id="76" left="378" top="4527" width="24" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">C</e>
-        <e type="operand">W</e>
-        <e type="operator" args="2">/</e>
-      </input>
-    </math>
-  </region>
-  <region id="77" left="36" top="4581" width="324" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="52" left="36" top="4554" width="607" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
-      <p>Therefore at 60C ambient max power is:</p>
+      <p>For the NCP700BSN33T1G part, using the SOT25 (SOT23-5) part, the maximum power disipation is &gt;300mW at 60C ambient with 645mm2 copper area.</p>
     </text>
   </region>
-  <region id="78" left="36" top="4626" width="291" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XC6210_Power_60C</e>
-        <e type="operand">125</e>
-        <e type="operand">60</e>
-        <e type="operator" args="2">-</e>
-        <e type="operand">400</e>
-        <e type="operator" args="2">/</e>
-        <e type="operator" args="2">:</e>
-      </input>
-      <result action="numeric">
-        <e type="operand">0.1625</e>
-      </result>
-    </math>
+  <region id="53" left="36" top="4599" width="702" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <text lang="eng">
+      <p>At 60C ambient the 1v8 rail max current, with absolute worst case input voltage, is:</p>
+    </text>
   </region>
-  <region id="79" left="306" top="4635" width="20" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="54" left="72" top="4626" width="501" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
-        <e type="operand">W</e>
-      </input>
-    </math>
-  </region>
-  <region id="80" left="36" top="4689" width="367" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">Max_3v3_Current_60C</e>
-        <e type="operand">162.5</e>
+        <e type="operand">Max_1v8_Current</e>
+        <e type="operand">250</e>
         <e type="operand" style="unit">mW</e>
         <e type="operator" args="2">*</e>
-        <e type="operand">3.98</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand">3.3</e>
+        <e type="operand">XPR7659_3v5_Vout_Real_Max</e>
+        <e type="operand">1.8</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
         <e type="operator" args="2">-</e>
@@ -845,346 +508,28 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">0.239</e>
+        <e type="operand">0.1289</e>
         <e type="operand" style="unit">A</e>
         <e type="operator" args="2">*</e>
       </result>
     </math>
   </region>
-  <region id="81" left="36" top="4743" width="666" height="72" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="55" left="36" top="4671" width="299" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
-      <p>Limiting each supply to around 200mA will give plenty of headroom in most normaluser cases. Assuming a modern design is the goal (i.e. power efficient)then thisshould not be an issue. Assuming a higher current 3v3 rail is needed then I willadd a third SMPS to provide this "dirty" rail for power hungry devices.</p>
+      <p>This is twice the max DVDD current.</p>
     </text>
   </region>
-  <region id="82" left="36" top="5130" width="181" height="31" color="#004080" bgColor="#ffffff" fontSize="14">
-    <text lang="eng">
-      <p>XC6272ITC5TR-F </p>
-    </text>
-  </region>
-  <region id="83" left="36" top="5157" width="708" height="104" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>The XC6272ITC5TR-F part is an adjustable voltage regulator. This will be used for theADAU1452 1v2 supply for power handling.ADAU1452 1v2 can be 1v14 to 1v26Calculate output voltage and tolerance:</p>
-    </text>
-  </region>
-  <region id="84" left="36" top="5265" width="198" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XC6272_Vref_Min</e>
-        <e type="operand">686</e>
-        <e type="operand" style="unit">mV</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-    </math>
-  </region>
-  <region id="85" left="36" top="5292" width="198" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XC6272_Vref_Max</e>
-        <e type="operand">714</e>
-        <e type="operand" style="unit">mV</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-    </math>
-  </region>
-  <region id="86" left="36" top="5319" width="165" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XC6272_Vref</e>
-        <e type="operand">700</e>
-        <e type="operand" style="unit">mV</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-    </math>
-  </region>
-  <region id="87" left="36" top="5355" width="190" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XC6272_Vout_Nom</e>
-        <e type="operand">1.2</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-    </math>
-  </region>
-  <region id="88" left="36" top="5391" width="282" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>Choose R2 value and calculate R1:</p>
-    </text>
-  </region>
-  <region id="89" left="36" top="5427" width="156" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XC6272_R2</e>
-        <e type="operand">48.7</e>
-        <e type="operand" style="unit">kΩ</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-    </math>
-  </region>
-  <region id="90" left="36" top="5472" width="476" height="47" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XC6272_R1</e>
-        <e type="operand">XC6272_Vout_Nom</e>
-        <e type="operand">XC6272_Vref</e>
-        <e type="operator" args="2">/</e>
-        <e type="bracket">(</e>
-        <e type="bracket">(</e>
-        <e type="operand">1</e>
-        <e type="operator" args="2">-</e>
-        <e type="bracket">(</e>
-        <e type="operand">XC6272_R2</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-      <result action="numeric">
-        <e type="operand">34785.7143</e>
-        <e type="operand" style="unit">Ω</e>
-        <e type="operator" args="2">*</e>
-      </result>
-    </math>
-  </region>
-  <region id="91" left="36" top="5544" width="197" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XC6272_R1_Real</e>
-        <e type="operand">34.8</e>
-        <e type="operand" style="unit">kΩ</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-    </math>
-  </region>
-  <region id="92" left="36" top="5589" width="526" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XC6272_Vout_Real_Nom</e>
-        <e type="operand">XC6272_Vref</e>
-        <e type="operand">1</e>
-        <e type="operand">XC6272_R1_Real</e>
-        <e type="operand">XC6272_R2</e>
-        <e type="operator" args="2">/</e>
-        <e type="operator" args="2">+</e>
-        <e type="bracket">(</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-      <result action="numeric">
-        <e type="operand">1.2002</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-      </result>
-    </math>
-  </region>
-  <region id="93" left="36" top="5643" width="242" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>Calculate worst case values:</p>
-    </text>
-  </region>
-  <region id="94" left="36" top="5670" width="599" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XC6272_Vout_Real_Min</e>
-        <e type="operand">XC6272_Vref_Min</e>
-        <e type="operand">1</e>
-        <e type="operand">XC6272_R1_Real</e>
-        <e type="operand">0.99</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand">XC6272_R2</e>
-        <e type="operand">1.01</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">/</e>
-        <e type="operator" args="2">+</e>
-        <e type="bracket">(</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-      <result action="numeric">
-        <e type="operand">1.1665</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-      </result>
-    </math>
-  </region>
-  <region id="95" left="36" top="5724" width="599" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XC6272_Vout_Real_Max</e>
-        <e type="operand">XC6272_Vref_Max</e>
-        <e type="operand">1</e>
-        <e type="operand">XC6272_R1_Real</e>
-        <e type="operand">1.01</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand">XC6272_R2</e>
-        <e type="operand">0.99</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">/</e>
-        <e type="operator" args="2">+</e>
-        <e type="bracket">(</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-      <result action="numeric">
-        <e type="operand">1.2345</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-      </result>
-    </math>
-  </region>
-  <region id="96" left="36" top="5769" width="701" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>Note that this is with 1% resistors, I might use 0.1% here as it will tighen up this rail, although it is in spec with 1% parts.</p>
-    </text>
-  </region>
-  <region id="97" left="36" top="5805" width="673" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XC6272_Vout_Real_Min_HighTol</e>
-        <e type="operand">XC6272_Vref_Min</e>
-        <e type="operand">1</e>
-        <e type="operand">XC6272_R1_Real</e>
-        <e type="operand">0.999</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand">XC6272_R2</e>
-        <e type="operand">1.001</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">/</e>
-        <e type="operator" args="2">+</e>
-        <e type="bracket">(</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-      <result action="numeric">
-        <e type="operand">1.1752</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-      </result>
-    </math>
-  </region>
-  <region id="98" left="36" top="5859" width="673" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XC6272_Vout_Real_Max_HighTol</e>
-        <e type="operand">XC6272_Vref_Max</e>
-        <e type="operand">1</e>
-        <e type="operand">XC6272_R1_Real</e>
-        <e type="operand">1.001</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand">XC6272_R2</e>
-        <e type="operand">0.999</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">/</e>
-        <e type="operator" args="2">+</e>
-        <e type="bracket">(</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-      <result action="numeric">
-        <e type="operand">1.2252</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-      </result>
-    </math>
-  </region>
-  <region id="99" left="36" top="5904" width="683" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>This part is a TO-252-5L package which can handle more power than the XC6210 part.The part is rated as 100C/W with 150C maximum junction temperature. </p>
-    </text>
-  </region>
-  <region id="100" left="36" top="5958" width="242" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>At 60C ambient max power is:</p>
-    </text>
-  </region>
-  <region id="101" left="36" top="5985" width="267" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XC6272_Power_60C</e>
-        <e type="operand">150</e>
-        <e type="operand">60</e>
-        <e type="operator" args="2">-</e>
-        <e type="operand">100</e>
-        <e type="operator" args="2">/</e>
-        <e type="operator" args="2">:</e>
-      </input>
-      <result action="numeric">
-        <e type="operand">0.9</e>
-      </result>
-    </math>
-  </region>
-  <region id="102" left="288" top="5994" width="24" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>W </p>
-    </text>
-  </region>
-  <region id="103" left="36" top="6030" width="307" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>At worst case ADAU1452 load (670mA):</p>
-    </text>
-  </region>
-  <region id="104" left="36" top="6057" width="679" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math error="2">
-      <input>
-        <e type="operand">XC6272_Power_Diss_Max</e>
-        <e type="operand">XPR7659_1v5_Vout_Real_Max</e>
-        <e type="operand">XC6272_Vout_Real_Min</e>
-        <e type="operator" args="2">-</e>
-        <e type="bracket">(</e>
-        <e type="operand">670</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand" style="unit">mA</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-      <result action="numeric">
-        <e type="operand">#</e>
-      </result>
-    </math>
-  </region>
-  <region id="105" left="36" top="6093" width="167" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>Plenty of headroom.</p>
-    </text>
-  </region>
-  <region id="106" left="36" top="6147" width="550" height="31" color="#004080" bgColor="#ffffff" fontSize="14">
+  <region id="56" left="36" top="5112" width="550" height="31" color="#004080" bgColor="#ffffff" fontSize="14">
     <text lang="eng">
       <p>ADM13307 Voltage Supervisor - Reset Generation </p>
     </text>
   </region>
-  <region id="107" left="36" top="6174" width="701" height="120" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="57" left="36" top="5139" width="701" height="120" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
       <p>The ADM13307 is a three supply volage monitor for generating a reset signal. Usingthe ADM13307-5ARZ1 part will allow monitoring of the two 3v3 rails and the 1v2 rail.SENSE1 is fixed at 3v3 and will monitor VPP (fast startup 3v3). The device is alsopowered from VPP but operates down to 2V.SENSE2 is adjustable and senses 0.6V, this will monitor VAA (slow startup 3v3).</p>
     </text>
   </region>
-  <region id="108" left="36" top="6300" width="216" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XC6210B332_Vmin</e>
-      </input>
-      <result action="numeric">
-        <e type="operand">3.234</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-      </result>
-    </math>
-  </region>
-  <region id="109" left="36" top="6327" width="190" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XC6210B332_Vnom</e>
-        <e type="operand">3.3</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-    </math>
-  </region>
-  <region id="110" left="36" top="6372" width="181" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="58" left="36" top="5274" width="181" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE2_Vmon_Real</e>
@@ -1195,7 +540,7 @@
       </input>
     </math>
   </region>
-  <region id="111" left="36" top="6408" width="131" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="59" left="36" top="5310" width="131" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE2_R2</e>
@@ -1206,7 +551,7 @@
       </input>
     </math>
   </region>
-  <region id="112" left="36" top="6444" width="493" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="60" left="36" top="5346" width="493" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE2_R1</e>
@@ -1229,7 +574,7 @@
       </result>
     </math>
   </region>
-  <region id="113" left="36" top="6498" width="205" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="61" left="36" top="5400" width="205" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE_Vref_Min</e>
@@ -1240,7 +585,7 @@
       </input>
     </math>
   </region>
-  <region id="114" left="36" top="6525" width="493" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="62" left="36" top="5427" width="493" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE2_Vmin</e>
@@ -1261,7 +606,7 @@
       </result>
     </math>
   </region>
-  <region id="115" left="36" top="6570" width="359" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="63" left="36" top="5472" width="359" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE2_V</e>
@@ -1284,7 +629,7 @@
       </result>
     </math>
   </region>
-  <region id="116" left="36" top="6651" width="441" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="64" left="36" top="5553" width="441" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE2_Vmax</e>
@@ -1307,29 +652,29 @@
       </result>
     </math>
   </region>
-  <region id="117" left="36" top="6741" width="206" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="65" left="36" top="5643" width="206" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE3_Vmon_Real</e>
-        <e type="operand">1.15</e>
+        <e type="operand">1.62</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
         <e type="operator" args="2">:</e>
       </input>
     </math>
   </region>
-  <region id="118" left="36" top="6777" width="148" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="66" left="36" top="5679" width="148" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE3_R2</e>
-        <e type="operand">3.6</e>
+        <e type="operand">4.7</e>
         <e type="operand" style="unit">kΩ</e>
         <e type="operator" args="2">*</e>
         <e type="operator" args="2">:</e>
       </input>
     </math>
   </region>
-  <region id="119" left="36" top="6813" width="485" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="67" left="36" top="5715" width="485" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE3_R1</e>
@@ -1346,13 +691,24 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">3300</e>
+        <e type="operand">7990</e>
         <e type="operand" style="unit">Ω</e>
         <e type="operator" args="2">*</e>
       </result>
     </math>
   </region>
-  <region id="120" left="36" top="6867" width="205" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="68" left="36" top="5769" width="189" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+    <math>
+      <input>
+        <e type="operand">SENSR3_R1_Real</e>
+        <e type="operand">8.2</e>
+        <e type="operand" style="unit">kΩ</e>
+        <e type="operator" args="2">*</e>
+        <e type="operator" args="2">:</e>
+      </input>
+    </math>
+  </region>
+  <region id="69" left="36" top="5805" width="205" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE_Vref_Min</e>
@@ -1363,12 +719,12 @@
       </input>
     </math>
   </region>
-  <region id="121" left="36" top="6912" width="501" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="70" left="36" top="5850" width="534" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE2_Vmin</e>
         <e type="operand">SENSE_Vref_Min</e>
-        <e type="operand">SENSE3_R1</e>
+        <e type="operand">SENSR3_R1_Real</e>
         <e type="operand">SENSE3_R2</e>
         <e type="operator" args="2">+</e>
         <e type="operand">SENSE3_R2</e>
@@ -1378,20 +734,20 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">1.1396</e>
+        <e type="operand">1.632</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
       </result>
     </math>
   </region>
-  <region id="122" left="36" top="6975" width="384" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="71" left="36" top="5913" width="441" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE2_V</e>
         <e type="operand">0.6</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
-        <e type="operand">SENSE3_R1</e>
+        <e type="operand">SENSR3_R1_Real</e>
         <e type="operand">SENSE3_R2</e>
         <e type="operator" args="2">+</e>
         <e type="operand">SENSE3_R2</e>
@@ -1401,20 +757,20 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">1.15</e>
+        <e type="operand">1.6468</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
       </result>
     </math>
   </region>
-  <region id="123" left="36" top="7038" width="449" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="72" left="36" top="5976" width="474" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE2_Vmax</e>
         <e type="operand">0.6048</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
-        <e type="operand">SENSE3_R1</e>
+        <e type="operand">SENSR3_R1_Real</e>
         <e type="operand">SENSE3_R2</e>
         <e type="operator" args="2">+</e>
         <e type="operand">SENSE3_R2</e>
@@ -1424,7 +780,7 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">1.1592</e>
+        <e type="operand">1.66</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
       </result>
