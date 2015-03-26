@@ -413,10 +413,4 @@ Text Label 2100 3300 0    60   ~ 0
 MAN_RESET
 Wire Wire Line
 	2100 3300 2750 3300
-$Sheet
-S 2250 6700 2650 850 
-U 55019779
-F0 "SimpleADCDAC" 60
-F1 "SimpleADCDAC.sch" 60
-$EndSheet
 $EndSCHEMATC
