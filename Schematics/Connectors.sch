@@ -45,7 +45,7 @@ Text Label 1550 9500 0    60   ~ 0
 SL_SCLK
 Text Label 1550 9600 0    60   ~ 0
 SL_~SS
-Text Label 2500 9500 0    60   ~ 0
+Text Label 3200 9500 0    60   ~ 0
 SL_MOSI
 $Comp
 L GNDD #PWR084
@@ -668,7 +668,7 @@ F 3 "" H 2150 8200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 10200 2050 0    60   Output ~ 0
-MRST
+PI_RST
 $Comp
 L CONN_02X05 P509
 U 1 1 54FF1EBC
@@ -1196,7 +1196,7 @@ Wire Wire Line
 Wire Wire Line
 	1550 9200 1900 9200
 Wire Wire Line
-	2400 9500 2700 9500
+	2400 9500 3550 9500
 Wire Wire Line
 	2500 9600 2400 9600
 Wire Wire Line
@@ -1207,7 +1207,6 @@ NoConn ~ 2400 9300
 Wire Wire Line
 	11050 2150 11200 2150
 NoConn ~ 2400 9200
-NoConn ~ 2400 9400
 Wire Wire Line
 	13600 1500 14100 1500
 Text Label 13600 1700 0    60   ~ 0
@@ -2271,4 +2270,27 @@ Wire Wire Line
 	2850 3000 3850 3000
 Wire Wire Line
 	2350 3000 1600 3000
+Text HLabel 3250 9350 2    60   Output ~ 0
+ADI_RST
+$Comp
+L R R?
+U 1 1 5517B867
+P 2750 9400
+F 0 "R?" V 2830 9400 40  0000 C CNN
+F 1 "1k" V 2757 9401 40  0000 C CNN
+F 2 "" V 2680 9400 30  0001 C CNN
+F 3 "~" H 2750 9400 30  0000 C CNN
+	1    2750 9400
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	3250 9350 3100 9350
+Wire Wire Line
+	3100 9350 3100 9400
+Wire Wire Line
+	3100 9400 3000 9400
+Wire Wire Line
+	2500 9400 2400 9400
+Text HLabel 5650 9300 2    60   Output ~ 0
+RST_OUT
 $EndSCHEMATC
