@@ -1549,7 +1549,7 @@ F 3 "" H 11200 7000 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Text HLabel 11400 7250 2    60   Output ~ 0
-ANAIN1
+ANA_IN1
 Wire Wire Line
 	10500 7250 10600 7250
 $Comp
@@ -1659,7 +1659,7 @@ F 3 "" H 11200 8700 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Text HLabel 11400 8950 2    60   Output ~ 0
-ANAIN2
+ANA_IN2
 Wire Wire Line
 	10500 8950 10600 8950
 $Comp
@@ -1749,7 +1749,7 @@ F 3 "~" H 13150 6450 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Text HLabel 12550 6450 0    60   Input ~ 0
-ANAOUT1
+ANA_OUT1
 Wire Wire Line
 	13450 6450 13350 6450
 $Comp
@@ -1832,7 +1832,7 @@ F 3 "~" H 13150 7300 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Text HLabel 12550 7300 0    60   Input ~ 0
-ANAOUT2
+ANA_OUT2
 Wire Wire Line
 	13450 7300 13350 7300
 $Comp
@@ -1915,7 +1915,7 @@ F 3 "~" H 13150 8100 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Text HLabel 12550 8100 0    60   Input ~ 0
-ANAOUT3
+ANA_OUT3
 Wire Wire Line
 	13450 8100 13350 8100
 $Comp
@@ -1998,7 +1998,7 @@ F 3 "~" H 13150 8950 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Text HLabel 12550 8950 0    60   Input ~ 0
-ANAOUT4
+ANA_OUT4
 Wire Wire Line
 	13450 8950 13350 8950
 $Comp
@@ -2291,6 +2291,4 @@ Wire Wire Line
 	3100 9400 3000 9400
 Wire Wire Line
 	2500 9400 2400 9400
-Text HLabel 5650 9300 2    60   Output ~ 0
-RST_OUT
 $EndSCHEMATC
