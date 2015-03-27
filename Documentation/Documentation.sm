@@ -4,7 +4,7 @@
   <settings>
     <identity>
       <id>f95f1910-2bda-4fc1-9fdb-20f70bb81fc8</id>
-      <revision>104</revision>
+      <revision>107</revision>
     </identity>
     <calculation>
       <precision>4</precision>
@@ -102,18 +102,18 @@
   <region id="15" left="36" top="2043" width="94" height="31" color="#004080" bgColor="#ffffff" fontSize="14">
     <math>
       <input>
-        <e type="operand">XPR7659</e>
+        <e type="operand">XRP7659</e>
       </input>
     </math>
   </region>
   <region id="16" left="36" top="2070" width="532" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
-      <p>One XPR7659 part will be used to generate 3v5 to feed the LDOs. </p>
+      <p>One XRP7659 part will be used to generate 3v5 to feed the LDOs. </p>
     </text>
   </region>
   <region id="17" left="36" top="2133" width="152" height="28" color="#004080" bgColor="#ffffff" fontSize="12">
     <text lang="eng">
-      <p bold="true">XPR7659 at 3v5</p>
+      <p bold="true">XRP7659 at 3v5</p>
     </text>
   </region>
   <region id="18" left="36" top="2160" width="687" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
@@ -136,7 +136,7 @@
     <math>
       <input>
         <e type="operand">XPR7659_3v5_Iout</e>
-        <e type="operand">50</e>
+        <e type="operand">80</e>
         <e type="operand" style="unit">mA</e>
         <e type="operator" args="2">*</e>
         <e type="operator" args="2">:</e>
@@ -348,9 +348,9 @@
       <p>C - which is plenty of headroom</p>
     </text>
   </region>
-  <region id="37" left="36" top="2925" width="652" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="37" left="36" top="2925" width="731" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
-      <p>Lets calulate an inductor using datasheet formula, need highest value, highestinput voltage (18V) and lowest switching frequency will give us this:</p>
+      <p>Lets calulate an inductor using datasheet formula, need highest inductor value, biggeris not an issue if can handle the current, lowest switching frequency will give us this:</p>
     </text>
   </region>
   <region id="38" left="36" top="2970" width="548" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
@@ -365,7 +365,7 @@
         <e type="operator" args="2">-</e>
         <e type="bracket">(</e>
         <e type="operator" args="2">*</e>
-        <e type="operand">18</e>
+        <e type="operand">4.5</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
         <e type="operand">XPR7659_3v5_Iout</e>
@@ -380,15 +380,15 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">0.0002</e>
+        <e type="operand">0.0004</e>
         <e type="operand" style="unit">H</e>
         <e type="operator" args="2">*</e>
       </result>
     </math>
   </region>
-  <region id="39" left="36" top="3024" width="224" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="39" left="36" top="3024" width="696" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
-      <p>Around 220uH should be ok.</p>
+      <p>So around 400uH with a 80mA min load, a couple of LEDs should help there, even if itwastes a little power.</p>
     </text>
   </region>
   <region id="40" left="18" top="3087" width="118" height="31" color="#800000" bgColor="#ffffff" fontSize="14">
