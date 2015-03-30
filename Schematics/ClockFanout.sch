@@ -540,9 +540,9 @@ Wire Wire Line
 	4500 2150 4400 2150
 Wire Wire Line
 	4400 2150 4400 1850
-Text HLabel 8150 1150 2    60   Output ~ 0
-MCLK_OUT1
 Text HLabel 8150 1700 2    60   Output ~ 0
+MCLK_OUT1
+Text HLabel 8150 1150 2    60   Output ~ 0
 MCLK_OUT2
 Text HLabel 8150 2300 2    60   Output ~ 0
 MCLK_OUT3
@@ -637,7 +637,7 @@ U 1 1 5515C046
 P 3250 2450
 F 0 "C404" H 3300 2550 50  0000 L CNN
 F 1 "220u" H 3300 2350 50  0000 L CNN
-F 2 "OHDSP-Footprints-Pretty:SMD-0805" H 3250 2450 60  0001 C CNN
+F 2 "OHDSP-Footprints-Pretty:CAP-TH-D6.3mmP2.5mm" H 3250 2450 60  0001 C CNN
 F 3 "~" H 3250 2450 60  0000 C CNN
 	1    3250 2450
 	1    0    0    -1  
