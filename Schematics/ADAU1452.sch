@@ -696,14 +696,6 @@ Text Notes 3800 8900 0    118  ~ 0
 Voltage Monitor Reset
 Text Notes 11450 4400 0    118  ~ 0
 SPI EEPROM
-Text Label 4500 6150 0    60   ~ 0
-SL_MISO
-Text Label 4500 6350 0    60   ~ 0
-SL_SCLK
-Text Label 4500 6850 0    60   ~ 0
-SL_~SS
-Text Label 4500 6750 0    60   ~ 0
-SL_MOSI
 $Comp
 L C C222
 U 1 1 54DC4D60
@@ -763,7 +755,7 @@ U 1 1 54DD878F
 P 13600 5450
 F 0 "U203" H 13940 5690 60  0000 C CNN
 F 1 "25AA1024" H 14050 5600 60  0000 C CNN
-F 2 "OHDSP-Footprints-Pretty:IC_DIP_8" H 13700 5550 60  0001 C CNN
+F 2 "OHDSP-Footprints-Pretty:IC_SOIC_8" H 13700 5550 60  0001 C CNN
 F 3 "" H 13700 5550 60  0000 C CNN
 	1    13600 5450
 	1    0    0    -1  
@@ -930,28 +922,6 @@ F 1 "0R" V 5407 6251 40  0000 C CNN
 F 2 "OHDSP-Footprints-Pretty:SMD-0805" V 5330 6250 30  0001 C CNN
 F 3 "~" H 5400 6250 30  0000 C CNN
 	1    5400 6250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L R R207
-U 1 1 54E23425
-P 5400 6150
-F 0 "R207" V 5450 6450 40  0000 C CNN
-F 1 "0R" V 5407 6151 40  0000 C CNN
-F 2 "OHDSP-Footprints-Pretty:SMD-0805" V 5330 6150 30  0001 C CNN
-F 3 "~" H 5400 6150 30  0000 C CNN
-	1    5400 6150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L R R209
-U 1 1 54E23533
-P 5400 6350
-F 0 "R209" V 5450 6650 40  0000 C CNN
-F 1 "0R" V 5407 6351 40  0000 C CNN
-F 2 "OHDSP-Footprints-Pretty:SMD-0805" V 5330 6350 30  0001 C CNN
-F 3 "~" H 5400 6350 30  0000 C CNN
-	1    5400 6350
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1154,34 +1124,16 @@ Text HLabel 6650 6000 0    60   Input ~ 0
 AUXADC_IN5
 Text HLabel 6650 6100 0    60   Input ~ 0
 AUXADC_IN6
-Text Label 1950 5300 0    60   ~ 0
-SL_MISO
 Text Label 1950 4750 0    60   ~ 0
 SL_SDA
-Text Label 1950 5400 0    60   ~ 0
-SL_SCLK
 Text Label 1950 4850 0    60   ~ 0
 SL_SCL
-Text Label 1950 5500 0    60   ~ 0
-SL_MOSI
-Text Label 1950 5600 0    60   ~ 0
-SL_~SS
 Text HLabel 1600 4850 0    60   BiDi ~ 0
 I2C_SCL
 Text HLabel 1600 4750 0    60   BiDi ~ 0
 I2C_SDA
-Text HLabel 1650 5300 0    60   BiDi ~ 0
-SPI_MISO
-Text HLabel 1650 5400 0    60   BiDi ~ 0
-SPI_SCLK
-Text HLabel 1650 5500 0    60   BiDi ~ 0
-SPI_MOSI
-Text HLabel 1650 5600 0    60   BiDi ~ 0
-SPI_~CS
 Text Notes 1150 4650 0    118  ~ 0
 I2C
-Text Notes 1150 5200 0    118  ~ 0
-SPI
 $Comp
 L VPP #PWR020
 U 1 1 54E57AC0
@@ -1208,31 +1160,9 @@ XTALIN
 Text Notes 11450 4600 0    59   ~ 0
 Allow for self boot\nUses master SPI
 Text Notes 1150 4300 0    118  ~ 0
-Slave SPI and I2C
+Slave I2C
 Text Notes 1150 4400 0    59   ~ 0
 Used for external control
-$Comp
-L R R213
-U 1 1 54E3266A
-P 5400 6750
-F 0 "R213" V 5450 7050 40  0000 C CNN
-F 1 "0R" V 5407 6751 40  0000 C CNN
-F 2 "OHDSP-Footprints-Pretty:SMD-0805" V 5330 6750 30  0001 C CNN
-F 3 "~" H 5400 6750 30  0000 C CNN
-	1    5400 6750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L R R214
-U 1 1 54E326E9
-P 5400 6850
-F 0 "R214" V 5450 7150 40  0000 C CNN
-F 1 "0R" V 5407 6851 40  0000 C CNN
-F 2 "OHDSP-Footprints-Pretty:SMD-0805" V 5330 6850 30  0001 C CNN
-F 3 "~" H 5400 6850 30  0000 C CNN
-	1    5400 6850
-	0    -1   -1   0   
-$EndComp
 $Comp
 L R R212
 U 1 1 54E33D3A
@@ -1262,7 +1192,7 @@ L R R215
 U 1 1 54E34A41
 P 5400 6950
 F 0 "R215" V 5450 7250 40  0000 C CNN
-F 1 "N/F" V 5407 6951 40  0000 C CNN
+F 1 "10k" V 5407 6951 40  0000 C CNN
 F 2 "OHDSP-Footprints-Pretty:SMD-0805" V 5330 6950 30  0001 C CNN
 F 3 "~" H 5400 6950 30  0000 C CNN
 	1    5400 6950
@@ -1273,7 +1203,7 @@ L R R216
 U 1 1 54E34ACE
 P 5400 7050
 F 0 "R216" V 5450 7350 40  0000 C CNN
-F 1 "N/F" V 5407 7051 40  0000 C CNN
+F 1 "10k" V 5407 7051 40  0000 C CNN
 F 2 "OHDSP-Footprints-Pretty:SMD-0805" V 5330 7050 30  0001 C CNN
 F 3 "~" H 5400 7050 30  0000 C CNN
 	1    5400 7050
@@ -1290,10 +1220,10 @@ F 3 "" H 5000 7100 60  0000 C CNN
 	1    5000 7100
 	1    0    0    -1  
 $EndComp
-Text Notes 4500 5600 0    118  ~ 0
-Slave SPI/I2C
-Text Notes 4500 5950 0    59   ~ 0
-Allow choosing\nbetween the two\nfor Raspberry Pi\nor Arduino
+Text Notes 4500 5800 0    118  ~ 0
+Slave I2C
+Text Notes 4500 6050 0    59   ~ 0
+I2C interface with \naddress selection
 $Comp
 L CONN_6X2 P203
 U 1 1 54E3D185
@@ -1578,7 +1508,7 @@ F 3 "" H 5300 9400 60  0000 C CNN
 	1    5300 9400
 	1    0    0    -1  
 $EndComp
-Text HLabel 9650 9500 2    60   Output ~ 0
+Text HLabel 10200 9500 2    60   Output ~ 0
 RESET
 $Comp
 L R R219
@@ -2052,10 +1982,6 @@ Wire Wire Line
 Wire Wire Line
 	9050 5900 9500 5900
 Wire Wire Line
-	4500 6750 5150 6750
-Wire Wire Line
-	4500 6850 5150 6850
-Wire Wire Line
 	6100 7450 6000 7450
 Wire Wire Line
 	6600 7450 6650 7450
@@ -2141,18 +2067,9 @@ Wire Wire Line
 Wire Wire Line
 	1500 6950 2350 6950
 Wire Wire Line
-	5650 6150 5800 6150
-Wire Wire Line
-	5800 6150 5800 6250
-Connection ~ 5800 6250
-Wire Wire Line
 	5650 6450 6000 6450
 Wire Wire Line
-	5150 6150 4500 6150
-Wire Wire Line
 	4500 6250 5150 6250
-Wire Wire Line
-	5150 6350 4500 6350
 Wire Wire Line
 	4500 6450 5150 6450
 Wire Wire Line
@@ -2237,23 +2154,11 @@ Wire Wire Line
 	1600 4750 2250 4750
 Wire Wire Line
 	1600 4850 2250 4850
-Wire Wire Line
-	1650 5300 2300 5300
-Wire Wire Line
-	1650 5400 2300 5400
-Wire Wire Line
-	1650 5500 2300 5500
-Wire Wire Line
-	1650 5600 2200 5600
 Connection ~ 1200 6300
 Wire Wire Line
 	9050 6650 9450 6650
 Wire Wire Line
 	9050 6800 9400 6800
-Wire Wire Line
-	5650 6350 6000 6350
-Wire Wire Line
-	6000 6350 6000 6650
 Wire Wire Line
 	5650 6250 6100 6250
 Wire Wire Line
@@ -2262,11 +2167,6 @@ Wire Wire Line
 	6100 6550 6750 6550
 Wire Wire Line
 	6000 6650 6750 6650
-Connection ~ 6000 6450
-Wire Wire Line
-	5650 6750 6750 6750
-Wire Wire Line
-	5650 6850 6750 6850
 Wire Wire Line
 	4750 6550 5150 6550
 Wire Wire Line
@@ -2278,12 +2178,10 @@ Wire Wire Line
 	5650 6650 5750 6650
 Wire Wire Line
 	5750 6650 5750 6750
-Connection ~ 5750 6750
 Wire Wire Line
 	5650 6550 5850 6550
 Wire Wire Line
 	5850 6550 5850 6850
-Connection ~ 5850 6850
 Wire Wire Line
 	5650 6950 5800 6950
 Wire Wire Line
@@ -2357,7 +2255,7 @@ Wire Wire Line
 Wire Wire Line
 	14750 4850 15050 4850
 Wire Wire Line
-	8350 9500 9650 9500
+	8350 9500 9600 9500
 Wire Wire Line
 	9350 10100 9350 10000
 Wire Wire Line
@@ -2574,4 +2472,23 @@ Wire Wire Line
 Wire Wire Line
 	9050 10150 9050 9500
 Connection ~ 9050 9500
+Wire Wire Line
+	6000 6450 6000 6650
+Wire Wire Line
+	5750 6750 6750 6750
+Wire Wire Line
+	5850 6850 6750 6850
+$Comp
+L R R207
+U 1 1 551B9D0B
+P 9850 9500
+F 0 "R207" V 9780 9420 40  0000 C CNN
+F 1 "100R" V 9857 9501 40  0000 C CNN
+F 2 "OHDSP-Footprints-Pretty:SMD-0805" V 9780 9500 30  0001 C CNN
+F 3 "~" H 9850 9500 30  0000 C CNN
+	1    9850 9500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10100 9500 10200 9500
 $EndSCHEMATC
