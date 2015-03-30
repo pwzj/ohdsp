@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:/repo/ohdsp/Schematics/OHDSP-ADAU1701.sch)
-    (date "30/03/2015 15:59:23")
+    (date "30/03/2015 16:07:15")
     (tool "Eeschema (after 2015-mar-04 BZR unknown)-product")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -457,7 +457,7 @@
       (tstamp 551616FB))
     (comp (ref U203)
       (value IC-EEPROM-I2C)
-      (footprint OHDSP-Footprints-Pretty:IC_DIP_8)
+      (footprint OHDSP-Footprints-Pretty:IC_SOIC_8)
       (libsource (lib OHDSP-Lib) (part IC-EEPROM-I2C))
       (sheetpath (names /ADAU1701/) (tstamps /54BE4270/))
       (tstamp 5514D162))
