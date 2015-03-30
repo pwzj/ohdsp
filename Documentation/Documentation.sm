@@ -4,7 +4,7 @@
   <settings>
     <identity>
       <id>f95f1910-2bda-4fc1-9fdb-20f70bb81fc8</id>
-      <revision>107</revision>
+      <revision>113</revision>
     </identity>
     <calculation>
       <precision>4</precision>
@@ -21,6 +21,7 @@
     <dependences>
       <assembly name="SMath Studio Desktop" version="0.97.5346.24640" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
       <assembly name="Text Region" version="1.10.5346.31409" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+      <assembly name="Picture Region" version="1.10.5346.31387" guid="06b5df04-393e-4be7-9107-305196fcb861" />
       <assembly name="Math Region" version="0.97.5346.24640" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
     </dependences>
   </settings>
@@ -79,9 +80,9 @@
       <p>The ADAU1701 requires 4 power rails:    AVDD = 3.3V - Min 2.97V Max 3.63V    PVDD = 3.3V - Min 2.97V Max 3.63V    AVDD and PVDD max 85mA combined    IOVDD = 3.3V - Min 1.71V Max 3.63V    DVDD = 1.8V 60mA Max - Min 1.62V Max 1.98V Current draw is low on all rails, IOVDD is unspecified but should only be a fewtens of mA</p>
     </text>
   </region>
-  <region id="11" left="45" top="702" width="683" height="56" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="11" left="45" top="702" width="681" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
-      <p>Easiest way to generate the supplies will be two rails, one at 1v8 direct from anSMPS and a clean 3v3 supply using an 3v3 LDO and an 3v8 SMPS. I may seperate IOVDDand AVDD/PVDD with two LDOs.</p>
+      <p>Will use 5v as a main rail for supply, and use power from a Pi or feed 5V to a Pi.</p>
     </text>
   </region>
   <region id="12" left="45" top="891" width="83" height="31" color="#000000" bgColor="#ffffff" fontSize="14">
@@ -99,326 +100,41 @@
       <p>Power Supply Block Diagram</p>
     </text>
   </region>
-  <region id="15" left="36" top="2043" width="94" height="31" color="#004080" bgColor="#ffffff" fontSize="14">
+  <region id="15" left="72" top="1062" width="604" height="321" color="#000000" bgColor="#ffffff">
+    <picture>
+      <raw format="png" encoding="base64">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</raw>
+    </picture>
+  </region>
+  <region id="16" left="36" top="1395" width="109" height="31" color="#004080" bgColor="#ffffff" fontSize="14">
     <math>
       <input>
-        <e type="operand">XRP7659</e>
-      </input>
-    </math>
-  </region>
-  <region id="16" left="36" top="2070" width="532" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>One XRP7659 part will be used to generate 3v5 to feed the LDOs. </p>
-    </text>
-  </region>
-  <region id="17" left="36" top="2133" width="152" height="28" color="#004080" bgColor="#ffffff" fontSize="12">
-    <text lang="eng">
-      <p bold="true">XRP7659 at 3v5</p>
-    </text>
-  </region>
-  <region id="18" left="36" top="2160" width="687" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>Lets assume a maximum current of 500mA on this rail, the ADAU1452 will only pull a small amount of current (60mA) from PVDD, IOVDD, AVDD, combined worst case. </p>
-    </text>
-  </region>
-  <region id="19" left="36" top="2205" width="198" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XPR7659_3v5_Vout</e>
-        <e type="operand">3.5</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-    </math>
-  </region>
-  <region id="20" left="261" top="2205" width="197" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XPR7659_3v5_Iout</e>
-        <e type="operand">80</e>
-        <e type="operand" style="unit">mA</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-    </math>
-  </region>
-  <region id="21" left="36" top="2232" width="180" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XPR7659_3v5_R1</e>
-        <e type="operand">75</e>
-        <e type="operand" style="unit">kΩ</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-    </math>
-  </region>
-  <region id="22" left="225" top="2232" width="506" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>use trial and error to get a nice value for R2 with R1 close to values listed in datasheet</p>
-    </text>
-  </region>
-  <region id="23" left="36" top="2277" width="432" height="60" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XPR7659_3v5_R2</e>
-        <e type="operand">XPR7659_3v5_R1</e>
-        <e type="operand">XPR7659_3v5_Vout</e>
-        <e type="operand">0.81</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">/</e>
-        <e type="bracket">(</e>
-        <e type="operand">1</e>
+        <e type="operand">LT1374</e>
+        <e type="operand">5</e>
         <e type="operator" args="2">-</e>
-        <e type="operator" args="2">/</e>
-        <e type="operator" args="2">:</e>
-      </input>
-      <result action="numeric">
-        <e type="operand">22583.6431</e>
-        <e type="operand" style="unit">Ω</e>
-        <e type="operator" args="2">*</e>
-      </result>
-    </math>
-  </region>
-  <region id="24" left="477" top="2295" width="250" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>Can use two series resistors,10k and 560R to get close</p>
-    </text>
-  </region>
-  <region id="25" left="36" top="2349" width="251" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>Rearranging for the real Vout</p>
-    </text>
-  </region>
-  <region id="26" left="36" top="2376" width="239" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XPR7659_3v5_R2_Real</e>
-        <e type="operand">22000</e>
-        <e type="operand" style="unit">Ω</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
       </input>
     </math>
   </region>
-  <region id="27" left="36" top="2403" width="532" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XPR7659_3v5_Vout_Real</e>
-        <e type="operand">XPR7659_3v5_R1</e>
-        <e type="operand">XPR7659_3v5_R2_Real</e>
-        <e type="operator" args="2">/</e>
-        <e type="operand">1</e>
-        <e type="operator" args="2">+</e>
-        <e type="bracket">(</e>
-        <e type="operand">0.81</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-      <result action="numeric">
-        <e type="operand">3.5714</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-      </result>
-    </math>
-  </region>
-  <region id="28" left="36" top="2457" width="658" height="72" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="17" left="36" top="1422" width="682" height="56" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
-      <p>This rail voltage is not critical as long as it is above the dropout voltage ofthe linear regulators (which should be less than 100mV).Lets caluclate worst case anyway...</p>
+      <p>A LT1374-5 will create a 5V supply from external PSU. Will also feed 5V to the Pi.Will use implementation from application note.</p>
     </text>
   </region>
-  <region id="29" left="36" top="2547" width="613" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XPR7659_3v5_Vout_Real_Max</e>
-        <e type="operand">XPR7659_3v5_R1</e>
-        <e type="operand">1.01</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand">XPR7659_3v5_R2_Real</e>
-        <e type="operand">0.99</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">/</e>
-        <e type="operand">1</e>
-        <e type="operator" args="2">+</e>
-        <e type="bracket">(</e>
-        <e type="operand">0.835</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-      <result action="numeric">
-        <e type="operand">3.7391</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-      </result>
-    </math>
-  </region>
-  <region id="30" left="36" top="2601" width="613" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XPR7659_3v5_Vout_Real_Min</e>
-        <e type="operand">XPR7659_3v5_R1</e>
-        <e type="operand">0.99</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand">XPR7659_3v5_R2_Real</e>
-        <e type="operand">1.01</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">/</e>
-        <e type="operand">1</e>
-        <e type="operator" args="2">+</e>
-        <e type="bracket">(</e>
-        <e type="operand">0.785</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-      <result action="numeric">
-        <e type="operand">3.4081</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-      </result>
-    </math>
-  </region>
-  <region id="31" left="36" top="2664" width="692" height="72" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>The Torex XC6210 have very very low dropout voltages, the 3v3 part is 75mV at 100mAoutput, and the graph at the start of the datasheet shows 200mV typically at around300mA-400mA output current. In the calculations on these regualtors Irecommend keeping the current lower than this anyway (200mA).</p>
-    </text>
-  </region>
-  <region id="32" left="36" top="2745" width="726" height="56" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>Lets approximate power dissipation for interest sake, lets assume 85% efficiencyat 500mA. The device will therefore draw 588mA on the input, assume this is all lost in the device through Rdson = 0.35Ω... </p>
-    </text>
-  </region>
-  <region id="33" left="36" top="2790" width="355" height="35" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XPR7659_3v5_Pdiss</e>
-        <e type="operand">88</e>
-        <e type="operand" style="unit">mA</e>
-        <e type="operator" args="2">*</e>
-        <e type="bracket">(</e>
-        <e type="operand">2</e>
-        <e type="operator" args="2">^</e>
-        <e type="operand">0.35</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand" style="unit">Ω</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">:</e>
-      </input>
-      <contract>
-        <e type="operand" style="unit">W</e>
-      </contract>
-      <result action="numeric">
-        <e type="operand">0.0027</e>
-      </result>
-    </math>
-  </region>
-  <region id="34" left="36" top="2835" width="696" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>Power dissipation is so small I think we can ignore it, even if I am a factor of 100out, with  thermal resistance of 220C/W and a junction temp of 150C, at 60C ambient</p>
-    </text>
-  </region>
-  <region id="35" left="36" top="2880" width="416" height="26" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XPR7659_3v5_Junc_Temp</e>
-        <e type="operand">220</e>
-        <e type="operand">0.0027</e>
-        <e type="operand">100</e>
-        <e type="operator" args="2">*</e>
-        <e type="bracket">(</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand">60</e>
-        <e type="operator" args="2">+</e>
-        <e type="operator" args="2">:</e>
-      </input>
-      <result action="numeric">
-        <e type="operand">119.4</e>
-      </result>
-    </math>
-  </region>
-  <region id="36" left="432" top="2880" width="264" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>C - which is plenty of headroom</p>
-    </text>
-  </region>
-  <region id="37" left="36" top="2925" width="731" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>Lets calulate an inductor using datasheet formula, need highest inductor value, biggeris not an issue if can handle the current, lowest switching frequency will give us this:</p>
-    </text>
-  </region>
-  <region id="38" left="36" top="2970" width="548" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
-    <math>
-      <input>
-        <e type="operand">XPR7659_3v5_L</e>
-        <e type="operand">XPR7659_3v5_Vout</e>
-        <e type="operand">18</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand">XPR7659_3v5_Vout</e>
-        <e type="operator" args="2">-</e>
-        <e type="bracket">(</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand">4.5</e>
-        <e type="operand" style="unit">V</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand">XPR7659_3v5_Iout</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand">0.3</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand">1.1</e>
-        <e type="operator" args="2">*</e>
-        <e type="operand" style="unit">MHz</e>
-        <e type="operator" args="2">*</e>
-        <e type="operator" args="2">/</e>
-        <e type="operator" args="2">:</e>
-      </input>
-      <result action="numeric">
-        <e type="operand">0.0004</e>
-        <e type="operand" style="unit">H</e>
-        <e type="operator" args="2">*</e>
-      </result>
-    </math>
-  </region>
-  <region id="39" left="36" top="3024" width="696" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>So around 400uH with a 80mA min load, a couple of LEDs should help there, even if itwastes a little power.</p>
-    </text>
-  </region>
-  <region id="40" left="18" top="3087" width="118" height="31" color="#800000" bgColor="#ffffff" fontSize="14">
-    <math>
-      <input>
-        <e type="operand">Inductors</e>
-      </input>
-    </math>
-  </region>
-  <region id="41" left="18" top="3114" width="705" height="104" color="#800000" bgColor="#ffffff" fontSize="10">
-    <text lang="eng">
-      <p>The best way, with any electronics, to make sure it works is to build it. I willtry and choose an inductor series with plenty of values in 1 footprint, with thecurrent handling needed. The datasheet recommends &gt;2.4A Isat and &gt;2.2A Idc to handle short circuit conditions so I will choose using this.The Wurth Elektronik 744772220 and 744772047 parts look suitable, and there are many other values (1uH to &gt;100uH) in the range as well and they are low cost.</p>
-    </text>
-  </region>
-  <region id="42" left="36" top="4104" width="94" height="31" color="#004080" bgColor="#ffffff" fontSize="14">
+  <region id="18" left="36" top="1476" width="94" height="31" color="#004080" bgColor="#ffffff" fontSize="14">
     <text lang="eng">
       <p>NCP700B</p>
     </text>
   </region>
-  <region id="43" left="45" top="4149" width="693" height="120" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="19" left="45" top="1503" width="693" height="104" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
-      <p>The NCP700B is a series of fixed voltage regualtors with excellent PSRR.The NCP700BSN18T1G is a 1v8 part.The NCP700BSN33T1G is a 3v3 part.Graphs for the 3v3 part show output voltage tolerance within 20mV over temperature!Transients graphs for 200mA on 3v3 part show -200mV and +50mV peaks, this iswithin the tolerance of the ADAU1701 and most I2C EEPROMs. They are fast transientsin the order of &lt;10μS, good local decoupling should filter these.</p>
+      <p>The NCP700B is a series of fixed voltage regualtors with excellent PSRR.The NCP700BSN18T1G is a 1v8 part. The NCP700BSN33T1G is a 3v3 part.Graphs for the 3v3 part show output voltage tolerance within 20mV over temperature!Transients graphs for 200mA on 3v3 part show -200mV and +50mV peaks, this iswithin the tolerance of the ADAU1701 and most I2C EEPROMs. They are fast transientsin the order of &lt;10μS, good local decoupling should filter these.</p>
     </text>
   </region>
-  <region id="44" left="36" top="4275" width="142" height="28" color="#000000" bgColor="#ffffff" fontSize="12">
+  <region id="20" left="36" top="1620" width="142" height="28" color="#000000" bgColor="#ffffff" fontSize="12">
     <text lang="eng">
       <p>NCP700B - 3v3</p>
     </text>
   </region>
-  <region id="45" left="45" top="4302" width="198" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="21" left="45" top="1647" width="198" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">NCP700B_3v3_Vnom</e>
@@ -429,24 +145,26 @@
       </input>
     </math>
   </region>
-  <region id="46" left="36" top="4329" width="607" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="22" left="36" top="1674" width="607" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
       <p>For the NCP700BSN33T1G part, using the SOT25 (SOT23-5) part, the maximum power disipation is &gt;300mW at 60C ambient with 645mm2 copper area.</p>
     </text>
   </region>
-  <region id="47" left="36" top="4374" width="694" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="23" left="36" top="1719" width="694" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
       <p>At 60C ambient one 3v3 rail max current, with absolute worst case input voltage is:</p>
     </text>
   </region>
-  <region id="48" left="63" top="4401" width="501" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="24" left="63" top="1746" width="317" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">Max_3v3_Current</e>
         <e type="operand">250</e>
         <e type="operand" style="unit">mW</e>
         <e type="operator" args="2">*</e>
-        <e type="operand">XPR7659_3v5_Vout_Real_Max</e>
+        <e type="operand">5</e>
+        <e type="operand" style="unit">V</e>
+        <e type="operator" args="2">*</e>
         <e type="operand">3.3</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
@@ -455,23 +173,23 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">0.5693</e>
+        <e type="operand">0.1471</e>
         <e type="operand" style="unit">A</e>
         <e type="operator" args="2">*</e>
       </result>
     </math>
   </region>
-  <region id="49" left="36" top="4455" width="733" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="25" left="36" top="1800" width="733" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
       <p>Even reducing power to 250mW maximum current is much higher than the device can deliver!</p>
     </text>
   </region>
-  <region id="50" left="36" top="4500" width="142" height="28" color="#000000" bgColor="#ffffff" fontSize="12">
+  <region id="26" left="36" top="1845" width="142" height="28" color="#000000" bgColor="#ffffff" fontSize="12">
     <text lang="eng">
       <p>NCP700B - 1v8</p>
     </text>
   </region>
-  <region id="51" left="45" top="4527" width="198" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="27" left="45" top="1872" width="198" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">NCP700B_1v8_Vnom</e>
@@ -482,24 +200,26 @@
       </input>
     </math>
   </region>
-  <region id="52" left="36" top="4554" width="607" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="28" left="36" top="1899" width="607" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
       <p>For the NCP700BSN33T1G part, using the SOT25 (SOT23-5) part, the maximum power disipation is &gt;300mW at 60C ambient with 645mm2 copper area.</p>
     </text>
   </region>
-  <region id="53" left="36" top="4599" width="702" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="29" left="36" top="1944" width="702" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
       <p>At 60C ambient the 1v8 rail max current, with absolute worst case input voltage, is:</p>
     </text>
   </region>
-  <region id="54" left="72" top="4626" width="501" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="30" left="72" top="1971" width="317" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">Max_1v8_Current</e>
         <e type="operand">250</e>
         <e type="operand" style="unit">mW</e>
         <e type="operator" args="2">*</e>
-        <e type="operand">XPR7659_3v5_Vout_Real_Max</e>
+        <e type="operand">5</e>
+        <e type="operand" style="unit">V</e>
+        <e type="operator" args="2">*</e>
         <e type="operand">1.8</e>
         <e type="operand" style="unit">V</e>
         <e type="operator" args="2">*</e>
@@ -508,28 +228,28 @@
         <e type="operator" args="2">:</e>
       </input>
       <result action="numeric">
-        <e type="operand">0.1289</e>
+        <e type="operand">0.0781</e>
         <e type="operand" style="unit">A</e>
         <e type="operator" args="2">*</e>
       </result>
     </math>
   </region>
-  <region id="55" left="36" top="4671" width="299" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="31" left="36" top="2016" width="479" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
-      <p>This is twice the max DVDD current.</p>
+      <p>This leaves some headroom on the 60mA max supply current.</p>
     </text>
   </region>
-  <region id="56" left="36" top="5112" width="550" height="31" color="#004080" bgColor="#ffffff" fontSize="14">
+  <region id="32" left="36" top="2052" width="550" height="31" color="#004080" bgColor="#ffffff" fontSize="14">
     <text lang="eng">
       <p>ADM13307 Voltage Supervisor - Reset Generation </p>
     </text>
   </region>
-  <region id="57" left="36" top="5139" width="701" height="120" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="33" left="36" top="2079" width="701" height="120" color="#000000" bgColor="#ffffff" fontSize="10">
     <text lang="eng">
       <p>The ADM13307 is a three supply volage monitor for generating a reset signal. Usingthe ADM13307-5ARZ1 part will allow monitoring of the two 3v3 rails and the 1v2 rail.SENSE1 is fixed at 3v3 and will monitor VPP (fast startup 3v3). The device is alsopowered from VPP but operates down to 2V.SENSE2 is adjustable and senses 0.6V, this will monitor VAA (slow startup 3v3).</p>
     </text>
   </region>
-  <region id="58" left="36" top="5274" width="181" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="34" left="36" top="2214" width="181" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE2_Vmon_Real</e>
@@ -540,7 +260,7 @@
       </input>
     </math>
   </region>
-  <region id="59" left="36" top="5310" width="131" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="35" left="36" top="2250" width="131" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE2_R2</e>
@@ -551,7 +271,7 @@
       </input>
     </math>
   </region>
-  <region id="60" left="36" top="5346" width="493" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="36" left="36" top="2286" width="493" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE2_R1</e>
@@ -574,7 +294,7 @@
       </result>
     </math>
   </region>
-  <region id="61" left="36" top="5400" width="205" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="37" left="36" top="2340" width="205" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE_Vref_Min</e>
@@ -585,7 +305,7 @@
       </input>
     </math>
   </region>
-  <region id="62" left="36" top="5427" width="493" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="38" left="36" top="2367" width="493" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE2_Vmin</e>
@@ -606,7 +326,7 @@
       </result>
     </math>
   </region>
-  <region id="63" left="36" top="5472" width="359" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="39" left="36" top="2412" width="359" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE2_V</e>
@@ -629,7 +349,7 @@
       </result>
     </math>
   </region>
-  <region id="64" left="36" top="5553" width="441" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="40" left="36" top="2493" width="441" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE2_Vmax</e>
@@ -652,7 +372,7 @@
       </result>
     </math>
   </region>
-  <region id="65" left="36" top="5643" width="206" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="41" left="36" top="2583" width="206" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE3_Vmon_Real</e>
@@ -663,7 +383,7 @@
       </input>
     </math>
   </region>
-  <region id="66" left="36" top="5679" width="148" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="42" left="36" top="2619" width="148" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE3_R2</e>
@@ -674,7 +394,7 @@
       </input>
     </math>
   </region>
-  <region id="67" left="36" top="5715" width="485" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="43" left="36" top="2655" width="485" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE3_R1</e>
@@ -697,7 +417,7 @@
       </result>
     </math>
   </region>
-  <region id="68" left="36" top="5769" width="189" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="44" left="36" top="2709" width="189" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSR3_R1_Real</e>
@@ -708,7 +428,7 @@
       </input>
     </math>
   </region>
-  <region id="69" left="36" top="5805" width="205" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="45" left="36" top="2745" width="205" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE_Vref_Min</e>
@@ -719,7 +439,7 @@
       </input>
     </math>
   </region>
-  <region id="70" left="36" top="5850" width="534" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="46" left="36" top="2790" width="534" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE2_Vmin</e>
@@ -740,7 +460,7 @@
       </result>
     </math>
   </region>
-  <region id="71" left="36" top="5913" width="441" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="47" left="36" top="2853" width="441" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE2_V</e>
@@ -763,7 +483,7 @@
       </result>
     </math>
   </region>
-  <region id="72" left="36" top="5976" width="474" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="48" left="36" top="2916" width="474" height="43" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">SENSE2_Vmax</e>
