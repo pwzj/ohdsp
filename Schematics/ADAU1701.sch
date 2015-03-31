@@ -78,17 +78,6 @@ F 3 "~" H 2800 1650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C219
-U 1 1 54DAD63D
-P 3050 1650
-F 0 "C219" H 3050 1750 40  0000 L CNN
-F 1 "10n" H 3056 1565 40  0000 L CNN
-F 2 "OHDSP-Footprints-Pretty:SMD-0805" H 3088 1500 30  0001 C CNN
-F 3 "~" H 3050 1650 60  0000 C CNN
-	1    3050 1650
-	1    0    0    -1  
-$EndComp
-$Comp
 L C C216
 U 1 1 54DAD7E6
 P 2250 1650
@@ -130,17 +119,6 @@ F 1 "100n" H 3606 1565 40  0000 L CNN
 F 2 "OHDSP-Footprints-Pretty:SMD-0805" H 3638 1500 30  0001 C CNN
 F 3 "~" H 3600 1650 60  0000 C CNN
 	1    3600 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C222
-U 1 1 54DAE4B8
-P 3850 1650
-F 0 "C222" H 3850 1750 40  0000 L CNN
-F 1 "10n" H 3856 1565 40  0000 L CNN
-F 2 "OHDSP-Footprints-Pretty:SMD-0805" H 3888 1500 30  0001 C CNN
-F 3 "~" H 3850 1650 60  0000 C CNN
-	1    3850 1650
 	1    0    0    -1  
 $EndComp
 Text Label 7700 3150 3    60   ~ 0
@@ -1733,8 +1711,6 @@ Connection ~ 2250 2150
 Wire Wire Line
 	2800 2150 2800 1850
 Connection ~ 2550 2150
-Wire Wire Line
-	3050 2150 3050 1850
 Connection ~ 2800 2150
 Wire Wire Line
 	2550 1050 2550 1450
@@ -1742,8 +1718,6 @@ Connection ~ 2250 1050
 Wire Wire Line
 	2800 1050 2800 1450
 Connection ~ 2550 1050
-Wire Wire Line
-	3050 1050 3050 1450
 Connection ~ 2800 1050
 Wire Wire Line
 	3350 2150 3350 1850
@@ -1751,18 +1725,11 @@ Wire Wire Line
 	3600 2150 3600 1850
 Connection ~ 3350 2150
 Wire Wire Line
-	3850 2150 3850 1850
-Connection ~ 3600 2150
-Wire Wire Line
 	3350 1050 3350 1450
 Wire Wire Line
 	3600 1050 3600 1450
 Connection ~ 3350 1050
-Wire Wire Line
-	3850 1050 3850 1450
 Connection ~ 3600 1050
-Connection ~ 3050 1050
-Connection ~ 3050 2150
 Wire Wire Line
 	800  900  800  1050
 Wire Wire Line
@@ -2043,8 +2010,6 @@ Wire Wire Line
 	7850 3550 7850 3650
 Wire Wire Line
 	1500 1050 3850 1050
-Wire Wire Line
-	1600 2150 3850 2150
 Wire Wire Line
 	6750 3550 6950 3550
 Wire Wire Line
@@ -2428,4 +2393,6 @@ Wire Wire Line
 	9600 6200 10000 6200
 Wire Wire Line
 	7250 2150 7900 2150
+Wire Wire Line
+	1600 2150 3600 2150
 $EndSCHEMATC
