@@ -1531,7 +1531,7 @@ $EndComp
 Text Notes 11850 10550 0    59   ~ 0
 Copyright Paul Janicki 2015\n\nLicensed under the TAPR Open Hardware License (www.tapr.org/OHL).\n\nThis documentation is distributed\nWITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF\nMERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A\nPARTICULAR PURPOSE.\n
 Text HLabel 5700 2300 0    60   Output ~ 0
-MRST
+PI_RST_OUT
 $Comp
 L CONN_02X05 P605
 U 1 1 54FF1EBC
