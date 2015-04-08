@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:/repo/ohdsp/Schematics/OHDSP-ADAU1701.sch)
-    (date "6/4/2015 8:33:25 PM")
+    (date "8/4/2015 8:29:45 PM")
     (tool "Eeschema (after 2015-mar-04 BZR unknown)-product")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -613,6 +613,7 @@
       (tstamp 551E0C1B))
     (comp (ref U201)
       (value IC-RST-ADM811)
+      (footprint OHDSP-Footprints-Pretty:IC-SOT143)
       (libsource (lib OHDSP-Lib) (part IC-RST-ADM811))
       (sheetpath (names /ADAU1701/) (tstamps /54BE4270/))
       (tstamp 55228CE6))
@@ -1104,7 +1105,7 @@
       (tstamp 551A731F))
     (comp (ref P504)
       (value CONN_02X05)
-      (footprint OHDSP-Footprints-Pretty:CONN_DIL_2X5)
+      (footprint OHDSP-Footprints-Pretty:CONN_DIL_2X5_BOX)
       (libsource (lib OHDSP-Lib) (part CONN_02X05))
       (sheetpath (names /Connectors/) (tstamps /54E8D6A6/))
       (tstamp 54DC056C))
@@ -1248,7 +1249,7 @@
       (tstamp 54E95681))
     (comp (ref P502)
       (value CONN_02X05)
-      (footprint OHDSP-Footprints-Pretty:CONN_DIL_2X5)
+      (footprint OHDSP-Footprints-Pretty:CONN_DIL_2X5_BOX)
       (libsource (lib OHDSP-Lib) (part CONN_02X05))
       (sheetpath (names /Connectors/) (tstamps /54E8D6A6/))
       (tstamp 54E480C2))
@@ -1260,7 +1261,7 @@
       (tstamp 54E4AF9E))
     (comp (ref P503)
       (value CONN_02X05)
-      (footprint OHDSP-Footprints-Pretty:CONN_DIL_2X5)
+      (footprint OHDSP-Footprints-Pretty:CONN_DIL_2X5_BOX)
       (libsource (lib OHDSP-Lib) (part CONN_02X05))
       (sheetpath (names /Connectors/) (tstamps /54E8D6A6/))
       (tstamp 54E55D44))
@@ -1512,7 +1513,7 @@
       (tstamp 5515F104))
     (comp (ref P501)
       (value CONN_02X10)
-      (footprint OHDSP-Footprints-Pretty:CONN_DIL_2X10)
+      (footprint OHDSP-Footprints-Pretty:CONN_DIL_2X10_BOX)
       (libsource (lib OHDSP-Lib) (part CONN_02X10))
       (sheetpath (names /Connectors/) (tstamps /54E8D6A6/))
       (tstamp 55141641))
@@ -1530,7 +1531,7 @@
       (tstamp 55143882))
     (comp (ref P505)
       (value CONN_02X10)
-      (footprint OHDSP-Footprints-Pretty:CONN_DIL_2X10)
+      (footprint OHDSP-Footprints-Pretty:CONN_DIL_2X10_BOX)
       (libsource (lib OHDSP-Lib) (part CONN_02X10))
       (sheetpath (names /Connectors/) (tstamps /54E8D6A6/))
       (tstamp 55145E3E))
@@ -1655,6 +1656,135 @@
       (sheetpath (names /Connectors/) (tstamps /54E8D6A6/))
       (tstamp 551C6570)))
   (libparts
+    (libpart (lib OHDSP-Lib) (part SWITCH)
+      (fields
+        (field (name Reference) SW)
+        (field (name Value) SWITCH))
+      (pins
+        (pin (num 1) (name 1) (type input))
+        (pin (num 2) (name 2) (type input))))
+    (libpart (lib OHDSP-Lib) (part IC-RST-ADM811)
+      (fields
+        (field (name Reference) U)
+        (field (name Value) IC-RST-ADM811))
+      (pins
+        (pin (num 1) (name GND) (type input))
+        (pin (num 2) (name ~RESET) (type input))
+        (pin (num 3) (name ~MR) (type input))
+        (pin (num 4) (name Vcc) (type input))))
+    (libpart (lib OHDSP-Lib) (part IC-REG-NCP700B)
+      (fields
+        (field (name Reference) U)
+        (field (name Value) IC-REG-NCP700B))
+      (pins
+        (pin (num 1) (name IN) (type input))
+        (pin (num 2) (name GND) (type input))
+        (pin (num 3) (name EN) (type input))
+        (pin (num 4) (name BYP) (type input))
+        (pin (num 5) (name OUT) (type input))))
+    (libpart (lib OHDSP-Lib) (part IC-REG-LT1374/6)
+      (fields
+        (field (name Reference) U)
+        (field (name Value) IC-REG-LT1374/6))
+      (pins
+        (pin (num 1) (name VIN) (type input))
+        (pin (num 2) (name BOOST) (type input))
+        (pin (num 3) (name FB/SENSE) (type input))
+        (pin (num 4) (name FGND) (type input))
+        (pin (num 5) (name BIAS) (type input))
+        (pin (num 6) (name Vc) (type input))
+        (pin (num 7) (name SYNC/~SHDN) (type input))
+        (pin (num 8) (name Vsw) (type input))))
+    (libpart (lib OHDSP-Lib) (part LED)
+      (footprints
+        (fp LED-3MM)
+        (fp LED-5MM)
+        (fp LED-10MM)
+        (fp LED-0603)
+        (fp LED-0805)
+        (fp LED-1206)
+        (fp LEDV))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) LED))
+      (pins
+        (pin (num 1) (name A) (type passive))
+        (pin (num 2) (name K) (type passive))))
+    (libpart (lib OHDSP-Lib) (part INDUCTOR)
+      (fields
+        (field (name Reference) L)
+        (field (name Value) INDUCTOR))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))))
+    (libpart (lib OHDSP-Lib) (part R)
+      (footprints
+        (fp R?)
+        (fp SM0603)
+        (fp SM0805)
+        (fp R?-*)
+        (fp SM1206))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) R))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib OHDSP-Lib) (part SCHOTTKY_DIODE)
+      (footprints
+        (fp D?)
+        (fp S*))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) SCHOTTKY_DIODE))
+      (pins
+        (pin (num 1) (name A) (type passive))
+        (pin (num 2) (name K) (type passive))))
+    (libpart (lib OHDSP-Lib) (part PIN)
+      (fields
+        (field (name Reference) P)
+        (field (name Value) PIN))
+      (pins
+        (pin (num 1) (name P1) (type passive))))
+    (libpart (lib OHDSP-Lib) (part XTAL-OSC-4PIN)
+      (fields
+        (field (name Reference) XTAL)
+        (field (name Value) XTAL-OSC-4PIN))
+      (pins
+        (pin (num 1) (name EN/NC) (type input))
+        (pin (num 2) (name GND) (type input))
+        (pin (num 3) (name OUT) (type input))
+        (pin (num 4) (name Vdd) (type input))))
+    (libpart (lib OHDSP-Lib) (part TRAN-PNP-BC857)
+      (fields
+        (field (name Reference) TR)
+        (field (name Value) TRAN-PNP-BC857))
+      (pins
+        (pin (num 1) (name ~) (type input))
+        (pin (num 2) (name ~) (type input))
+        (pin (num 3) (name ~) (type input))))
+    (libpart (lib OHDSP-Lib) (part TRAN-NPN-BC847)
+      (fields
+        (field (name Reference) TR)
+        (field (name Value) TRAN-NPN-BC847))
+      (pins
+        (pin (num 1) (name ~) (type input))
+        (pin (num 2) (name ~) (type input))
+        (pin (num 3) (name ~) (type input))))
+    (libpart (lib OHDSP-Lib) (part DIODE)
+      (fields
+        (field (name Reference) D)
+        (field (name Value) DIODE))
+      (pins
+        (pin (num 1) (name A) (type passive))
+        (pin (num 2) (name K) (type passive))))
+    (libpart (lib OHDSP-Lib) (part CONN_2x1)
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_2x1))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))))
     (libpart (lib OHDSP-Lib) (part C)
       (footprints
         (fp SM*)
@@ -1666,43 +1796,6 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
-    (libpart (lib OHDSP-Lib) (part COAX)
-      (fields
-        (field (name Reference) CN)
-        (field (name Value) COAX))
-      (pins
-        (pin (num 1) (name ~) (type input))
-        (pin (num 2) (name ~) (type input))))
-    (libpart (lib OHDSP-Lib) (part CONN_02X10)
-      (footprints
-        (fp Pin_Header_Straight_2X20)
-        (fp Pin_Header_Angled_2X20)
-        (fp Socket_Strip_Straight_2X20)
-        (fp Socket_Strip_Angled_2X20))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_02X10))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))
-        (pin (num 3) (name P3) (type passive))
-        (pin (num 4) (name P4) (type passive))
-        (pin (num 5) (name P5) (type passive))
-        (pin (num 6) (name P6) (type passive))
-        (pin (num 7) (name P7) (type passive))
-        (pin (num 8) (name P8) (type passive))
-        (pin (num 9) (name P9) (type passive))
-        (pin (num 10) (name P10) (type passive))
-        (pin (num 11) (name P11) (type passive))
-        (pin (num 12) (name P12) (type passive))
-        (pin (num 13) (name P13) (type passive))
-        (pin (num 14) (name P14) (type passive))
-        (pin (num 15) (name P15) (type passive))
-        (pin (num 16) (name P16) (type passive))
-        (pin (num 17) (name P17) (type passive))
-        (pin (num 18) (name P18) (type passive))
-        (pin (num 19) (name P19) (type passive))
-        (pin (num 20) (name P20) (type passive))))
     (libpart (lib OHDSP-Lib) (part CONN_02X05)
       (footprints
         (fp Pin_Header_Straight_2X05)
@@ -1773,13 +1866,13 @@
         (pin (num 38) (name P38) (type passive))
         (pin (num 39) (name P39) (type passive))
         (pin (num 40) (name P40) (type passive))))
-    (libpart (lib OHDSP-Lib) (part DIODE)
+    (libpart (lib OHDSP-Lib) (part COAX)
       (fields
-        (field (name Reference) D)
-        (field (name Value) DIODE))
+        (field (name Reference) CN)
+        (field (name Value) COAX))
       (pins
-        (pin (num 1) (name A) (type passive))
-        (pin (num 2) (name K) (type passive))))
+        (pin (num 1) (name ~) (type input))
+        (pin (num 2) (name ~) (type input))))
     (libpart (lib OHDSP-Lib) (part CP1)
       (footprints
         (fp CP*)
@@ -1790,26 +1883,6 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
-    (libpart (lib OHDSP-Lib) (part CONN_2x1)
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_2x1))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))))
-    (libpart (lib OHDSP-Lib) (part IC-CLK-FANOUT-NB3L553)
-      (fields
-        (field (name Reference) U)
-        (field (name Value) IC-CLK-FANOUT-NB3L553))
-      (pins
-        (pin (num 1) (name Vdd) (type input))
-        (pin (num 2) (name Q0) (type input))
-        (pin (num 3) (name Q1) (type input))
-        (pin (num 4) (name GND) (type input))
-        (pin (num 5) (name ICLK) (type input))
-        (pin (num 6) (name Q2) (type input))
-        (pin (num 7) (name Q3) (type input))
-        (pin (num 8) (name OE) (type input))))
     (libpart (lib OHDSP-Lib) (part IC-DSP-ADAU1701JSTZ)
       (fields
         (field (name Reference) U)
@@ -1876,121 +1949,49 @@
         (pin (num 6) (name SCL) (type input))
         (pin (num 7) (name WP) (type input))
         (pin (num 8) (name Vcc) (type input))))
-    (libpart (lib OHDSP-Lib) (part IC-REG-LT1374/6)
-      (fields
-        (field (name Reference) U)
-        (field (name Value) IC-REG-LT1374/6))
-      (pins
-        (pin (num 1) (name VIN) (type input))
-        (pin (num 2) (name BOOST) (type input))
-        (pin (num 3) (name FB/SENSE) (type input))
-        (pin (num 4) (name FGND) (type input))
-        (pin (num 5) (name BIAS) (type input))
-        (pin (num 6) (name Vc) (type input))
-        (pin (num 7) (name SYNC/~SHDN) (type input))
-        (pin (num 8) (name Vsw) (type input))))
-    (libpart (lib OHDSP-Lib) (part IC-REG-NCP700B)
-      (fields
-        (field (name Reference) U)
-        (field (name Value) IC-REG-NCP700B))
-      (pins
-        (pin (num 1) (name IN) (type input))
-        (pin (num 2) (name GND) (type input))
-        (pin (num 3) (name EN) (type input))
-        (pin (num 4) (name BYP) (type input))
-        (pin (num 5) (name OUT) (type input))))
-    (libpart (lib OHDSP-Lib) (part SWITCH)
-      (fields
-        (field (name Reference) SW)
-        (field (name Value) SWITCH))
-      (pins
-        (pin (num 1) (name 1) (type input))
-        (pin (num 2) (name 2) (type input))))
-    (libpart (lib OHDSP-Lib) (part R)
+    (libpart (lib OHDSP-Lib) (part CONN_02X10)
       (footprints
-        (fp R?)
-        (fp SM0603)
-        (fp SM0805)
-        (fp R?-*)
-        (fp SM1206))
-      (fields
-        (field (name Reference) R)
-        (field (name Value) R))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
-    (libpart (lib OHDSP-Lib) (part XTAL-OSC-4PIN)
-      (fields
-        (field (name Reference) XTAL)
-        (field (name Value) XTAL-OSC-4PIN))
-      (pins
-        (pin (num 1) (name EN/NC) (type input))
-        (pin (num 2) (name GND) (type input))
-        (pin (num 3) (name OUT) (type input))
-        (pin (num 4) (name Vdd) (type input))))
-    (libpart (lib OHDSP-Lib) (part TRAN-NPN-BC847)
-      (fields
-        (field (name Reference) TR)
-        (field (name Value) TRAN-NPN-BC847))
-      (pins
-        (pin (num 1) (name ~) (type input))
-        (pin (num 2) (name ~) (type input))
-        (pin (num 3) (name ~) (type input))))
-    (libpart (lib OHDSP-Lib) (part PIN)
+        (fp Pin_Header_Straight_2X20)
+        (fp Pin_Header_Angled_2X20)
+        (fp Socket_Strip_Straight_2X20)
+        (fp Socket_Strip_Angled_2X20))
       (fields
         (field (name Reference) P)
-        (field (name Value) PIN))
+        (field (name Value) CONN_02X10))
       (pins
-        (pin (num 1) (name P1) (type passive))))
-    (libpart (lib OHDSP-Lib) (part INDUCTOR)
-      (fields
-        (field (name Reference) L)
-        (field (name Value) INDUCTOR))
-      (pins
-        (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))))
-    (libpart (lib OHDSP-Lib) (part IC-RST-ADM811)
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))
+        (pin (num 3) (name P3) (type passive))
+        (pin (num 4) (name P4) (type passive))
+        (pin (num 5) (name P5) (type passive))
+        (pin (num 6) (name P6) (type passive))
+        (pin (num 7) (name P7) (type passive))
+        (pin (num 8) (name P8) (type passive))
+        (pin (num 9) (name P9) (type passive))
+        (pin (num 10) (name P10) (type passive))
+        (pin (num 11) (name P11) (type passive))
+        (pin (num 12) (name P12) (type passive))
+        (pin (num 13) (name P13) (type passive))
+        (pin (num 14) (name P14) (type passive))
+        (pin (num 15) (name P15) (type passive))
+        (pin (num 16) (name P16) (type passive))
+        (pin (num 17) (name P17) (type passive))
+        (pin (num 18) (name P18) (type passive))
+        (pin (num 19) (name P19) (type passive))
+        (pin (num 20) (name P20) (type passive))))
+    (libpart (lib OHDSP-Lib) (part IC-CLK-FANOUT-NB3L553)
       (fields
         (field (name Reference) U)
-        (field (name Value) IC-RST-ADM811))
+        (field (name Value) IC-CLK-FANOUT-NB3L553))
       (pins
-        (pin (num 1) (name GND) (type input))
-        (pin (num 2) (name ~RESET) (type input))
-        (pin (num 3) (name ~MR) (type input))
-        (pin (num 4) (name Vcc) (type input))))
-    (libpart (lib OHDSP-Lib) (part TRAN-PNP-BC857)
-      (fields
-        (field (name Reference) TR)
-        (field (name Value) TRAN-PNP-BC857))
-      (pins
-        (pin (num 1) (name ~) (type input))
-        (pin (num 2) (name ~) (type input))
-        (pin (num 3) (name ~) (type input))))
-    (libpart (lib OHDSP-Lib) (part SCHOTTKY_DIODE)
-      (footprints
-        (fp D?)
-        (fp S*))
-      (fields
-        (field (name Reference) D)
-        (field (name Value) SCHOTTKY_DIODE))
-      (pins
-        (pin (num 1) (name A) (type passive))
-        (pin (num 2) (name K) (type passive))))
-    (libpart (lib OHDSP-Lib) (part LED)
-      (footprints
-        (fp LED-3MM)
-        (fp LED-5MM)
-        (fp LED-10MM)
-        (fp LED-0603)
-        (fp LED-0805)
-        (fp LED-1206)
-        (fp LEDV))
-      (fields
-        (field (name Reference) D)
-        (field (name Value) LED))
-      (pins
-        (pin (num 1) (name A) (type passive))
-        (pin (num 2) (name K) (type passive)))))
+        (pin (num 1) (name Vdd) (type input))
+        (pin (num 2) (name Q0) (type input))
+        (pin (num 3) (name Q1) (type input))
+        (pin (num 4) (name GND) (type input))
+        (pin (num 5) (name ICLK) (type input))
+        (pin (num 6) (name Q2) (type input))
+        (pin (num 7) (name Q3) (type input))
+        (pin (num 8) (name OE) (type input)))))
   (libraries
     (library (logical OHDSP-Lib)
       (uri C:\repo\ohdsp\Kicad-Libs\OHDSP-Lib.lib)))
