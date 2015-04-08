@@ -1,10 +1,15 @@
-(module CONN_DIL_2X10 (layer F.Cu) (tedit 5513FBB6)
-  (fp_text reference VAL** (at -3.556 9.779 90) (layer F.SilkS)
+(module CONN_DIL_2X10_BOX (layer F.Cu) (tedit 552572F6)
+  (fp_text reference VAL** (at -5.5 13.5 90) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.15)))
   )
-  (fp_text value CONN_DIL_2X10 (at -3.556 -3.81 90) (layer F.SilkS) hide
+  (fp_text value CONN_DIL_2X10_BOX (at -5.5 -5 90) (layer F.SilkS) hide
     (effects (font (size 1.5 1.5) (thickness 0.15)))
   )
+  (fp_line (start 0 -16.5) (end -4.5 -16.5) (layer F.SilkS) (width 0.15))
+  (fp_line (start -4.5 -16.5) (end -4.5 16.5) (layer F.SilkS) (width 0.15))
+  (fp_line (start -4.5 16.5) (end 4.5 16.5) (layer F.SilkS) (width 0.15))
+  (fp_line (start 4.5 16.5) (end 4.5 -16.5) (layer F.SilkS) (width 0.15))
+  (fp_line (start 4.5 -16.5) (end 0 -16.5) (layer F.SilkS) (width 0.15))
   (fp_line (start -2.413 -12.573) (end -2.413 12.7) (layer F.SilkS) (width 0.15))
   (fp_line (start 2.413 12.7) (end 2.413 -12.573) (layer F.SilkS) (width 0.15))
   (fp_line (start -2.413 -12.573) (end 2.413 -12.573) (layer F.SilkS) (width 0.15))
