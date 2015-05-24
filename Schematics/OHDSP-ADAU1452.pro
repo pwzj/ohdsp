@@ -1,4 +1,4 @@
-update=10/03/2015 12:24:43
+update=24/05/2015 12:30:24
 version=1
 last_client=kicad
 [cvpcb]
@@ -30,12 +30,12 @@ LabSize=60
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=
-UseCmpFile=1
-PadDrill=1
-PadDrillOvalY=1
-PadSizeH=1.8
-PadSizeV=1.8
+LastNetListRead=OHDSP-ADAU1452.net
+UseCmpFile=0
+PadDrill=45
+PadDrillOvalY=45
+PadSizeH=45
+PadSizeV=2
 PcbTextSizeV=1.5
 PcbTextSizeH=1.5
 PcbTextThickness=0.3

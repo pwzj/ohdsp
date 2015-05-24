@@ -6,7 +6,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 6
 Title ""
 Date "10 feb 2015"
 Rev ""
@@ -64,13 +64,6 @@ S 8900 1100 1650 1500
 U 54DA50D9
 F0 "ADAU1452 PSU" 60
 F1 "ADAU1452 PSU.sch" 60
-$EndSheet
-$Sheet
-S 8950 4800 1650 1200
-U 54E20ECF
-F0 "ClockFanout" 60
-F1 "ClockFanout.sch" 60
-F2 "MCLK_IN" I L 8950 5000 60 
 $EndSheet
 $Sheet
 S 9100 3200 1300 1100
@@ -216,6 +209,7 @@ F33 "DAC_SDATA3" I R 5650 5250 60
 F34 "PI_RST_OUT" O R 5650 6200 60 
 F35 "~USB_RST" O L 3300 6200 60 
 F36 "RST_DACADC" I R 5650 5900 60 
+F37 "MCLK_IN" I R 5650 6050 60 
 $EndSheet
 Text Label 2650 4000 0    60   ~ 0
 IN_LRCLK0
@@ -357,10 +351,6 @@ Text Label 6250 3400 2    60   ~ 0
 MCLK
 Wire Wire Line
 	5650 3400 6250 3400
-Text Label 8600 5000 0    60   ~ 0
-MCLK
-Wire Wire Line
-	8600 5000 8950 5000
 Text Label 6250 2750 2    60   ~ 0
 SDA
 Text Label 6250 2850 2    60   ~ 0
@@ -429,4 +419,8 @@ Text Label 6250 5900 2    60   ~ 0
 GLB_RESET
 Wire Wire Line
 	6250 5900 5650 5900
+Text Label 6250 6050 2    60   ~ 0
+MCLK
+Wire Wire Line
+	5650 6050 6250 6050
 $EndSCHEMATC
