@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (after 2015-may-01 BZR unknown)-product   date = 26/05/2015 15:47:45
+Cmp-Mod V01 Created by Cvpcb (after 2015-may-01 BZR unknown)-product   date = 26/05/2015 16:33:28
 
 BeginCmp
 TimeStamp = /54BE4270/54E2687A;
@@ -291,7 +291,7 @@ BeginCmp
 TimeStamp = /54BE4270/54DB3007;
 Reference = C242;
 ValeurCmp = 100n;
-IdModule  = OHDSP-Footprints-Pretty:SMD-0805;
+IdModule  = OHDSP-Footprints-Pretty:SMD-0603;
 EndCmp
 
 BeginCmp
@@ -340,7 +340,7 @@ BeginCmp
 TimeStamp = /54BE4270/54DB3C8F;
 Reference = C249;
 ValeurCmp = 100n;
-IdModule  = OHDSP-Footprints-Pretty:SMD-0805;
+IdModule  = OHDSP-Footprints-Pretty:SMD-0603;
 EndCmp
 
 BeginCmp

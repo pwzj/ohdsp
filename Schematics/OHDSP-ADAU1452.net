@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:/repo/ohdsp/Schematics/OHDSP-ADAU1452.sch)
-    (date "26/05/2015 15:47:51")
+    (date "26/05/2015 16:33:34")
     (tool "Eeschema (after 2015-may-01 BZR unknown)-product")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -282,7 +282,7 @@
       (tstamp 54DB2FE6))
     (comp (ref C242)
       (value 100n)
-      (footprint OHDSP-Footprints-Pretty:SMD-0805)
+      (footprint OHDSP-Footprints-Pretty:SMD-0603)
       (libsource (lib OHDSP-Lib) (part C))
       (sheetpath (names /ADAU1452/) (tstamps /54BE4270/))
       (tstamp 54DB3007))
@@ -312,7 +312,7 @@
       (tstamp 54DB3C68))
     (comp (ref C249)
       (value 100n)
-      (footprint OHDSP-Footprints-Pretty:SMD-0805)
+      (footprint OHDSP-Footprints-Pretty:SMD-0603)
       (libsource (lib OHDSP-Lib) (part C))
       (sheetpath (names /ADAU1452/) (tstamps /54BE4270/))
       (tstamp 54DB3C8F))
