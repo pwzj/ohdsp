@@ -2043,9 +2043,9 @@ Text Label 11000 10750 0    60   ~ 0
 MCLKB3
 Text Label 11000 10900 0    60   ~ 0
 MCLKB4
-Text Label 4800 2350 2    60   ~ 0
-MCLKA1
 Text Label 4800 4050 2    60   ~ 0
+MCLKA1
+Text Label 4800 2350 2    60   ~ 0
 MCLKA2
 Text Label 4800 5750 2    60   ~ 0
 MCLKA3
