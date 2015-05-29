@@ -346,17 +346,6 @@ F 3 "~" H 8200 1650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C225
-U 1 1 54DB1F7E
-P 7900 1650
-F 0 "C225" H 7900 1750 40  0000 L CNN
-F 1 "22u" H 7906 1565 40  0000 L CNN
-F 2 "OHDSP-Footprints-Pretty:SMD-0805" H 7938 1500 30  0000 C CNN
-F 3 "~" H 7900 1650 60  0000 C CNN
-	1    7900 1650
-	1    0    0    -1  
-$EndComp
-$Comp
 L C C230
 U 1 1 54DB2327
 P 9050 1650
@@ -492,17 +481,6 @@ F 3 "~" H 12500 1650 60  0000 C CNN
 	1    12500 1650
 	1    0    0    -1  
 $EndComp
-$Comp
-L C C241
-U 1 1 54DB300D
-P 12200 1650
-F 0 "C241" H 12200 1750 40  0000 L CNN
-F 1 "22u" H 12206 1565 40  0000 L CNN
-F 2 "OHDSP-Footprints-Pretty:SMD-0805" H 12238 1500 30  0000 C CNN
-F 3 "~" H 12200 1650 60  0000 C CNN
-	1    12200 1650
-	1    0    0    -1  
-$EndComp
 Text Label 12800 1050 0    60   ~ 0
 PVDD
 $Comp
@@ -569,17 +547,6 @@ F 1 "100n" H 15106 1565 40  0000 L CNN
 F 2 "OHDSP-Footprints-Pretty:SMD-0603" H 15138 1500 30  0000 C CNN
 F 3 "~" H 15100 1650 60  0000 C CNN
 	1    15100 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C248
-U 1 1 54DB3C95
-P 14800 1650
-F 0 "C248" H 14800 1750 40  0000 L CNN
-F 1 "22u" H 14806 1565 40  0000 L CNN
-F 2 "OHDSP-Footprints-Pretty:SMD-0805" H 14838 1500 30  0000 C CNN
-F 3 "~" H 14800 1650 60  0000 C CNN
-	1    14800 1650
 	1    0    0    -1  
 $EndComp
 Text Label 15400 1050 0    60   ~ 0
@@ -1741,10 +1708,7 @@ Wire Wire Line
 Wire Wire Line
 	7550 1050 7550 1450
 Connection ~ 7200 1050
-Wire Wire Line
-	7900 1050 7900 1450
 Connection ~ 7550 1050
-Connection ~ 7900 1050
 Wire Wire Line
 	7200 2100 7200 2200
 Wire Wire Line
@@ -1752,10 +1716,7 @@ Wire Wire Line
 Wire Wire Line
 	7550 2150 7550 1850
 Connection ~ 7200 2150
-Wire Wire Line
-	7900 2150 7900 1850
 Connection ~ 7550 2150
-Connection ~ 7900 2150
 Wire Wire Line
 	8200 1050 8200 1450
 Wire Wire Line
@@ -1834,19 +1795,13 @@ Wire Wire Line
 Wire Wire Line
 	11850 1050 11850 1450
 Connection ~ 11500 1050
-Wire Wire Line
-	12200 1050 12200 1450
 Connection ~ 11850 1050
-Connection ~ 12200 1050
 Wire Wire Line
 	11500 2100 11500 2200
 Wire Wire Line
 	11850 2150 11850 1850
 Connection ~ 11500 2150
-Wire Wire Line
-	12200 2150 12200 1850
 Connection ~ 11850 2150
-Connection ~ 12200 2150
 Wire Wire Line
 	12500 1050 12500 1450
 Wire Wire Line
@@ -1865,19 +1820,13 @@ Wire Wire Line
 Wire Wire Line
 	14450 1050 14450 1450
 Connection ~ 14100 1050
-Wire Wire Line
-	14800 1050 14800 1450
 Connection ~ 14450 1050
-Connection ~ 14800 1050
 Wire Wire Line
 	14100 2100 14100 2200
 Wire Wire Line
 	14450 2150 14450 1850
 Connection ~ 14100 2150
-Wire Wire Line
-	14800 2150 14800 1850
 Connection ~ 14450 2150
-Connection ~ 14800 2150
 Wire Wire Line
 	15100 1050 15100 1450
 Wire Wire Line
