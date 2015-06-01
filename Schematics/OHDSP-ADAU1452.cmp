@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (after 2015-may-01 BZR unknown)-product   date = 29/05/2015 14:16:39
+Cmp-Mod V01 Created by Cvpcb (after 2015-may-01 BZR unknown)-product   date = 01/06/2015 10:10:27
 
 BeginCmp
 TimeStamp = /54BE4270/54E2687A;
@@ -470,22 +470,8 @@ IdModule  = OHDSP-Footprints-Pretty:SMD-0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /54DA50D9/54D8E050;
-Reference = C320;
-ValeurCmp = 22u;
-IdModule  = OHDSP-Footprints-Pretty:SMD-0805;
-EndCmp
-
-BeginCmp
 TimeStamp = /54DA50D9/54D8DD89;
 Reference = C321;
-ValeurCmp = 100n;
-IdModule  = OHDSP-Footprints-Pretty:SMD-0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /54DA50D9/54D8E05C;
-Reference = C322;
 ValeurCmp = 100n;
 IdModule  = OHDSP-Footprints-Pretty:SMD-0805;
 EndCmp
@@ -498,22 +484,8 @@ IdModule  = OHDSP-Footprints-Pretty:SMD-0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /54DA50D9/54E3F121;
-Reference = C324;
-ValeurCmp = 10n;
-IdModule  = OHDSP-Footprints-Pretty:SMD-0805;
-EndCmp
-
-BeginCmp
 TimeStamp = /54DA50D9/54D8DF05;
 Reference = C325;
-ValeurCmp = 100n;
-IdModule  = OHDSP-Footprints-Pretty:SMD-0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /54DA50D9/54D8E075;
-Reference = C326;
 ValeurCmp = 100n;
 IdModule  = OHDSP-Footprints-Pretty:SMD-0805;
 EndCmp
@@ -526,23 +498,9 @@ IdModule  = OHDSP-Footprints-Pretty:SMD-0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /54DA50D9/54D8E056;
-Reference = C328;
-ValeurCmp = 22u;
-IdModule  = OHDSP-Footprints-Pretty:SMD-0805;
-EndCmp
-
-BeginCmp
 TimeStamp = /54DA50D9/54D8DEFF;
 Reference = C329;
-ValeurCmp = 100u;
-IdModule  = OHDSP-Footprints-Pretty:CAP-TH-D6.3mmP2.5mm;
-EndCmp
-
-BeginCmp
-TimeStamp = /54DA50D9/54D8E06F;
-Reference = C330;
-ValeurCmp = 100u;
+ValeurCmp = 220u;
 IdModule  = OHDSP-Footprints-Pretty:CAP-TH-D6.3mmP2.5mm;
 EndCmp
 
@@ -1215,14 +1173,14 @@ BeginCmp
 TimeStamp = /54E8D6A6/54DC056C;
 Reference = P507;
 ValeurCmp = CONN_02X05;
-IdModule  = OHDSP-Footprints-Pretty:CONN_DIL_2X5;
+IdModule  = OHDSP-Footprints-Pretty:CONN_DIL_2X5_BOX;
 EndCmp
 
 BeginCmp
-TimeStamp = /54E8D6A6/54E480C2;
+TimeStamp = /54E8D6A6/556C65A2;
 Reference = P508;
-ValeurCmp = CONN_02X05;
-IdModule  = OHDSP-Footprints-Pretty:CONN_DIL_2X5;
+ValeurCmp = CONN_4x1;
+IdModule  = OHDSP-Footprints-Pretty:CONN_SIL_4;
 EndCmp
 
 BeginCmp
@@ -1247,10 +1205,10 @@ IdModule  = OHDSP-Footprints-Pretty:CONN_DIL_2X5;
 EndCmp
 
 BeginCmp
-TimeStamp = /54E8D6A6/54E55D44;
+TimeStamp = /54E8D6A6/556C821A;
 Reference = P512;
-ValeurCmp = CONN_02X05;
-IdModule  = OHDSP-Footprints-Pretty:CONN_DIL_2X5;
+ValeurCmp = CONN_4x1;
+IdModule  = OHDSP-Footprints-Pretty:CONN_SIL_4;
 EndCmp
 
 BeginCmp
@@ -1642,13 +1600,6 @@ BeginCmp
 TimeStamp = /54DA50D9/54DA36BB;
 Reference = R310;
 ValeurCmp = 100k;
-IdModule  = OHDSP-Footprints-Pretty:SMD-0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /54DA50D9/54DA35C3;
-Reference = R311;
-ValeurCmp = 10k;
 IdModule  = OHDSP-Footprints-Pretty:SMD-0805;
 EndCmp
 
@@ -2614,13 +2565,6 @@ EndCmp
 BeginCmp
 TimeStamp = /54DA50D9/54D8CF90;
 Reference = U303;
-ValeurCmp = IC-REG-XC6210B332MR;
-IdModule  = OHDSP-Footprints-Pretty:IC-SOT25;
-EndCmp
-
-BeginCmp
-TimeStamp = /54DA50D9/54D8E04A;
-Reference = U304;
 ValeurCmp = IC-REG-XC6210B332MR;
 IdModule  = OHDSP-Footprints-Pretty:IC-SOT25;
 EndCmp
