@@ -1,12 +1,12 @@
 EESchema Schematic File Version 2
 LIBS:power
 LIBS:OHDSP-Lib
-LIBS:OHDSP-ADAU1701-cache
+LIBS:OHDSP-XOVER-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 7
 Title ""
 Date "10 feb 2015"
 Rev ""
@@ -307,4 +307,16 @@ Wire Wire Line
 	4000 3450 3400 3450
 Wire Wire Line
 	950  3450 1600 3450
+$Sheet
+S 5750 1500 1500 1050
+U 5574D2FB
+F0 "PSU" 60
+F1 "PSU.sch" 60
+$EndSheet
+$Sheet
+S 6100 3400 1650 800 
+U 5574D5A4
+F0 "SPDIF" 60
+F1 "SPDIF.sch" 60
+$EndSheet
 $EndSCHEMATC
