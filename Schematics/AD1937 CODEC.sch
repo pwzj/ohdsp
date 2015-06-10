@@ -1,11 +1,12 @@
 EESchema Schematic File Version 2
 LIBS:power
 LIBS:OHDSP-Lib
+LIBS:OHDSP-XOVER-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 6 7
+Sheet 6 9
 Title ""
 Date "10 feb 2015"
 Rev ""
@@ -725,7 +726,7 @@ Connection ~ 14800 6650
 Wire Wire Line
 	15150 6150 15150 6200
 Wire Wire Line
-	13850 6150 15150 6150
+	13850 6150 15250 6150
 Wire Wire Line
 	14800 6150 14800 6200
 Wire Wire Line
@@ -1277,4 +1278,7 @@ Wire Wire Line
 	13350 3200 13350 3650
 Wire Wire Line
 	13350 3650 13250 3650
+Text HLabel 15250 6150 2    60   Output ~ 0
+AD1937_CM
+Connection ~ 15150 6150
 $EndSCHEMATC

@@ -1,11 +1,12 @@
 EESchema Schematic File Version 2
 LIBS:power
 LIBS:OHDSP-Lib
+LIBS:OHDSP-XOVER-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 4 9
 Title ""
 Date "10 feb 2015"
 Rev ""
