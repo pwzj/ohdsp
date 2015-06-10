@@ -6,7 +6,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 9 10
+Sheet 10 10
 Title ""
 Date ""
 Rev ""
@@ -1077,9 +1077,9 @@ Wire Wire Line
 	6300 3600 6500 3600
 Connection ~ 6500 3600
 Text HLabel 2200 1900 0    60   Input ~ 0
-DIGIOUT_1P
+DIGIOUT_5P
 Text HLabel 2200 3950 0    60   Input ~ 0
-DIGIOUT_1N
+DIGIOUT_5N
 $Comp
 L C C?
 U 1 1 557BA221
@@ -2198,9 +2198,9 @@ Wire Wire Line
 	16100 3700 16300 3700
 Connection ~ 16300 3700
 Text HLabel 12000 2000 0    60   Input ~ 0
-DIGIOUT_2P
+DIGIOUT_6P
 Text HLabel 12000 4050 0    60   Input ~ 0
-DIGIOUT_2N
+DIGIOUT_6N
 $Comp
 L C C?
 U 1 1 557BC0B6
@@ -3319,9 +3319,9 @@ Wire Wire Line
 	6350 9650 6550 9650
 Connection ~ 6550 9650
 Text HLabel 2250 7950 0    60   Input ~ 0
-DIGIOUT_3P
+DIGIOUT_7P
 Text HLabel 2250 10000 0    60   Input ~ 0
-DIGIOUT_3N
+DIGIOUT_7N
 $Comp
 L C C?
 U 1 1 557BD5DD
@@ -4440,9 +4440,9 @@ Wire Wire Line
 	16150 9750 16350 9750
 Connection ~ 16350 9750
 Text HLabel 12050 8050 0    60   Input ~ 0
-DIGIOUT_4P
+DIGIOUT_8P
 Text HLabel 12050 10100 0    60   Input ~ 0
-DIGIOUT_4N
+DIGIOUT_8N
 $Comp
 L C C?
 U 1 1 557BD848
