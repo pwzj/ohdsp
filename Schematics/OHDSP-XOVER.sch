@@ -6,7 +6,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 10
+Sheet 1 9
 Title ""
 Date "10 feb 2015"
 Rev ""
@@ -202,12 +202,6 @@ S 9250 900  1500 1050
 U 5574D2FB
 F0 "PSU" 60
 F1 "PSU.sch" 60
-$EndSheet
-$Sheet
-S 7150 1000 1650 800 
-U 5574D5A4
-F0 "SPDIF" 60
-F1 "SPDIF.sch" 60
 $EndSheet
 $Sheet
 S 4850 3600 2050 2550
